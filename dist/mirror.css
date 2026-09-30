@@ -1,6 +1,9 @@
 /* 中文字符使用系统字体，保留官方字号、间距和所有表格尺寸。 */
 body, input, textarea, select, button {font-family: 'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;}
 .zh-image-label {position:relative;display:inline-block;line-height:0;}
+/* 保留官方图示上方 40px 间距，同时让覆盖文字以图片本身的高度定位。 */
+.custom-sec .zh-image-label {margin:40px 0 0;}
+.custom-sec .zh-image-label > img {margin:0;}
 .zh-image-label > span {position:absolute;left:4.9%;top:55%;width:18.1%;height:16%;background:#fff;color:#333;font-size:13px;font-weight:bold;line-height:1.5;display:flex;align-items:center;justify-content:center;text-align:center;}
 /* 官网营销页的滚动动画在离线版直接显示，避免依赖追踪脚本。 */
 html[data-mirror-public] [data-aos] {opacity:1!important;transform:none!important;}

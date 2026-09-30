@@ -52,10 +52,10 @@
       item.classList.add('open'); paragraph.style.height = paragraph.scrollHeight + 'px';
     }
   }));
-  // 原介绍页的锚点使用 fullPage 名称；将名称对应到已存在的 section，保留导航含义。
+  // 官方分页已初始化时由 fullPage 接管锚点，避免总览页被普通滚动逻辑打断。
   document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListener('click', event => {
     const hash = anchor.getAttribute('href').slice(1);
     const section = Array.from(document.querySelectorAll('[data-anchor]')).find(item => item.dataset.anchor === hash);
-    if (section && !document.querySelector('#fullpage.fullpage-wrapper')) {event.preventDefault(); section.scrollIntoView({behavior:'smooth'}); history.replaceState(null,'','#'+hash);}
+    if (section && !section.closest('.fullpage-wrapper')) {event.preventDefault(); section.scrollIntoView({behavior:'smooth'}); history.replaceState(null,'','#'+hash);}
   }));
 })();
