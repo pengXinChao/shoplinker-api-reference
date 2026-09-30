@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+/* Reset */
+html, body{height:100%;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form, label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button,em,textarea{margin:0;padding:0;vertical-align:baseline;}
+body{font:normal 13px/18px "Nanum Gothic", "나눔고딕","malgun Gothic","맑은 고딕","돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif;color:#666;-ms-word-break:break-all;*word-break:break-all;-webkit-text-size-adjust:none;}
+button{font-family:"malgun Gothic","맑은 고딕";cursor:pointer;}
+h1,h2,h3,h4,h5,h6{font-size:14px;}
+ul, ol{list-style:none;}
+img,fieldset,abbr,acronym {border:0}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal;}
+q:before,q:after{content:' '}
+input,select,button,textarea{color:#777;vertical-align:middle;font-size:12px;}
+select{padding:2px;vertical-align:top;}
+legend,caption{visibility:hidden;line-height:0;font:0/0;}
+ins{text-decoration:none}/*remember to highlight inserts somehow!*/
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0;word-break:break-all;}
+legend,hr,caption{visibility:hidden;font-size:0;line-height:0;height:0;}
+hr{display:none}
+a:link,a:visited,a:active{text-decoration:none;color:#777;}
+a:hover{text-decoration:none;color:#555;}
+br{letter-spacing:0; } /*br ie6,7*/
+input[type='text'], input[type='password']{border:1px solid #d7d7d5;font-family:"Nanum Gothic", "나눔고딕" !important;}
+input[type='submit'], input[type='button']{font-family:"Nanum Gothic", "나눔고딕" !important;}
+textarea{border:1px solid #d7d7d5;resize:none;overflow:hidden;overflow-y:auto;}
+button{border:0;background:none;}
+.hid{display:block;letter-spacing:-1000em;z-index:-1;}
+.invisible{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;}
+*::-moz-selection{background:none repeat scroll 0 0 #f7941d;color:#fff;text-shadow:none;}
+*::selection{background:none repeat scroll 0 0 #f7941d;color:#fff;text-shadow:none;}
+
+ /* Skip Navigation */
+#skip{position:relative;z-index:99999;}
+#skip a{position:absolute;left:0;border:1px solid #f7941d;outline:medium none;text-align:center;top:-30px;width:138px;background-color:#000;}
+#skip a:active, #skip a:focus{cursor:pointer;text-decoration:none;top:0;}
+#skip span{padding:2px 6px 0 0;display:inline-block;color:#fff;font-size:11px;letter-spacing:-1px;line-height:26px;}
+@media print{body{color:#000;}} 
+
+/*로그인모달*/
+.modalpop{display:none;position:fixed;top:50%;left:50%;margin:-130px 0 0 -190px;padding:30px 30px 0 30px;width:320px;height:200px;border:1px solid #ccc;background-color:#fff;box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);z-index:9999;border-radius:5px;}
+.modal-title{font-size:20px;font-weight:bold;color:#333;border-bottom:1px solid #bebebe;}
+.modal-title>span{display:inline-block;margin-bottom:-1px;padding:0 5px 10px 5px;border-bottom:1px solid #ffc056;}
+.login-bx{position:relative;padding:20px 10px 10px 10px;}
+.login-bx span.label-hid{display:block;height:1px;width:1px;text-indent:-1000em;z-index:-1;}
+.login-bx input[type="text"], .login-bx input[type="password"]{padding:5px;width:200px;color:#555;}
+.login-submit{position:absolute;top:20px;right:10px;display:block;color:#fff;font-family:verdana, '돋움',dotum;border:0;font-weight:bold;white-space:nowrap;border-radius:2px;vertical-align:middle;background-color:#f8a314;width:80px;height:60px;}
+.login-pass{margin:5px 0 0 0;}
+.id-check{margin-top:7px;font-size:12px;}
+.id-check input[type="checkbox"]{margin-top:-1px;}
+.login-bnlist{margin-top:10px;}
+.bn2{display:inline-block;color:#333 !important;font-size:11px;font-family:verdana, '돋움',dotum;border:0;font-weight:bold;white-space:nowrap;border-radius:2px;vertical-align:middle;background-color:#fff;border:1px solid #9a9a9a;padding:3px 6px 2px 6px;}
+.bn-close{position:absolute;top:27px;right:35px;}
+.bn-close button{width:19px;height:19px;overflow:hidden;background:url('../images/bg_close.png') no-repeat left top;}
+.bn-close button>span{display:block;text-indent:-1000em;z-index:-1;}
+.bg_modal{display:none;position:absolute;top:0;bottom:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.6);z-index:9998;}

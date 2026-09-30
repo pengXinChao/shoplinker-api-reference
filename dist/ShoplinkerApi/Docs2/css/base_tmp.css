@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {margin:0px; padding:0px;  font-family:Dotum,  AppleGothic, Sans-serif; font-size:12px;}
+div, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, p, blockquote, th, td, xmp {margin:0px; padding:0px;}
+
+a{text-decoration:none; margin:0px; padding:0px;}
+a:link{text-decoration:none; margin:0px; padding:0px;}
+a:hover{text-decoration:none; margin:0px; padding:0px; }
+a:visited{text-decoration:none; margin:0px; padding:0px;}
+
+caption, hr{display:none;}
+*:first-child+html caption {display:none;}
+
+input, select, textarea {font-size:12px;  vertical-align:middle; color:#707070;}
+
+table{border-collapse:collapse; border-spacing:0;}
+img{border:0; vertical-align:middle;}
+
+h1{margin:0px; font-size:16px; font-weight:bold; }
+h2{margin:0px; font-size:14px; font-weight:bold; }
+h3{margin:0px; font-size:12px; font-weight:bold; }
+h4{margin:0px; font-size:12px; }
+h5{margin:0px; font-size:12px;}
+h6{margin:0px; font-size:12px; }
+
+nav,ol,ul {list-style:none; }
+fieldset {position:absolute; margin:0px; padding:0px; border:0px;}
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0; padding:0px; margin:0px;} 
+
+.skipnavi {position:absolute; top:-100px;left:220px;}
+.skipnavi:focus, .skipnavi:active {display:block; position:absolute; left:100px; top:0px; z-index:5000; background:#F5F5F5; width:200px; text-align:center; height:30px; line-height:30px; color:#000000; }
+
+.hidden {display:none;}

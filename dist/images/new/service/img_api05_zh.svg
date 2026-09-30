@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="935" height="359" viewBox="0 0 935 359" role="img" aria-label="Shoplinker 标准服务加定制服务等于基于 API 的定制 VIP 服务">
+<defs><radialGradient id="lime"><stop stop-color="#f8ffdb"/><stop offset="1" stop-color="#d4fa31"/></radialGradient><radialGradient id="purple"><stop stop-color="#e6e6ff"/><stop offset="1" stop-color="#c4c4ff"/></radialGradient></defs>
+<rect x="1" y="65" width="467" height="209" rx="104" fill="#f7f7ff" stroke="#1c08a6" stroke-width="2"/>
+<circle cx="105" cy="171" r="94" fill="url(#lime)"/>
+<circle cx="365" cy="171" r="94" fill="url(#purple)"/>
+<text x="233" y="194" fill="#120068" font-size="72" font-family="Arial" text-anchor="middle">+</text>
+<text x="533" y="202" fill="#120068" font-size="84" font-family="Arial" text-anchor="middle">=</text>
+<circle cx="756" cy="180" r="177" fill="url(#purple)" stroke="#170074" stroke-width="3"/>
+<circle cx="756" cy="223" r="92" fill="url(#lime)" stroke="white" stroke-width="4"/>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" font-weight="bold" text-anchor="middle">
+<text x="105" y="162"><tspan x="105">Shoplinker</tspan><tspan x="105" dy="33">标准服务</tspan></text>
+<text x="365" y="162"><tspan x="365">Shoplinker</tspan><tspan x="365" dy="33">定制服务</tspan></text>
+<text x="756" y="78" fill="#0b0757"><tspan x="756">使用 Shoplinker API</tspan><tspan x="756" dy="36">定制 VIP 服务</tspan></text>
+<text x="756" y="215"><tspan x="756">Shoplinker</tspan><tspan x="756" dy="33">标准服务</tspan></text>
+</g></svg>

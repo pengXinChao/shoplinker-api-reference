@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 中文参考</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css"> <!--풀페이지에만 적용--><link rel="stylesheet" href="css/content.css">
+
+
+ <!--풀페이지에만 적용-->
+ <!--풀페이지에만 적용-->
+
+
+<meta charset="utf-8"><link rel="stylesheet" href="../../mirror.css"></head>
+<body class="full"><!-- skip navigation -->
+
+<div id="skip">
+    <a href="#gnb"><span>跳转至主菜单</span></a>
+    <a href="#content"><span>跳转至正文</span></a>
+</div>
+
+<input type="hidden" name="type_gubun">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap intro">
+
+	<div class="header">
+        <h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+        <div class="gnb">
+            <ul id="gnb">
+                <li>
+                    <span class="ico-home"></span>
+                    <a href="index.html?type_gubun=001"><span>首页</span></a>
+                </li>
+                <li>
+                    <span class="ico-dev"></span>
+										                    <a href="Product/Attribute_Info.html?spec_135=ov&amp;guTwo=t">
+										<span>API</span></a>
+                </li>
+
+                <li>
+                    <span class="ico-dev"></span>
+					                    <a href="Product/SkuInfo.html?spec_001=ov&amp;type_gubun=006">
+										<span>ERP</span></a>
+                </li>
+                <li class="ov">
+                    <span class="ico-sandbox"></span>
+                    					<a href="xml.html?type_gubun=003">
+										<span>沙箱</span></a>
+				</li>
+
+                <li>
+                    <span class="ico-service"></span>
+                    <a href="introduce.html?type_gubun=004"><span>API 介绍</span></a>
+                </li>
+				            </ul>
+            <div class="bn-logout">
+                <span class="ico-logout"></span>
+                <a href="#" data-local-action="official-login">logout_</a>
+            </div>
+        </div>
+	
+
+    <!--content-->
+    <div id="content">
+		<div class="xml-wrap">
+        <h2 class="cts-title">XML</h2>
+
+       <ul class="list mgt_30">
+				<li>可使用 XML 消息进行简单测试。</li> <p></p>
+				<li>在发送值中填写 XML 正文后即可测试。</li>
+				<li>直接输入方式－直接输入 XML，输出结果值。</li>
+				<li>URL 输入方式－输入保存了 XML 的 URL，输出结果值。</li>
+				<li>自动输入方式－选择 XML 示例并输出结果值。</li>
+       </ul>
+
+	<form name="xml" method="post" action="#" data-local-form="true">
+		<ul class="xml-tab">
+			<li class="ov"><label><a href="#"><input type="radio" name="select" id="select" value="direct" data-local-action="xml-mode">直接输入方式</a></label></li>
+			<li><label><a href="#"><input type="radio" name="select" id="select" value="urlXml" data-local-action="xml-mode">XML URL 输入方式</a></label></li>
+			<li><label><a href="#"><input type="radio" name="select" id="select" value="sample" data-local-action="xml-mode">XML 自动生成方式</a></label></li>
+		</ul>
+
+		<ul class="list tab-cts1">
+			<li style="display: list-item;">输入 XML 消息后可进行测试。</li>
+			<li style="display: none;">输入保存了 XML 的 URL 后可进行测试。</li>
+			<li style="display: none;">可选择要测试的 XML 消息进行测试。</li>
+		</ul>
+
+			<div class="mgt_20">
+			   <h3 class="title-xmlform">服务 URL</h3>
+			   <div class="xml-sel">
+					<select name="urlName" id="urlName">
+						<option value="">请选择</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">商品新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_list.php">Shoplinker 商品查询</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_price_insert.html">商城售价登记</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/goods_info_reg.php">商品公示信息新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">商城商品新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">001方式_商城商品修改 [1:1]</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">002方式_商城商品修改 [1:N]</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_product_list.php">商城商品查询</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">商城期限延长</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/orderlist.php">订单采集</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/delivery.php">Shoplinker 运单登记</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/DeliveryLinkage.php">商城运单登记</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Clame/Clame_Xml.php">售后申请采集</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Cs/Cs_Xml.php">CS 采集</option>
+						<!--option value="">CS 처리</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/CategoryList.php">分类查询</option>
+						<!--option value="">매핑카테고리 유효검사</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupList.php">Shoplinker 商品组信息</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">商品组信息新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">商城 SCM 登录</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/api_basic.php">基础信息查询</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Stock.php">库存登记</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_image_register.php">图片新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">SKU 属性查询</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">SKU 新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">商品新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">SKU/商品修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallSendStock.php">（旧版）商城部分同步</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Partupdate.php">001方式_（新版）商城部分同步 [1:1]</option>
+                        <option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/part_thred.php">002方式_（新版）商城部分同步 [1:N]</option>
+                        <option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/v7/order/newOrderlist.php">[新版] 新订单查询</option>
+
+				</select>
+				<select name="urlNameXml" id="urlNameXml" style="display:none">
+						<option value="">请选择</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">商品新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">商城商品新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">001方式_商城商品修改 [1:1]</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">002方式_商城商品修改 [1:N]</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">商城期限延长</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">商城 SCM 登录</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">商品组信息新增/修改</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">SKU 属性查询</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">SKU 新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">商品新增</option>
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">SKU/商品修改</option>
+				 </select>
+					<span id="xmlB" style="display:none"><input class="bn bn-submit" type="button" value="查看测试 XML" data-local-action="xml-sample"></span>
+			   </div>
+		   </div>
+
+			<div class="xml-url2" id="xmlUrl2" style="display: none;">
+				<h3 class="title-xmlform">xml URL</h3>
+				<div class="xml-sel2"><input type="text" name="xmlUrl" id="xmlUrl" size="56" value="" placeholder=" 请输入 XML 文件 URL"></div>
+			</div>
+
+			<div class="xml-bx">
+				<div class="xml-bx-cts">
+					<h3>发送值</h3>
+					<textarea name="xmlSend" id="xmlSend" cols="30" rows="10" placeholder="请在此输入要测试的 XML"></textarea>
+				</div>
+				<div class="xml-bx-cts fl_r">
+					<h3>结果值</h3>
+					<div class="frame-wrap">
+					 							<iframe name="result" class="frame" id="result-frame" src="about:blank"></iframe>
+											</div>
+				</div>
+			</div>
+
+			<div class="xml-submit"><input class="bn" type="button" value="发送" data-local-action="official-sandbox"></div>
+			<input type="hidden" name="type_gubun" id="type_gubun">
+		</form>
+ 		</div>
+    </div>
+    <!--//content-->
+
+</div>
+
+
+
+
+</div><script src="js/jquery-1.8.1.min.js"></script><script src="js/jquery.color-2.1.2.min.js"></script><script src="js/common.js"></script><script src="../../samples.js"></script><script src="../../mirror.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

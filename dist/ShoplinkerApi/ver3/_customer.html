@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="overflow: hidden; height: 100%;"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scaleable=no">
+<title>Shoplinker API - 中文参考</title>
+<!--link rel="shortcut icon" href="../images/ico/favicon.ico"-->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css"> <!--풀페이지에만 적용-->
+<link rel="stylesheet" href="css/content.css">
+
+
+
+
+
+
+
+
+
+<!--풀페이지에만 적용-->
+
+<!--//풀페이지에만 적용-->
+
+<!--[if lt IE 9]>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+<meta charset="utf-8"><link rel="stylesheet" href="../../mirror.css"></head>
+<body style="overflow: hidden; height: 100%;">
+<!-- skip navigation -->
+<div id="skip">
+    <a href="#gnb"><span>跳转至主菜单</span></a>
+    <a href="#content"><span>跳转至正文</span></a>
+</div>
+<!-- //skip navigation -->
+<div class="wrap customer">
+
+	<!--header-->
+	<div class="header">
+		<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+		<div class="gnb">
+			<ul id="gnb">
+				<li>
+					<span class="ico-home"></span>
+					<a href="index.html?type_gubun=001"><span>首页</span></a>
+				</li>
+				<li class="ov">
+					<span class="ico-api"></span>
+										<a href="Product/ProductInfo.html?spec_001=ov&amp;type_gubun=002">
+										<span>API</span></a>
+				</li>
+				<li>
+					<span class="ico-sandbox"></span>
+										<a href="xml.html?type_gubun=003">
+										<span>沙箱</span></a>
+				</li>
+				<li>
+					<span class="ico-service"></span>
+					<a href="introduce.html?type_gubun=004"><span>API 介绍</span></a>
+				</li>
+				<li>
+					<span class="ico-key"></span>
+										<a href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/setup.html?type_gubun=005">
+										<span>企业设置</span></a>
+				</li>
+			</ul>
+			<div class="bn-logout">
+				<span class="ico-logout"></span>
+				<a href="#" data-local-action="official-login">logout</a>
+			</div>
+		</div>
+
+	</div>
+	<!--//header-->
+
+	<!--content-->
+	<div id="content">
+
+
+
+		<div class="submenu-wrap">
+			<div class="submenu">
+				<ul class="menu-title">
+					<li class="ov"><a href="http://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html">API 总览</a></li>
+					<li>
+												<a href="http://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductInfo.html?spec_001=ov&amp;guTwo=t">
+												开发手册</a>
+					</li>
+				</ul>
+				<ol id="menu2">
+					<li>Shoplinker 商品管理
+						<ul>
+							<li data-menuanchor="0rdPage" class="active"><a href="#0rdPage">- 商品新增/修改</a></li>
+							<li data-menuanchor="1rdPage"><a href="#1rdPage">- Shoplinker 商品查询</a></li>
+							<li data-menuanchor="2rdPage"><a href="#2rdPage">- 商城售价登记</a></li>
+							<li data-menuanchor="3rdPage"><a href="#3rdPage">- 商品公示信息新增/修改</a></li>
+						</ul>
+					</li>
+					<li>商城关联商品管理
+						<ul>
+							<li data-menuanchor="4rdPage"><a href="#4rdPage">- 商城商品新增</a></li>
+							<li data-menuanchor="5rdPage"><a href="#5rdPage">- 商城商品修改</a></li>
+							<li data-menuanchor="6rdPage"><a href="#6rdPage">- 商城商品查询</a></li>
+							<li data-menuanchor="7rdPage"><a href="#7rdPage">- 商城销售期限延长</a></li>
+						</ul>
+					</li>
+					<li>订单管理
+						<ul>
+							<li data-menuanchor="8rdPage"><a href="#8rdPage">- 订单采集</a></li>
+							<li data-menuanchor="9rdPage"><a href="#9rdPage">- Shoplinker 运单登记</a></li>
+						</ul>
+					</li>
+					<li>售后/CS 管理
+						<ul>
+							<li data-menuanchor="10rdPage"><a href="#10rdPage">- 售后申请采集</a></li>
+							<li data-menuanchor="11rdPage"><a href="#11rdPage">- CS 采集</a></li>
+						</ul>
+					</li>
+					<li>公告采集
+						<ul>
+							<li data-menuanchor="12rdPage"><a href="#12rdPage">- 公告采集</a></li>
+						</ul>
+					</li>
+					<li>分类信息
+						<ul>
+							<li data-menuanchor="13rdPage"><a href="#13rdPage">- 分类查询</a></li>
+						</ul>
+					</li>
+					<li>管理员附加功能
+						<ul>
+							<li data-menuanchor="14rdPage"><a href="#14rdPage">- Shoplinker 商品组信息查询</a></li>
+							<li data-menuanchor="15rdPage"><a href="#15rdPage">- 商品组信息新增/修改</a></li>
+							<li data-menuanchor="16rdPage"><a href="#16rdPage">- SCM 登录</a></li>
+							<li data-menuanchor="17rdPage"><a href="#17rdPage">- 基础信息查询</a></li>
+						</ul>
+					</li>
+				</ol>
+
+			</div>
+		</div>
+
+		<div id="fullpage2" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+
+			<div class="section fp-section active fp-table" id="section0" data-anchor="0rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-0">
+					<h2 class="custom-title">商品新增/修改</h2>
+					<p class="custom-txt">在 Shoplinker 与自有商城之间使用“客户 API”，即可将熟悉的“自有商城”中登记的商品……<br>现在可以使用 Shoplinker，在所需时间一次发送所需数量的商品。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer0.jpg" alt="自有商城 - Shoplinker">
+					<span style="left:5.279034690799397%;top:58.064516129032256%;width:17.49622926093514%;height:13.440860215053764%;">自有商城</span></span><p class="custom-txt1">自动/手动发送</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/ProductInfo.html?spec_001=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section1" data-anchor="1rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-1">
+					<h2 class="custom-title">Shoplinker 商品查询</h2>
+					<p class="custom-txt">无需登录 Shoplinker，即可查询已登记（发送）到 Shoplinker 的商品。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer1.jpg" alt="">
+					<span style="left:5.319148936170213%;top:53.80434782608695%;width:17.62917933130699%;height:13.043478260869565%;">自有商城</span></span><p class="custom-txt1">Shoplinker 注册代码、开始日期、结束日期</p>
+					<p class="custom-txt2">销售状态、价格、原产地等</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/ProductList.html?spec_002=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section2" data-anchor="2rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-2">
+					<h2 class="custom-title">商城售价登记</h2>
+					<p class="custom-txt">Shoplinker 可以快速、方便地按销售渠道（商城）设置手续费、售价、供货价等。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2.jpg" alt="">
+					<span style="left:7.30593607305936%;top:70.96774193548387%;width:13.850837138508371%;height:10.75268817204301%;">自有商城</span><span style="left:12.024353120243532%;top:12.903225806451612%;width:9.436834094368342%;height:11.290322580645162%;">市价</span><span style="left:12.024353120243532%;top:24.193548387096776%;width:9.436834094368342%;height:11.290322580645162%;">售价</span><span style="left:12.024353120243532%;top:36.02150537634409%;width:9.436834094368342%;height:10.75268817204301%;">供货价</span></span><p class="custom-txt1">商城名称、市价、售价、利润率等</p>
+					<p class="custom-txt2">登记成功或失败的结果值</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/MallPrice.html?spec_003=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section3" data-anchor="3rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-3">
+					<h2 class="custom-title">商品公示信息新增/修改</h2>
+					<p class="custom-txt">37种商品信息（商品信息提供公示）也可以方便地应用到 Shoplinker 已登记商品。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer3.jpg" alt="">
+					<span style="left:7.435508345978755%;top:70.96774193548387%;width:13.505311077389985%;height:11.290322580645162%;">自有商城</span></span><p class="custom-txt1">商城名称、市价、售价、利润率等</p>
+					<p class="custom-txt2">登记成功或失败的结果值</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/GoodsInfo.html?spec_004=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section4" data-anchor="4rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-4_2">
+					<h2 class="custom-title">商城商品新增</h2>
+					<p class="custom-txt">可将 Shoplinker 中已登记商品一次发布到多个商城。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_1.jpg" alt="">
+					<span style="left:5.223880597014926%;top:53.80434782608695%;width:16.865671641791046%;height:12.5%;">自有商城</span><span style="left:88.80597014925372%;top:70.65217391304348%;width:7.462686567164179%;height:19.02173913043478%;">多家商城</span></span><p class="custom-txt1">Shoplinker 商品代码、商城账号、商城代码等</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/MallProductLinkReg.html?spec_005=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section5" data-anchor="5rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-4">
+					<h2 class="custom-title">商城商品修改</h2>
+					<p class="custom-txt">修改自有商城的商品信息（价格/销售状态等）后，可在所需销售渠道（商城）<br>所需商品可实时更新，与自有商城保持一致。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer4.jpg" alt="">
+					<span style="left:5.216095380029806%;top:57.75401069518717%;width:17.2876304023845%;height:13.368983957219251%;">自有商城</span><span style="left:88.37555886736214%;top:68.98395721925134%;width:7.600596125186289%;height:20.32085561497326%;">多家商城</span></span><div class="mgt_30">
+											<a class="bn custom" href="Product/MallProductLink.html?spec_006=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section6" data-anchor="6rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-5">
+					<h2 class="custom-title">商城商品查询</h2>
+					<p class="custom-txt">通过 Shoplinker 同步的商城（销售渠道）商品也可一次查询。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer5.jpg" alt="">
+					<span style="left:7.32824427480916%;top:71.71717171717172%;width:13.740458015267176%;height:10.606060606060606%;">自有商城</span></span><p class="custom-txt1">Shoplinker 注册代码、开始日期、结束日期</p>
+					<p class="custom-txt2">商城商品同步明细</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/MallList.html?spec_007=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section7" data-anchor="7rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-6">
+					<h2 class="custom-title">商城期限延长</h2>
+					<p class="custom-txt">通过客户 API 可以方便地延长 ESM（Auction、Gmarket）的销售期限。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer6.jpg" alt="">
+					<span style="left:5.303030303030303%;top:52.972972972972975%;width:17.272727272727273%;height:13.513513513513514%;">自有商城</span><span style="left:76.51515151515152%;top:20.54054054054054%;width:18.939393939393938%;height:11.35135135135135%;">选择销售期限</span><span style="left:76.51515151515152%;top:31.89189189189189%;width:18.939393939393938%;height:11.891891891891891%;">15天～90天</span></span><p class="custom-txt-s">在 Shoplinker 订单列表中登记运单</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/MallContinue.html?spec_008=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section8" data-anchor="8rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-7">
+					<h2 class="custom-title">订单采集</h2>
+					<p class="custom-txt">将 Shoplinker 自动采集的订单列表快速、准确地传入自有商城……</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer7.jpg" alt="">
+					<span style="left:7.32824427480916%;top:70.96774193548387%;width:13.893129770992367%;height:11.827956989247312%;">自有商城</span></span><p class="custom-txt1">Shoplinker 注册代码、商城代码</p>
+					<p class="custom-txt-s">订单采集计划设置</p>
+					<p class="custom-txt3">商城订单列表</p>
+					<div class="mgt_30">
+												<a class="bn custom" href="Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">查看开发者手册</a>
+																</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section9" data-anchor="9rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-8">
+					<h2 class="custom-title">Shoplinker 运单登记</h2>
+					<p class="custom-txt">在自有商城直接输入运单号后，销售渠道（商城）<br>可向买家批量发送运单号。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer8.jpg" alt="">
+					<span style="left:7.368421052631579%;top:70.58823529411765%;width:13.834586466165414%;height:11.229946524064172%;">自有商城</span></span><p class="custom-txt1">在 Shoplinker 订单列表中登记运单</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section10" data-anchor="10rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-10">
+					<h2 class="custom-title">售后申请采集</h2>
+					<p class="custom-txt">采集后检查是否可处理（发送至 Shoplinker）</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer10.jpg" alt="">
+					<span style="left:5.50314465408805%;top:57.75401069518717%;width:18.238993710691823%;height:13.368983957219251%;">自有商城</span></span><p class="custom-txt1">售后申请开始日期、结束日期</p>
+					<p class="custom-txt2">售后申请状态、种类、备注、日期等明细</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Clame/ClameList.html?spec_012=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section11" data-anchor="11rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-11">
+					<h2 class="custom-title">CS 采集</h2>
+					<p class="custom-txt">采集后检查是否可处理（发送至 Shoplinker）</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer11.jpg" alt="">
+					<span style="left:5.477308294209703%;top:53.475935828877006%;width:17.84037558685446%;height:12.834224598930481%;">自有商城</span></span><p class="custom-txt1">C/S 开始日期、C/S 结束日期</p>
+					<p class="custom-txt2">C/S 标题、事由、处理状态明细</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Clame/CSList.html?spec_013=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section12" data-anchor="12rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-12">
+					<h2 class="custom-title">公告采集</h2>
+					<p class="custom-txt">可在自有商城查看销售渠道（商城）的公告。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer12.jpg" alt="">
+					<span style="left:5.537974683544304%;top:53.763440860215056%;width:18.037974683544302%;height:12.903225806451612%;">自有商城</span></span><p class="custom-txt1">公告板类型、公告日期</p>
+					<p class="custom-txt2">公告标题、内容、浏览次数等</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="#">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section13" data-anchor="13rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-13">
+					<h2 class="custom-title">分类查询</h2>
+					<p class="custom-txt">可按分类查询 API 的类型信息查询分类信息。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_5.jpg" alt="">
+					<span style="left:5.451713395638629%;top:54.09836065573771%;width:17.757009345794394%;height:12.568306010928962%;">自有商城</span></span><p class="custom-txt1">客户代码、类型信息</p>
+					<p class="custom-txt2">分类信息</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/CategoryList.html?spec_015=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section14" data-anchor="14rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-14">
+					<h2 class="custom-title">Shoplinker 商品组信息查询</h2>
+					<p class="custom-txt">通过商品组信息查询 API 可查询商品组信息（商品组名称、商品组 ID 等）。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_6.jpg" alt="">
+					<span style="left:5.351681957186544%;top:54.09836065573771%;width:17.431192660550458%;height:12.568306010928962%;">自有商城</span></span><p class="custom-txt1">客户代码、商城账号、商城代码等</p>
+					<p class="custom-txt2">商品组信息（商品组名称、商品组 ID 等</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/GroupList.html?spec_017=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section15" data-anchor="15rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-15">
+					<h2 class="custom-title">商品组信息新增/修改</h2>
+					<p class="custom-txt">通过商品组登记 API 跳转至 Shoplinker 商品组信息登记页面。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_3.jpg" alt="">
+					<span style="left:5.359877488514548%;top:53.55191256830601%;width:17.304747320061256%;height:12.568306010928962%;">自有商城</span><span style="left:88.3614088820827%;top:69.94535519125684%;width:7.656967840735069%;height:19.12568306010929%;">多家商城</span></span><p class="custom-txt1">客户代码、商城账号、商城代码</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/GroupUpdate.html?spec_018=ov&amp;guTwo=t">查看开发者手册</a>
+				 					</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section16" data-anchor="16rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-16">
+					<h2 class="custom-title">SCM 登录</h2>
+					<p class="custom-txt">可通过 SCM 登录 API 直接访问。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_2.jpg" alt="">
+					<span style="left:5.351681957186544%;top:53.513513513513516%;width:17.2782874617737%;height:12.432432432432432%;">自有商城</span><span style="left:88.2262996941896%;top:69.1891891891892%;width:7.6452599388379205%;height:18.91891891891892%;">多家商城</span></span><p class="custom-txt1">客户代码、商城账号、商城代码</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Admin/ScmLogin.html?spec_019=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+			<div class="section fp-section fp-table" id="section17" data-anchor="17rdPage" style="height: 776px;"><div class="fp-tableCell" style="height:776px;">
+				<div class="custom-sec custom-17">
+					<h2 class="custom-title">基础信息查询</h2>
+					<p class="custom-txt">可按基础信息 API 的类型信息进行查询。</p>
+					<span class="zh-image-label"><img src="images/customer/img_customer2_4.jpg" alt="">
+					<span style="left:4.814305364511692%;top:53.80434782608695%;width:15.680880330123797%;height:13.043478260869565%;">自有商城</span></span><p class="custom-txt1">客户代码、类型信息</p>
+					<p class="custom-txt2">原产地、快递公司列表、商城列表、商品公示列表</p>
+					<div class="mgt_30">
+											<a class="bn custom" href="Product/BasicList.html?spec_020=ov&amp;guTwo=t">查看开发者手册</a>
+										</div>
+				</div>
+			</div></div>
+
+		</div>
+
+	</div>
+	<!--//content-->
+
+</div>
+
+<!------------------------------------------------------------------------------->
+<div class="modalpop login-modal">
+    <h2 class="modal-title"><span>登录</span></h2>
+			<form method="post" name="nemo" id="nemo" action="#" data-local-form="true">
+			<input name="return_url" id="return_url" type="hidden">
+			<input name="mode" id="mode" type="hidden">
+        <fieldset>
+        <legend>登录</legend>
+        <div class="login-bx">
+            <p><label><span class="label-hid">会员 ID</span> <input type="text" name="user_id" id="user_id" value=""></label></p>
+            <p class="login-pass"><label><span class="label-hid">密码</span> <input type="password" name="password" id="password" value=""></label></p>
+            <div class="id-check"><label><input type="checkbox" name="idSave" id="idSave" value="on"> 记住 ID</label></div>
+            <input class="login-submit" id="" name="" type="button" value="登录" data-local-action="official-login">
+
+
+            <div class="login-bnlist">
+                <a href="#" class="bn2">注册</a>
+                <a href="#" class="bn2">找回 ID/密码</a>
+            </div>
+
+        </div>
+        </fieldset>
+    </form>
+
+    <div class="bn-close"><button type="button"><span>关闭</span></button></div>
+</div>
+
+<!------------------------------------------------------------------------------->
+
+
+<div class="bg_modal"></div><script src="js/jquery-1.8.1.min.js"></script><script src="js/jquery.color-2.1.2.min.js"></script><script src="js/common.js"></script><script src="../../mirror.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

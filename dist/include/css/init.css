@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 웹폰트 */
+/* CSS Document */
+
+/* devanagari */
+
+/* latin-ext */
+
+/* latin */
+
+.ir-txt {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin:0; padding:0; border:0; font-size:100%; font:inherit; background:none;
+}
+body {font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; font-size:12px; font-weight:700; line-height:75%; color:#000;}
+ol, ul, li{margin:0; padding:0; list-style:none;}
+hr {display:none;}
+table {border-collapse:collapse; border-spacing:0;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+strong, b {font-weight:normal;}
+button {cursor:pointer;}
+input,textarea,select {margin:0px; font-family:inherit; font-size:inherit; font-weight:inherit;}
+option:disabled {color: #d7d7d7}
+a:link, a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+legend { display:none; }
+a:hover,
+a:visited,
+a:link,
+a:active {color:#000;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display:block;
+}
+body {
+background:#fff;
+line-height:100%;
+}
+blockquote, q {
+quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* 파이어폭스에서의 초기화 방법 */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* css 기본값 정의 */
+.blind {display:block; overflow:hidden; position:absolute !important; left:-9999px; width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999px !important;}
+.input.readonly {border:0 none;background-color:#f1f1f1;cursor:default}
+
+@media print {
+	.header-container, #aside, #footer,	#contents .c_area > .c_hero {display:none}
+	#content {position:absolute;left:0;top:0;margin:0 auto}
+}

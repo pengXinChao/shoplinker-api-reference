@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 中文参考</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+
+
+
+
+<meta charset="utf-8"><link rel="stylesheet" href="../../../mirror.css"></head>
+<body><!-- skip navigation -->
+
+<div id="skip">
+    <a href="#gnb"><span>跳转至主菜单</span></a>
+    <a href="#content"><span>跳转至正文</span></a>
+</div>
+
+<input type="hidden" name="type_gubun">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo">
+
+
+<div class="wrap">
+
+	<div class="header">
+        <h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+        <div class="gnb">
+            <ul id="gnb">
+                <li>
+                    <span class="ico-home"></span>
+                    <a href="../index.html?type_gubun=001"><span>首页</span></a>
+                </li>
+                <li class="ov">
+                    <span class="ico-dev"></span>
+										                    <a href="Attribute_Info.html?spec_135=ov&amp;guTwo=t">
+										<span>API</span></a>
+                </li>
+
+                <li>
+                    <span class="ico-dev" style="bottom: -30px;"></span>
+					                    <a href="SkuInfo.html?spec_001=ov&amp;type_gubun=006" style="background-color: rgb(221, 177, 107);">
+										<span>ERP</span></a>
+                </li>
+                <li>
+                    <span class="ico-sandbox" style="bottom: -30px;"></span>
+                    					<a href="../xml.html?type_gubun=003" style="background-color: rgb(221, 177, 107);">
+										<span>沙箱</span></a>
+				</li>
+
+                <li>
+                    <span class="ico-service" style="bottom: -30px;"></span>
+                    <a href="../introduce.html?type_gubun=004" style="background-color: rgb(221, 177, 107);"><span>API 介绍</span></a>
+                </li>
+				            </ul>
+            <div class="bn-logout">
+                <span class="ico-logout"></span>
+                <a href="#" data-local-action="official-login">logout_</a>
+            </div>
+        </div>
+	        <div class="submenu-wrap">
+            <div class="submenu">
+                <ul class="menu-title">
+					<li><a href="../_customer.html">API 总览</a></li>
+					<li class="ov">
+												<a href="ProductInfo.html?spec_001=ov&amp;guTwo=t">
+							开发手册</a>
+					</li>
+
+				</ul>
+                <ol class="menu">
+
+                
+
+
+
+    <li>一. SKU 管理（安德玛）        <ul>
+
+            <li class=""><a href="Attribute_Info.html?spec_135=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  1. Shoplinker SKU 新增</a></li>
+            <li class=""><a href="Attribute_Product.html?spec_136=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  2. Shoplinker 商品新增</a></li>
+            <li class=""><a href="Attribute_Modify.html?spec_137=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  3. Shoplinker SKU/商品修改</a></li>
+			<li class=""><a href="ProductImageUpdate.html?spec_034=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  4. Shoplinker 图片新增/修改</a></li>
+			<li class=""><a href="GoodsInfo.html?spec_004=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  5. Shoplinker 商品公示信息新增/修改</a></li>
+
+            <li class=""><a href="ProductList.html?spec_002=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  6. Shoplinker 商品查询</a></li>
+
+            <li class=""><a href="Attribute_qty_ref_v7.html?spec_5=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  7. Shoplinker 库存修改</a></li>
+            <li class=""><a href="Attribute_price_ref_v7.html?spec_14=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  8. 商城价格同步</a></li>
+			<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  9. 基础信息查询</a></li>
+
+
+
+        </ul>
+    </li>
+
+
+
+
+
+
+
+
+                					                    <li>二. 订单管理
+                        <ul>
+                            <li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t" style="color: rgb(85, 85, 85);">  1. 订单采集</a></li>
+                            <li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. 订单详情查询</a></li>
+                            <li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. Shoplinker 运单登记</a></li>
+                                                        <li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. 商城运单发送</a></li>
+                                                        <li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. 订单手动新增</a></li>
+                            <li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. 订单修改</a></li>
+                        </ul>
+                    </li>
+				                      <li>五. 售后/CS 管理
+                        <ul>
+				   <li class=""><a href="../Clame/ClameList.html?spec_012=ov&amp;guTwo=t">  1. 售后申请采集</a></li>
+				  <li class=""><a href="../Clame/CSList.html?spec_013=ov&amp;guTwo=t">  2. CS 采集</a></li>
+				  <li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS 处理</a></li>
+				  </ul>
+				                              </li></ol>
+        </div>
+    </div>
+
+</div>
+
+	    <!--//header-->
+
+	<!--content-->
+    <div id="content">
+        <h2 class="cts-title">Shoplinker 商品查询</h2>
+        <p class="mgt_30">用于查询 Shoplinker 商品的 API。</p>
+        <div class="basic-box">
+            <span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_list.php?iteminfo_url=XML地址[URL编码]
+        </div>
+
+        <h3 class="section-title">请求参数</h3>
+        <table class="board-col2">
+        <colgroup>
+        <col width="5%">
+        <col width="18%">
+        <col width="10%">
+        <col width="15%">
+        <col width="25%">
+        <col width="*">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="txt_c" scope="col">No.</th>
+            <th scope="col">参数</th>
+            <th class="txt_c" scope="col">类型</th>
+            <th scope="col">说明</th>
+            <th scope="col">取值范围</th>
+            <th scope="col">备注</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="txt_c">1.</td>
+            <td><span class="ico ico-css">必填</span> customer_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>客户代码（Shoplinker 注册代码）</td>
+            <td>
+			</td>
+            <td>Shoplinker 分配的代码<br>ex) a0000001</td>
+        </tr>
+        <tr>
+            <td class="txt_c">2.</td>
+            <td><span class="ico ico-css">必填</span> st_date</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>开始日期</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="txt_c">3.</td>
+            <td><span class="ico ico-css">必填</span> ed_date</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>结束日期</td>
+            <td>	</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="txt_c">4.</td>
+            <td> partner_product_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有商品代码（商品管理代码）</td>
+            <td></td>
+            <td>设置自有代码时无日期限制。</td>
+        </tr>
+        <tr>
+            <td class="txt_c">5.</td>
+            <td> barcode</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>条码</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">6.</td>
+            <td> page</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>页码 </td>
+            <td></td>
+            <td>商品数量超过500时，请填写页码</td>
+        </tr>
+		<tr>
+            <td class="txt_c">7.</td>
+            <td> total_standard_count</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>每页显示总条数 </td>
+            <td>默认设置为500条。</td>
+            <td></td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h4 class="section-title2">XML 示例</h4>
+		<div class="code-txt">
+			<pre><code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">openMarket</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a0000001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">st_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20150303</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">st_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20150303</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a586</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">page</span><span class="GreaterThan">&gt;</span><span class="othertext">1</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">page</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="othertext">1000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">openMarket</span><span class="GreaterThan">&gt;</span></code>
+			</pre>
+        </div>
+
+        <h3 class="section-title">响应</h3>
+        <table class="board-col2">
+        <colgroup>
+        <col width="5%">
+        <col width="18%">
+        <col width="10%">
+        <col width="15%">
+        <col width="23%">
+        <col width="*">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="txt_c" scope="col">No.</th>
+            <th scope="col">参数</th>
+            <th class="txt_c" scope="col">类型</th>
+            <th scope="col">说明</th>
+            <th scope="col">取值范围</th>
+            <th scope="col">备注</th>
+        </tr>
+        </thead>
+        <tbody>
+		<tr>
+            <td class="txt_c">1.</td>
+            <td> customer_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>客户代码（Shoplinker 注册代码）</td>
+            <td>
+			</td>
+            <td>Shoplinker 分配的代码<br>ex) a0000001</td>
+        </tr>
+        <tr>
+            <td class="txt_c">2.</td>
+            <td> product_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 商品代码</td>
+            <td></td>
+            <td>Shoplinker 商品代码 <br>ex) prod0001213 </td>
+        </tr>
+        <tr>
+            <td class="txt_c">3.</td>
+            <td> partner_product_id_t</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有商品代码（商品管理代码）</td>
+            <td>	</td>
+            <td>自有系统管理的商品代码</td>
+        </tr>
+        <tr>
+            <td class="txt_c">4.</td>
+            <td> sale_status</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>销售状态</td>
+            <td>
+				<span class="ico-select">选填</span>
+				<ol>
+					<li> - 销售中 : 001</li>
+					<li> - 等待中 : 002</li>
+					<li> - 停售 : 003</li>
+					<li> - 售罄 : 004</li>
+					<li> - 删除 : 005</li>
+					<li> - 销售结束 : 006</li>
+				</ol>
+			</td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">5.</td>
+            <td> category_l</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 分类一级代码 </td>
+            <td></td>
+            <td>存在自有分类时，请使用自有分类发送</td>
+        </tr>
+		<tr>
+            <td class="txt_c">6.</td>
+            <td> category_m</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 分类二级代码 </td>
+            <td></td>
+            <td>例如：cat00200</td>
+        </tr>
+		<tr>
+            <td class="txt_c">7.</td>
+            <td> category_s</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 分类三级代码 </td>
+            <td></td>
+            <td>例如：cat00201</td>
+        </tr>
+		<tr>
+            <td class="txt_c">8.</td>
+            <td> category_d</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 分类四级代码 </td>
+            <td></td>
+            <td>例如：cat00202</td>
+        </tr>
+		<tr>
+            <td class="txt_c">9.</td>
+            <td> ccategory_l</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有分类一级代码</td>
+            <td></td>
+            <td>例如：A01</td>
+        </tr>
+		<tr>
+            <td class="txt_c">10.</td>
+            <td> ccategory_m</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有分类二级代码</td>
+            <td></td>
+            <td>例如：B01</td>
+        </tr>
+		<tr>
+            <td class="txt_c">11.</td>
+            <td> ccategory_s</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有分类三级代码</td>
+            <td></td>
+            <td>例如：C01</td>
+        </tr>
+		<tr>
+            <td class="txt_c">12.</td>
+            <td> ccategory_d</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>自有分类四级代码</td>
+            <td></td>
+            <td>例如：D01</td>
+        </tr>
+		<tr>
+            <td class="txt_c">13.</td>
+            <td> maker</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>生产商</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">14.</td>
+            <td> maker_dt</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>发行日期（生产日期）</td>
+            <td> yyyymmdd</td>
+            <td> </td>
+        </tr>
+		<tr>
+            <td class="txt_c">15.</td>
+            <td> register_date</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品登记日期</td>
+            <td> yyyymmdd</td>
+            <td> </td>
+        </tr>
+		<tr>
+            <td class="txt_c">16.</td>
+            <td> origin</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>原产地名称</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">17.</td>
+            <td> market_price</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>商城市价（图书定价） </td>
+            <td></td>
+            <td> 没有值时登记为与商城售价相同的值 </td>
+        </tr>
+		<tr>
+            <td class="txt_c">18.</td>
+            <td> sale_price</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>商城售价</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">19.</td>
+            <td> supply_price</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td> 商城供货价</td>
+            <td></td>
+            <td>没有值时登记为与商城售价相同的值</td>
+        </tr>
+		<tr>
+            <td class="txt_c">20.</td>
+            <td> market_price_p</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>采购客户市价</td>
+            <td></td>
+            <td>没有值时登记为与商城售价相同的值</td>
+        </tr>
+		<tr>
+            <td class="txt_c">21.</td>
+            <td> sale_price_p</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>采购客户售价</td>
+            <td></td>
+            <td>没有值时登记为与商城售价相同的值</td>
+        </tr>
+		<tr>
+            <td class="txt_c">22.</td>
+            <td> supply_price_p</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>采购客户供货价</td>
+            <td></td>
+            <td>没有值时登记为与商城售价相同的值</td>
+        </tr>
+			<tr>
+				<td class="txt_c">23.</td>
+				<td> delivery_charge_type </td>
+				<td class="txt_c"><span class="ico ico-sample">string</span></td>
+				<td>运费类型</td>
+				<td>
+					<span class="ico-select">选填</span>
+					<ul>
+						<li>- 免费 : 001</li>
+						<li>- 到付 : 002</li>
+						<li>- 到付/预付 : 003</li>
+						<li>- 满3万韩元免运费 : 004</li>
+						<li>- 满5万韩元免运费 : 005</li>
+						<li>- 满7万韩元免运费 : 006</li>
+						<li>- 满10万韩元免运费 : 007</li>
+					</ul>
+				</td>
+            <td></td>
+        </tr>
+		<tr>
+			<td class="txt_c">24.</td>
+			<td>delivery_charge</td>
+			<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+			<td>到付运费金额</td>
+			<td></td>
+			<td></td>
+        </tr>
+		<tr>
+			<td class="txt_c">25.</td>
+			<td> tax_yn</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td>应税</td>
+			<td>
+				<span class="ico-select">选填</span>
+				<ol>
+					<li>- 应税 : 001</li>
+					<li>- 免税 : 002</li>
+				</ol>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">26.</td>
+			<td> detail_desc</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td>详情说明</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">27.</td>
+			<td>new_desc_top</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td>新版详情说明</td>
+			<td></td>
+			<td>ESM 商品可选值</td>
+		</tr>
+		<tr>
+            <td class="txt_c">28.</td>
+            <td>new_desc_center</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>附加构成详情说明</td>
+            <td></td>
+            <td>ESM 商品可选值 </td>
+        </tr>
+		<tr>
+            <td class="txt_c">29.</td>
+            <td>new_desc_bottom</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>广告/宣传详情说明</td>
+            <td></td>
+            <td>ESM 商品可选值 </td>
+        </tr>
+		<tr>
+            <td class="txt_c">30.</td>
+            <td>desc_type_tag</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>品质标识 TAG 及详情说明</td>
+            <td></td>
+            <td>仅适用于现代电视购物 </td>
+        </tr>
+		<tr>
+            <td class="txt_c">31.</td>
+            <td> quantity</td>
+            <td class="txt_c"><span class="ico ico-integer">integer</span></td>
+            <td>可供货数量 </td>
+            <td></td>
+            <td>无值时登记为900个</td>
+        </tr>
+		<tr>
+            <td class="txt_c">32.</td>
+            <td>salearea</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>销售地区</td>
+            <td></td>
+            <td>无值时登记为 001（全国）</td>
+        </tr>
+		<tr>
+            <td class="txt_c">33.</td>
+            <td>partner_id </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>供应商（采购客户）ID</td>
+            <td></td>
+            <td>供应商 ID 只能在新增商品时设置，无法修改。<br>修改供应商 ID 可能产生重复商品，请注意。</td>
+        </tr>
+		<tr>
+            <td class="txt_c">34.</td>
+            <td>sex</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品适用性别</td>
+            <td>
+				<span class="ico-select">选填</span>
+				<ol>
+					<li>- 通用 : 001</li>
+					<li>- 男款 : 002</li>
+					<li>- 女款 : 003</li>
+				</ol>
+			</td>
+            <td></td>
+        </tr>
+		<tr>
+           <td class="txt_c">35.</td>
+            <td>keyword</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品关键词（商品简称）</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+           <td class="txt_c">36.</td>
+            <td>model </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>型号名称</td>
+            <td></td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">37.</td>
+            <td>model_no</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>型号 NO</td>
+            <td></td>
+            <td>使用 isbn（图书代码）时，必须以 "isbn-" 开头。</td>
+        </tr>
+		<tr>
+            <td class="txt_c">38.</td>
+            <td>brand </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>品牌名称 </td>
+            <td>	</td>
+            <td>
+			</td>
+        </tr>
+		<tr>
+            <td class="txt_c">39.</td>
+            <td>auth_no </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>认证编号</td>
+            <td></td>
+            <td>	</td>
+        </tr>
+		<tr>
+            <td class="txt_c">40.</td>
+            <td>expirydate </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>有效日期</td>
+            <td>yyyymmdd</td>
+            <td></td>
+        </tr>
+		<tr>
+            <td class="txt_c">41.</td>
+            <td>option_info </td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>选项信息</td>
+            <td></td>
+            <td>组合选项名称||组合选项1^^数量&lt;**&gt;价格,组合选项2^^数量&lt;**&gt;价格~~<br>选项内容中的 ‘(’、‘)’、‘/’、‘^’、‘,’ 是 Shoplinker 的分隔符，不得包含在选项内容中。</td>
+        </tr>
+		<tr>
+			<td class="txt_c">42.</td>
+			<td> product_name</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td>商品名称</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">43.</td>
+			<td> image_url</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 图片地址信息</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">44.</td>
+			<td> image_seq</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 图片 seq</td>
+			<td></td>
+			<td>图片类型 No</td>
+		</tr>
+		<tr>
+			<td class="txt_c">45.</td>
+			<td> item_group_no</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品公示组 seq</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">46.</td>
+			<td> item_group_title</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品公示组标题</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">47.</td>
+			<td> gosi_name </td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品公示单项标题</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">48.</td>
+			<td> gosi_seq</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品公示单项 seq</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">49.</td>
+			<td> gosi_value</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品公示单项内容</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">50.</td>
+			<td> barcode</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 条码</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">51.</td>
+			<td> count_all</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 商品总数</td>
+			<td>位于 MessageHeader</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">52.</td>
+			<td> total_page</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 总页数</td>
+			<td>位于 MessageHeader</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">53.</td>
+			<td> currently_page</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 当前页</td>
+			<td>位于 MessageHeader</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">54.</td>
+			<td> currently_count</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 当前页显示的商品数</td>
+			<td>位于 MessageHeader</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="txt_c">55.</td>
+			<td> total_standard_count</td>
+			<td class="txt_c"><span class="ico ico-sample">string</span></td>
+			<td> 每页显示总条数</td>
+			<td>位于 MessageHeader</td>
+			<td></td>
+		</tr>
+		</tbody>
+        </table>
+
+				<div class="code-txt">
+<pre><span class="LessThan">&lt;?</span><span style="color:#200080; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#308080; ">=</span><span style="color:#1060b6; ">'</span><span style="color:#7d0045; ">1.0</span><span style="color:#1060b6; ">'</span><span style="color:#004a43; "> </span><span style="color:#074726; ">encoding</span><span style="color:#308080; ">=</span><span style="color:#1060b6; ">'</span><span style="color:#1060b6; ">EUC-KR</span><span style="color:#1060b6; ">'</span><span style="color:#004a43; "> </span><span style="color:#004a43; ">?&gt;</span>
+<span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">ProductInfo</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">MessageHeader</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">count_all</span><span class="LessThan">&gt;</span>2<span class="LessThan">&lt;/</span><span class="OpenTag">count_all</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">total_page</span><span class="LessThan">&gt;</span>2<span class="LessThan">&lt;/</span><span class="OpenTag">total_page</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">currently_page</span><span class="LessThan">&gt;</span>1<span class="LessThan">&lt;/</span><span class="OpenTag">currently_page</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">currently_count</span><span class="LessThan">&gt;</span>43<span class="LessThan">&lt;/</span><span class="OpenTag">currently_count</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">total_standard_count</span><span class="LessThan">&gt;</span>1000<span class="LessThan">&lt;/</span><span class="OpenTag">total_standard_count</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;/</span><span class="OpenTag">MessageHeader</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">Product</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>prod31821617<span class="LessThan">&lt;/</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_status</span><span class="LessThan">&gt;</span>001<span class="LessThan">&lt;/</span><span class="OpenTag">sale_status</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_l</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>cat05773<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_l</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_m</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_m</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_s</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_s</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_d</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_d</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_l</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>20<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_l</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_m</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_m</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_s</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_s</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_d</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_d</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">maker</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>제조업체<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">maker</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">maker_dt</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>발행일<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">maker_dt</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">register_date</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>20141226090752<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">register_date</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">origin</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>APIORIGIN_120<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">origin</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">barcode</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>test_code1<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">barcode</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">market_price</span><span class="LessThan">&gt;</span>20000<span class="LessThan">&lt;/</span><span class="OpenTag">market_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_price</span><span class="LessThan">&gt;</span>19000<span class="LessThan">&lt;/</span><span class="OpenTag">sale_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">supply_price</span><span class="LessThan">&gt;</span>18000<span class="LessThan">&lt;/</span><span class="OpenTag">supply_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">market_price_p</span><span class="LessThan">&gt;</span>10000<span class="LessThan">&lt;/</span><span class="OpenTag">market_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_price_p</span><span class="LessThan">&gt;</span>9000<span class="LessThan">&lt;/</span><span class="OpenTag">sale_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">supply_price_p</span><span class="LessThan">&gt;</span>8000<span class="LessThan">&lt;/</span><span class="OpenTag">supply_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge_type</span><span class="LessThan">&gt;</span>001<span class="LessThan">&lt;/</span><span class="OpenTag">delivery_charge_type</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge</span><span class="LessThan">&gt;</span>0<span class="LessThan">&lt;/</span><span class="OpenTag">delivery_charge</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">tax_yn</span><span class="LessThan">&gt;</span>002<span class="LessThan">&lt;/</span><span class="OpenTag">tax_yn</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">detail_desc</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>상품상세설명 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">detail_desc</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_top</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>신상세설명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_top</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_center</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>추가구성상세설명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_center</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_bottom</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>광고/홍보 상세설명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_bottom</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">desc_type_tag</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>품질표시TAG<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">desc_type_tag</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">quantity</span><span class="LessThan">&gt;</span>10000<span class="LessThan">&lt;/</span><span class="OpenTag">quantity</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">partner_id</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">partner_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sex</span><span class="LessThan">&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">sex</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">keyword</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>상품키워드(상품약어)<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">keyword</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">model</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>모델명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">model</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">model_no</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">model_no</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">brand</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>브랜드명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">brand</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">auth_no</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>isbn-<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">auth_no</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">expirydate</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>유효기간<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">expirydate</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">option_info</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>Color/Size||Red/55^^500&lt;**&gt;0,Red/66^^500&lt;**&gt;0,Red/77^^500&lt;**&gt;0,Red/88^^500&lt;**&gt;0,Red/99^^500&lt;**&gt;0,Blue/55^^500&lt;**&gt;0,Blue/66^^500&lt;**&gt;0,Blue/77^^500&lt;**&gt;0,Blue/88^^500&lt;**&gt;0,Blue/99^^500&lt;**&gt;0,Yellow/55^^500&lt;**&gt;0,Yellow/66^^500&lt;**&gt;0,Yellow/77^^500&lt;**&gt;0,Yellow/88^^500&lt;**&gt;0,Yellow/99^^500&lt;**&gt;0,Black/55^^500&lt;**&gt;0,Black/66^^500&lt;**&gt;0,Black/77^^500&lt;**&gt;0,Black/88^^500&lt;**&gt;0,Black/99^^500&lt;**&gt;0<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">option_info</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">image_info_type</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31821617_700.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>0<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31821617_600_7.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>6<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31821617_600_8.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>7<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;/</span><span class="OpenTag">image_info_type</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">item_gosi_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">item_group_no</span><span class="LessThan">&gt;</span>i10<span class="LessThan">&lt;/</span><span class="OpenTag">item_group_no</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">item_group_title</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>사무용기기(컴퓨터/노트북/프린터)<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">item_group_title</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>품명 및 모델명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>1001<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>SL-C1404W<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>KCC 인증 필 유무<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>1002<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>6&lt;**&gt;KCC-RMI-SEC-CLP415NW<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+				.
+				.
+				.
+			<span class="LessThan">&lt;/</span><span class="OpenTag">item_gosi_info</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;/</span><span class="OpenTag">Product</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">Product</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>prod31823555<span class="LessThan">&lt;/</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_status</span><span class="LessThan">&gt;</span>005<span class="LessThan">&lt;/</span><span class="OpenTag">sale_status</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_l</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>cat05773<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_l</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_m</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_m</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_s</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_s</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">category_d</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">category_d</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_l</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>20<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_l</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_m</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_m</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_s</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_s</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">ccategory_d</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">ccategory_d</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">maker</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>제조업체<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">maker</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">maker_dt</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">maker_dt</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">register_date</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>20141226124448<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">register_date</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">origin</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>APIORIGIN_120<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">origin</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">barcode</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>test_code2<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">barcode</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">market_price</span><span class="LessThan">&gt;</span>1000000<span class="LessThan">&lt;/</span><span class="OpenTag">market_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_price</span><span class="LessThan">&gt;</span>250000<span class="LessThan">&lt;/</span><span class="OpenTag">sale_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">supply_price</span><span class="LessThan">&gt;</span>80000<span class="LessThan">&lt;/</span><span class="OpenTag">supply_price</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">market_price_p</span><span class="LessThan">&gt;</span>1000000<span class="LessThan">&lt;/</span><span class="OpenTag">market_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_price_p</span><span class="LessThan">&gt;</span>1000000<span class="LessThan">&lt;/</span><span class="OpenTag">sale_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">supply_price_p</span><span class="LessThan">&gt;</span>80000<span class="LessThan">&lt;/</span><span class="OpenTag">supply_price_p</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge_type</span><span class="LessThan">&gt;</span>001<span class="LessThan">&lt;/</span><span class="OpenTag">delivery_charge_type</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge</span><span class="LessThan">&gt;</span>0<span class="LessThan">&lt;/</span><span class="OpenTag">delivery_charge</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">tax_yn</span><span class="LessThan">&gt;</span>002<span class="LessThan">&lt;/</span><span class="OpenTag">tax_yn</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">detail_desc</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>상품상세설명 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">detail_desc</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_top</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_top</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_center</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_center</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">new_desc_bottom</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">new_desc_bottom</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">tag_desc_info</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">tag_desc_info</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">quantity</span><span class="LessThan">&gt;</span>10000<span class="LessThan">&lt;/</span><span class="OpenTag">quantity</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">partner_id</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">partner_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sex</span><span class="LessThan">&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">sex</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">keyword</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>상품키워드(상품약어)<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">keyword</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">model</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>...<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">model</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">model_no</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">model_no</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">brand</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>manmin<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">brand</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">auth_no</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">auth_no</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">expirydate</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span><span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">expirydate</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">option_info</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>Color/Size||Red/55^^500&lt;**&gt;0,Red/66^^500&lt;**&gt;0,Red/77^^500&lt;**&gt;0,Red/88^^500&lt;**&gt;0,Red/99^^500&lt;**&gt;0,Blue/55^^500&lt;**&gt;0,Blue/66^^500&lt;**&gt;0,Blue/77^^500&lt;**&gt;0,Blue/88^^500&lt;**&gt;0,Blue/99^^500&lt;**&gt;0,Yellow/55^^500&lt;**&gt;0,Yellow/66^^500&lt;**&gt;0,Yellow/77^^500&lt;**&gt;0,Yellow/88^^500&lt;**&gt;0,Yellow/99^^500&lt;**&gt;0,Black/55^^500&lt;**&gt;0,Black/66^^500&lt;**&gt;0,Black/77^^500&lt;**&gt;0,Black/88^^500&lt;**&gt;0,Black/99^^500&lt;**&gt;0<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">option_info</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">image_info_type</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31823555_700.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>0<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31823555_600_7.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>6<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>http://ad2.shoplinker.co.kr/product_image4/a0000018/201412/prod31823555_600_8.jpg<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">image_url</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>7<span class="LessThan">&lt;/</span><span class="OpenTag">image_seq</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">image_info</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;/</span><span class="OpenTag">image_info_type</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">item_gosi_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">item_group_no</span><span class="LessThan">&gt;</span>i10<span class="LessThan">&lt;/</span><span class="OpenTag">item_group_no</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">item_group_title</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>사무용기기(컴퓨터/노트북/프린터)<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">item_group_title</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>품명 및 모델명<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>1001<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>SL-C1404W<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>KCC 인증 필 유무<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_name</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>1002<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_seq</span><span class="LessThan">&gt;</span>
+					<span class="LessThan">&lt;</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>6&lt;**&gt;KCC-RMI-SEC-CLP415NW<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">gosi_value</span><span class="LessThan">&gt;</span>
+				<span class="LessThan">&lt;/</span><span class="OpenTag">gosi_info</span><span class="LessThan">&gt;</span>
+				.
+				.
+				.
+			<span class="LessThan">&lt;/</span><span class="OpenTag">item_gosi_info</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;/</span><span class="OpenTag">Product</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">ProductInfo</span><span class="LessThan">&gt;</span>
+<span class="LessThan">&lt;/</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+			</pre>
+			</div>
+    </div>
+    <!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+        <p class="foot-txt">
+            Shoplinker G&amp;C 股份有限公司 | 代表董事：金永植 | 京畿道城南市盆唐区黄鸟路359号街7，庆林大厦5层 | 客服：1544-4211 | FAX：031-706-2180<br>
+            营业登记号：120-87-41757 | 通信销售业备案号：第2020-城南盆唐B-0792号 | 个人信息管理负责人：卢海勇 | E-MAIL：security@shoplinkergnc.com
+        </p>
+        <p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+    </div>	<div class="bn-top" style="display: none;"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../js/jquery-1.8.1.min.js"></script><script src="../js/jquery.color-2.1.2.min.js"></script><script src="../js/common.js"></script><script src="../../../mirror.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

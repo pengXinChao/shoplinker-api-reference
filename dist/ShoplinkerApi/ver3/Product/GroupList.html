@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 中文参考</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+
+
+
+
+<meta charset="utf-8"><link rel="stylesheet" href="../../../mirror.css"></head>
+<body><!-- skip navigation -->
+
+<div id="skip">
+    <a href="#gnb"><span>跳转至主菜单</span></a>
+    <a href="#content"><span>跳转至正文</span></a>
+</div>
+
+<input type="hidden" name="type_gubun">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo">
+
+
+<div class="wrap">
+
+	<div class="header">
+        <h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+        <div class="gnb">
+            <ul id="gnb">
+                <li>
+                    <span class="ico-home"></span>
+                    <a href="../index.html?type_gubun=001"><span>首页</span></a>
+                </li>
+                <li class="ov">
+                    <span class="ico-dev"></span>
+										                    <a href="Attribute_Info.html?spec_135=ov&amp;guTwo=t">
+										<span>API</span></a>
+                </li>
+
+                <li>
+                    <span class="ico-dev"></span>
+					                    <a href="SkuInfo.html?spec_001=ov&amp;type_gubun=006">
+										<span>ERP</span></a>
+                </li>
+                <li>
+                    <span class="ico-sandbox"></span>
+                    					<a href="../xml.html?type_gubun=003">
+										<span>沙箱</span></a>
+				</li>
+
+                <li>
+                    <span class="ico-service"></span>
+                    <a href="../introduce.html?type_gubun=004"><span>API 介绍</span></a>
+                </li>
+				            </ul>
+            <div class="bn-logout">
+                <span class="ico-logout"></span>
+                <a href="#" data-local-action="official-login">logout_</a>
+            </div>
+        </div>
+	        <div class="submenu-wrap">
+            <div class="submenu">
+                <ul class="menu-title">
+					<li><a href="../_customer.html">API 总览</a></li>
+					<li class="ov">
+												<a href="ProductInfo.html?spec_001=ov&amp;guTwo=t">
+							开发手册</a>
+					</li>
+
+				</ul>
+                <ol class="menu">
+
+                
+
+
+
+    <li>一. SKU 管理（安德玛）        <ul>
+
+            <li class=""><a href="Attribute_Info.html?spec_135=ov&amp;guTwo=t">  1. Shoplinker SKU 新增</a></li>
+            <li class=""><a href="Attribute_Product.html?spec_136=ov&amp;guTwo=t">  2. Shoplinker 商品新增</a></li>
+            <li class=""><a href="Attribute_Modify.html?spec_137=ov&amp;guTwo=t">  3. Shoplinker SKU/商品修改</a></li>
+			<li class=""><a href="ProductImageUpdate.html?spec_034=ov&amp;guTwo=t">  4. Shoplinker 图片新增/修改</a></li>
+			<li class=""><a href="GoodsInfo.html?spec_004=ov&amp;guTwo=t">  5. Shoplinker 商品公示信息新增/修改</a></li>
+
+            <li class=""><a href="ProductList.html?spec_002=ov&amp;guTwo=t">  6. Shoplinker 商品查询</a></li>
+
+            <li class=""><a href="Attribute_qty_ref_v7.html?spec_5=ov&amp;guTwo=t">  7. Shoplinker 库存修改</a></li>
+            <li class=""><a href="Attribute_price_ref_v7.html?spec_14=ov&amp;guTwo=t">  8. 商城价格同步</a></li>
+			<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  9. 基础信息查询</a></li>
+
+
+
+        </ul>
+    </li>
+
+
+
+
+
+
+
+
+                					                    <li>二. 订单管理
+                        <ul>
+                            <li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">  1. 订单采集</a></li>
+                            <li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. 订单详情查询</a></li>
+                            <li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. Shoplinker 运单登记</a></li>
+                                                        <li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. 商城运单发送</a></li>
+                                                        <li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. 订单手动新增</a></li>
+                            <li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. 订单修改</a></li>
+                        </ul>
+                    </li>
+				                      <li>五. 售后/CS 管理
+                        <ul>
+				   <li class=""><a href="../Clame/ClameList.html?spec_012=ov&amp;guTwo=t">  1. 售后申请采集</a></li>
+				  <li class=""><a href="../Clame/CSList.html?spec_013=ov&amp;guTwo=t">  2. CS 采集</a></li>
+				  <li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS 处理</a></li>
+				  </ul>
+				                              </li></ol>
+        </div>
+    </div>
+
+</div>
+
+	    <!--//header-->
+
+	<!--content-->
+    <div id="content">
+        <h2 class="cts-title">Shoplinker 商品组信息查询</h2>
+        <p class="mgt_30">1. 用于查询 Shoplinker 商品组列表的 API。</p>
+        <div class="basic-box">
+            <span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupList.php?iteminfo_url=XML地址[URL编码]
+        </div>
+
+        <h3 class="section-title">请求参数</h3>
+        <table class="board-col2">
+        <colgroup>
+        <col width="5%">
+        <col width="18%">
+        <col width="10%">
+        <col width="15%">
+        <col width="25%">
+        <col width="*">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="txt_c" scope="col">No.</th>
+            <th scope="col">参数</th>
+            <th class="txt_c" scope="col">类型</th>
+            <th scope="col">说明</th>
+            <th scope="col">取值范围</th>
+            <th scope="col">备注</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="txt_c">1.</td>
+            <td><span class="ico ico-css">必填</span> customer_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>客户代码（Shoplinker 注册代码）</td>
+            <td>
+			</td>
+            <td>Shoplinker 分配的代码<br>ex) a0000001</td>
+        </tr>
+
+        <tr>
+            <td class="txt_c">2.</td>
+            <td><span class="ico ico-css">必填</span> user_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商城账号（ID）</td>
+            <td></td>
+            <td>ex) Auction ID : a2135</td>
+        </tr>
+        <tr>
+            <td class="txt_c">3.</td>
+            <td><span class="ico ico-css">必填</span> mall_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>Shoplinker 商城代码</td>
+            <td><input type="button" style="cursor:hand" value="Shoplinker 商城代码列表" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></td>
+            <td><span class="txt-red">* 请准确填写该代码；如没有对应商城，请在入驻设置中添加。ex )APISHOP_0001</span></td>
+        </tr>
+        <tr>
+            <td class="txt_c">4.</td>
+            <td> useYn</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>是否使用</td>
+            <td>
+				<span class="ico-select">选填</span>
+				<ol>
+					<li> - 全部 : null</li>
+					<li> - 使用 : 001</li>
+					<li> - 不使用 : 002</li>
+				</ol>
+			</td>
+            <td>显示商品组信息是否使用。 </td>
+        </tr>
+        <tr>
+            <td class="txt_c">5.</td>
+            <td>version_s</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>版本</td>
+            <td>
+                <ol>
+                    <li> - 1.0 : 1</li>
+                    <li> - 2.0 : 2</li>
+                </ol>
+            </td>
+            <td>仅适用于区分版本的商城。</td>
+        </tr>
+        <tr>
+            <td class="txt_c">6.</td>
+            <td>etc_info1</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>登录经营主体名称</td>
+            <td>
+                <ol>
+
+					<li> - 设置为与商城登记管理中的登录经营主体一致</li>
+                    <li> - ex) 1,Shoplinker,OM经营主体</li>
+                </ol>
+            </td>
+            <td>仅适用于 Interpark（多经营主体时才填写）</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h4 class="section-title2">XML 示例</h4>
+        <div class="code-txt">
+			<pre><code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">GroupInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">user_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a0001555</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="othertext">APISHOP_0003</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">user_id</span><span class="GreaterThan">&gt;</span><span class="othertext">nemosoft</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">user_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">useYn</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">useYn</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">user_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">GroupInfo</span><span class="GreaterThan">&gt;</span></code>
+<span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span>
+			</pre>
+        </div>
+        <h3 class="section-title">响应</h3>
+        <table class="board-col2">
+        <colgroup>
+        <col width="5%">
+        <col width="18%">
+        <col width="10%">
+        <col width="15%">
+        <col width="23%">
+        <col width="*">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="txt_c" scope="col">No.</th>
+            <th scope="col">参数</th>
+            <th class="txt_c" scope="col">类型</th>
+            <th scope="col">说明</th>
+            <th scope="col">取值范围</th>
+            <th scope="col">备注</th>
+        </tr>
+        </thead>
+        <tbody>
+		<tr>
+            <td class="txt_c">1.</td>
+            <td> group_name</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品组名称</td>
+            <td>
+			</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="txt_c">2.</td>
+            <td> group_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品组 ID</td>
+            <td></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td class="txt_c">3.</td>
+            <td> user_id</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商城卖家账号</td>
+            <td></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td class="txt_c">4.</td>
+            <td> cateinfo</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>分类信息</td>
+            <td></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td class="txt_c">5.</td>
+            <td> useYn</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>是否使用</td>
+            <td>
+				<span class="ico-select">选填</span>
+				<ol>
+					<li> - 使用 : 001</li>
+					<li> - 不使用 : 002</li>
+				</ol>
+			</td>
+            <td>显示商品组信息是否使用。 </td>
+        </tr>
+        <tr>
+            <td class="txt_c">6.</td>
+            <td> version</td>
+            <td class="txt_c"><span class="ico ico-sample">string</span></td>
+            <td>商品组版本信息</td>
+            <td>
+                <ol>
+                    <li> - 1.0</li>
+                    <li> - 2.0</li>
+                </ol>
+            </td>
+            <td>仅在区分版本的商城中显示。</td>
+        </tr>
+
+        </tbody>
+        </table>
+
+				<div class="code-txt">
+
+				<pre><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">MessageHeader</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">SendID</span><span class="LessThan">&gt;</span>20150313153001<span class="LessThan">&lt;/</span><span class="OpenTag">SendID</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">SendDate</span><span class="LessThan">&gt;</span>2015-03-13 15:30:01<span class="LessThan">&lt;/</span><span class="OpenTag">SendDate</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">MessageHeader</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">GroupInfo</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">Group</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">group_name</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>그룹이름<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">group_name</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">group_id</span><span class="LessThan">&gt;</span>00901600<span class="LessThan">&lt;/</span><span class="OpenTag">group_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">user_id</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>shoplinker<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">user_id</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">cateinfo</span><span class="LessThan">&gt;</span><span class="unknownchar">&lt;![CDATA[</span>여성 의류&gt;블라우스/셔츠/남방&gt;루즈핏/박스 블라우스&gt;<span class="unknownchar">]]&gt;</span><span class="LessThan">&lt;/</span><span class="OpenTag">cateinfo</span><span class="LessThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">useYn</span><span class="LessThan">&gt;</span><span class="unknownchar">001</span><span class="LessThan">&lt;/</span><span class="OpenTag">useYn</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;/</span><span class="OpenTag">Group</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">GroupInfo</span><span class="LessThan">&gt;</span>
+<span class="LessThan">&lt;/</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+</pre>
+</div>
+    </div>
+    <!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+        <p class="foot-txt">
+            Shoplinker G&amp;C 股份有限公司 | 代表董事：金永植 | 京畿道城南市盆唐区黄鸟路359号街7，庆林大厦5层 | 客服：1544-4211 | FAX：031-706-2180<br>
+            营业登记号：120-87-41757 | 通信销售业备案号：第2020-城南盆唐B-0792号 | 个人信息管理负责人：卢海勇 | E-MAIL：security@shoplinkergnc.com
+        </p>
+        <p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+    </div>	<div class="bn-top" style="display: none;"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../js/jquery-1.8.1.min.js"></script><script src="../js/jquery.color-2.1.2.min.js"></script><script src="../js/common.js"></script><script src="../../../mirror.js"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

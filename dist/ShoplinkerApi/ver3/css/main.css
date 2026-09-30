@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/*layout*/
+.header-wrap{position:relative;width:100%;min-width:1100px;height:60px;overflow:hidden;background:#333;}
+.header{position:relative;margin:0 auto;width:1100px;}
+.header h1{font-size:16px;font-weight:bold;font-family:Tahoma;color:#d6d6d6;line-height:60px;}
+.header h1>span{color:#d6a44f;}
+.gnb{position:absolute;top:0;left:323px;}
+.gnb ul{position:relative;*zoom:1;border:1px;}
+.gnb ul:after{content:'';display:block;clear:both;}
+.gnb ul li{margin-right:65px;font-size:15px;font-weight:bold;float:left;}
+.gnb ul li>a{display:block;padding:0 15px 0 15px;line-height:60px;color:#ccc;text-align:center;}
+.gnb ul li>a:hover{color:#ffc056;}
+.line{display:block;position:absolute;bottom:0;left:0;height:5px;background-color:#ffc056;overflow:hidden;}/* 임시 */
+.login{position:absolute;top:0;right:0;}
+.login>a{display:block;width:114px;height:57px;line-height:57px;text-align:center;font-weight:bold;background-color:#272729;color:#b1b1b1;text-indent:15px;}
+.login .login-bg{display:block;position:absolute;top:22px;left:29px;width:10px;height:12px;background:#b1b1b1 url('../images/ico_login.png') no-repeat left top;}
+.main-visual{position:relative;padding:35px 0 0 0;width:100%;min-width:1100px;height:415px;background-color:#ffc056;overflow:hidden;}
+.main-vis-inner{position:relative;margin:0 auto;width:1100px;}
+.main-vis-line{display:block;position:absolute;top:250px;left:0;width:100%;height:8px;background:url('../images/bg_visline.png') no-repeat center top;}
+.main-visual h2{padding:18px 0 0 0;line-height:35px;font-size:35px;color:#333;text-align:center;background:url('../images/logo_api.png') no-repeat center top;}
+.main-txt1{margin:17px 0 0 0;text-align:center;color:#333;line-height:18px;}
+.main-txt2{margin:27px 0 0 0;text-align:center;color:#333;font-size:11px;font-family:Tahoma;}
+.big-bnlist{position:relative;margin:30px auto 0 auto;width:1100px;text-align:center;}
+.big-bnlist li{display:inline-block;position:relative;top:0;margin-right:55px;text-align:center;*display:inline;*zoom:1;}
+.big-bnlist li.mg_n{margin-right:0;}
+.big-bnlist li>a{display:inline-block;position:relative;padding:160px 0 0 0;width:155px;font-size:15px;color:#333;background:url('../images/bg_bnround.png') no-repeat center top;}
+.big-bnlist li>a>span.ico-big{display:block;position:absolute;left:50%;-webkit-transition:.1s;transition:.1s;-webkit-transition-duration:.1s;transition-duration:.1s;}
+.big-bnlist li>a>span.ico-big.ico-menu1{margin-left:-19px;top:46px;width:38px;height:41px;background:url('../images/ico_account.png') no-repeat left top;}
+.big-bnlist li>a>span.ico-big.ico-menu2{margin-left:-22px;top:49px;width:44px;height:44px;background:url('../images/ico_api.png') no-repeat left top;}
+.big-bnlist li>a>span.ico-big.ico-menu3{margin-left:-26px;top:45px;width:52px;height:40px;background:url('../images/ico_erp.png') no-repeat left top;}
+.big-bnlist li>a>span.ico-big.ico-menu4{margin-left:-22px;top:49px;width:44px;height:44px;background:url('../images/ico_shopapi.png') no-repeat left top;}
+.big-bnlist li>a>span.ico-big.ico-menu5{margin-left:-12px;top:44px;width:24px;height:49px;background:url('../images/ico_news.png') no-repeat left top;}
+.big-bnlist li>a:hover>span.ico-big{margin-top:-10px;-ms-transform:rotate(30deg);-webkit-transform:rotate(20deg);transform:rotate(30deg);}
+
+.notice{position:relative;margin:90px auto 0 auto;padding:0 95px 0 95px;width:910px;}
+.notice:after{content:'';display:block;clear:both;}
+.notice .more_bn{position:absolute;top:0;right:0;}
+.notice h3{margin:0 0 10px 0;padding:0 0 5px 0;border-bottom:1px solid #c9c9c9;font-weight:bold;color:#333;font-size:15px;}
+.notice-linker, .notice-mall{position:relative;width:430px;} 
+.notice-linker{float:left;}
+.notice-mall{float:right;}
+.notice-list li{position:relative;margin:0 0 5px 0;}
+.notice-list li a{display:inline-block;width:360px;color:#999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.notice-list li a:hover{color:#ffa40a;}
+.notice-list li span.date{position:absolute;top:0;right:0;color:#999;}
+.more_bn{width:16px;height:16px;text-indent:-1000em;}
+.more_bn a{display:block;width:16px;height:16px;background:#ffc056 url('../images/ico_more.png') no-repeat left top;}
+.footer{margin:100px auto 0 auto;padding:22px 0 0 0;width:1100px;border-top:1px solid #e0e0e0;text-align:center;font-family:'Dotum', '돋움';font-size:11px;color:#999;line-height:14px;}
+.footer .copy{padding:5px 0 30px 0;font-family:arial;font-size:9px;}
+/*animation*/
+.header{
+    -webkit-animation-name:main_logo;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;
+    animation-name:main_logo;animation-duration:3s;animation-timing-function:linear;
+}
+@-webkit-keyframes main_logo{  
+    0% {margin-top:-61px;}
+    90% {margin-top:-61px;}
+    100% {margin-top:0;}
+}
+@keyframes main_logo{  
+    0% {margin-top:-61px;}
+    90% {margin-top:-61px;}
+    100% {margin-top:0;}
+}
+
+.header h1>span.blinker{
+    -webkit-animation-name:blinker;-webkit-animation-duration:1s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;
+    animation-name:blinker;animation-duration:1s;animation-timing-function:linear;animation-iteration-count:infinite;
+}
+@-webkit-keyframes blinker{  
+    0% {opacity:1.0;}
+    50% {opacity:0.0;}
+    100% {opacity:1.0;}
+}
+@keyframes blinker{  
+    0% {opacity:1.0;}
+    50% {opacity:0.0;}
+    100% {opacity:1.0;}
+}
+
+.header-wrap{
+    -webkit-animation-name:head_bg;-webkit-animation-duration:5s;-webkit-animation-timing-function:linear;
+    animation-name:head_bg;animation-duration:5s;animation-timing-function:linear;
+}
+@-webkit-keyframes head_bg{  
+    0% {background-color:#ffc056;}
+    10% {background-color:#333;}  
+}
+
+@keyframes head_bg{  
+    0% {background-color:#ffc056;}
+    10% {background-color:#333;}  
+}
+
+.main-visual{
+    -webkit-animation-name:vis_bg;-webkit-animation-duration:5s;-webkit-animation-timing-function:linear;
+    animation-name:vis_bg;animation-duration:5s;animation-timing-function:linear;
+}
+@-webkit-keyframes vis_bg{  
+    0% {background-color:#333;}
+    10% {background-color:#ffc056;}  
+}
+@keyframes vis_bg{  
+    0% {background-color:#333;}
+    10% {background-color:#ffc056;}  
+}
+
+.big-bnlist li:nth-child(1){
+    -webkit-animation-name:big_btn;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:big_btn;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes big_btn{  
+    0% {opacity:0.0;top:-50px;}
+    20% {opacity:0.0;top:-50px;}
+    40% {opacity:1.0;top:0;}  
+}
+@keyframes big_btn{  
+    0% {opacity:0.0;top:-50px;}
+    20% {opacity:0.0;top:-50px;}
+    40% {opacity:1.0;top:0;}  
+}
+
+.big-bnlist li:nth-child(2){
+    -webkit-animation-name:big_btn2;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:big_btn2;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes big_btn2{  
+    0% {opacity:0.0;top:-50px;}
+    30% {opacity:0.0;top:-50px;}
+    50% {opacity:1.0;top:0;}
+}
+@keyframes big_btn2{  
+    0% {opacity:0.0;top:-50px;}
+    30% {opacity:0.0;top:-50px;}
+    50% {opacity:1.0;top:0;}
+}
+
+
+.big-bnlist li:nth-child(3){
+    -webkit-animation-name:big_btn3;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:big_btn3;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes big_btn3{  
+    0% {opacity:0.0;top:-50px;}
+    40% {opacity:0.0;top:-50px;}
+    60% {opacity:1.0;top:0;}
+}
+@keyframes big_btn3{  
+    0% {opacity:0.0;top:-50px;}
+    40% {opacity:0.0;top:-50px;}
+    60% {opacity:1.0;top:0;}
+}
+
+.big-bnlist li:nth-child(4){
+    -webkit-animation-name:big_btn4;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:big_btn4;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes big_btn4{  
+    0% {opacity:0.0;top:-50px;}
+    50% {opacity:0.0;top:-50px;}
+    70% {opacity:1.0;top:0;}
+}
+@keyframes big_btn4{  
+    0% {opacity:0.0;top:-50px;}
+    50% {opacity:0.0;top:-50px;}
+    70% {opacity:1.0;top:0;}
+}
+
+.big-bnlist li:nth-child(5){
+    -webkit-animation-name:big_btn5;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:big_btn5;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes big_btn5{  
+    0% {opacity:0.0;top:-50px;}
+    60% {opacity:0.0;top:-50px;}
+    80% {opacity:1.0;top:0;}
+}
+@keyframes big_btn5{  
+    0% {opacity:0.0;top:-50px;}
+    60% {opacity:0.0;top:-50px;}
+    80% {opacity:1.0;top:0;}
+}
+
+.main-visual h2{
+    -webkit-animation-name:vis_title;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:vis_title;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes vis_title{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}  
+}
+@keyframes vis_title{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}  
+}
+
+.main-txt1{
+    -webkit-animation-name:vis_txt1;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:vis_txt1;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes vis_txt1{  
+    0% {opacity:0.0;}
+    70% {opacity:0.0;}
+    80% {opacity:1.0;}  
+}
+@keyframes vis_txt1{  
+    0% {opacity:0.0;}
+    70% {opacity:0.0;}
+    80% {opacity:1.0;}  
+}
+
+.main-txt2{
+    -webkit-animation-name:vis_txt2;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:vis_txt2;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes vis_txt2{  
+    0% {opacity:0.0;}
+    60% {opacity:0.0;}
+    70% {opacity:1.0;}
+}
+@keyframes vis_txt2{  
+    0% {opacity:0.0;}
+    60% {opacity:0.0;}
+    70% {opacity:1.0;}
+}
+
+
+.main-vis-line{
+    -webkit-animation-name:vis_line;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:vis_line;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes vis_line{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}
+@keyframes vis_line{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}
+
+.notice{
+    -webkit-animation-name:notice;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:notice;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes notice{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}
+@keyframes notice{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}
+
+.footer{
+    -webkit-animation-name:foot;-webkit-animation-duration:3s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:1;
+    animation-name:foot;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:1;
+}
+@-webkit-keyframes foot{
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}
+@keyframes foot{  
+    0% {opacity:0.0;}
+    80% {opacity:0.0;}
+    90% {opacity:1.0;}
+}

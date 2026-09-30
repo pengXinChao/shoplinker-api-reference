@@ -1,0 +1,62 @@
+<svg id="리스트_아이콘" xmlns="http://www.w3.org/2000/svg" width="42" height="168" viewBox="0 0 42 168">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+        stroke-width: 1px;
+      }
+
+      .cls-1 {
+        stroke: #ccc;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ccc;
+      }
+
+      .cls-4 {
+        stroke: #5a44fb;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #5a44fb;
+      }
+    </style>
+  </defs>
+  <g id="리스트형">
+    <path id="Rectangle_815_copy_2" data-name="Rectangle 815 copy 2" class="cls-1" d="M21,43A20,20,0,1,1,1,63,20,20,0,0,1,21,43Z"/>
+    <circle class="cls-2" cx="12.125" cy="57.328" r="1.938"/>
+    <path class="cls-3" d="M16.372,55.4H31.8v3.085H16.372V55.4Z"/>
+    <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-2" cx="12.125" cy="63.5" r="1.938"/>
+    <path id="Rectangle_817_copy" data-name="Rectangle 817 copy" class="cls-3" d="M16.372,61.572H31.8v3.085H16.372V61.572Z"/>
+    <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-2" cx="12.125" cy="69.672" r="1.938"/>
+    <path id="Rectangle_817_copy_2" data-name="Rectangle 817 copy 2" class="cls-3" d="M16.372,67.742H31.8v3.085H16.372V67.742Z"/>
+  </g>
+  <g id="썸네일형">
+    <path id="Rectangle_815_copy" data-name="Rectangle 815 copy" class="cls-1" d="M21,1A20,20,0,1,1,1,21,20,20,0,0,1,21,1Z"/>
+    <rect class="cls-2" x="9" y="11" width="6" height="9"/>
+    <rect id="Rectangle_816_copy" data-name="Rectangle 816 copy" class="cls-2" x="18" y="11" width="16" height="9"/>
+    <rect id="Rectangle_816_copy_2" data-name="Rectangle 816 copy 2" class="cls-2" x="9" y="22" width="6" height="9"/>
+    <rect id="Rectangle_816_copy_2-2" data-name="Rectangle 816 copy 2" class="cls-2" x="18" y="22" width="16" height="9"/>
+  </g>
+  <g id="리스트형_copy" data-name="리스트형 copy">
+    <path id="Rectangle_815_copy_2-2" data-name="Rectangle 815 copy 2" class="cls-4" d="M21,127A20,20,0,1,1,1,147,20,20,0,0,1,21,127Z"/>
+    <circle class="cls-5" cx="12.125" cy="141.328" r="1.938"/>
+    <path class="cls-6" d="M16.372,139.4H31.8v3.085H16.372V139.4Z"/>
+    <circle id="Ellipse_3_copy-2" data-name="Ellipse 3 copy" class="cls-5" cx="12.125" cy="147.5" r="1.938"/>
+    <path id="Rectangle_817_copy-2" data-name="Rectangle 817 copy" class="cls-6" d="M16.372,145.572H31.8v3.085H16.372v-3.085Z"/>
+    <circle id="Ellipse_3_copy_2-2" data-name="Ellipse 3 copy 2" class="cls-5" cx="12.125" cy="153.672" r="1.938"/>
+    <path id="Rectangle_817_copy_2-2" data-name="Rectangle 817 copy 2" class="cls-6" d="M16.372,151.742H31.8v3.085H16.372v-3.085Z"/>
+  </g>
+  <g id="썸네일형_copy" data-name="썸네일형 copy">
+    <path id="Rectangle_815_copy-2" data-name="Rectangle 815 copy" class="cls-4" d="M21,85A20,20,0,1,1,1,105,20,20,0,0,1,21,85Z"/>
+    <rect class="cls-5" x="9" y="95" width="6" height="9"/>
+    <rect id="Rectangle_816_copy-2" data-name="Rectangle 816 copy" class="cls-5" x="18" y="95" width="16" height="9"/>
+    <rect id="Rectangle_816_copy_2-3" data-name="Rectangle 816 copy 2" class="cls-5" x="9" y="106" width="6" height="9"/>
+    <rect id="Rectangle_816_copy_2-4" data-name="Rectangle 816 copy 2" class="cls-5" x="18" y="106" width="16" height="9"/>
+  </g>
+</svg>
