@@ -4,6 +4,16 @@
 每页右上方可切换语言，保留查询参数、章节锚点和滚动位置。
 首页记住用户主动选择的语言；浏览器禁用存储时仍可正常使用语言链接。
 
+## GitHub Pages
+
+站点地址：https://pengxinchao.github.io/shoplinker-api-reference/
+
+`.github/workflows/pages.yml` 直接部署 `dist/` 中已生成的静态页面。
+更新文档后先运行下方构建和校验，再提交 `dist/`，push 到 `main` 即可自动发布。
+也可在 GitHub 仓库的 **Actions → Deploy GitHub Pages → Run workflow** 手动部署。
+仓库 **Settings → Pages → Source** 使用 **GitHub Actions**。
+英文和韩文页面分别保留在站点目录下的 `en/`、`ko/`，支持仓库子路径部署。
+
 ## 内容来源与构建
 
 - `tooling/source/`：2026-11-09 获取的 47 个官方文档原文快照。
