@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - English reference</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/jquery.fullPage.css"> <!--풀페이지에만 적용--><link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/content.css">
+
+
+<!--풀페이지에만 적용-->
+ <!--풀페이지에만 적용-->
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../ShoplinkerApi/ver3/xml.html"><link rel="alternate" hreflang="en" href="xml.html"><link rel="alternate" hreflang="ko" href="../../../ko/ShoplinkerApi/ver3/xml.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head><body class="full"><nav class="language-switch" aria-label="Page language"><a href="../../../ShoplinkerApi/ver3/xml.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="xml.html" lang="en" data-language="en" hreflang="en" aria-current="page">English</a><a href="../../../ko/ShoplinkerApi/ver3/xml.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>Skip to main menu</span></a>
+<a href="#content"><span>Skip to content</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="003">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap intro">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html"> 					<span>ERP</span></a>
+</li>
+<li class="ov">
+<span class="ico-sandbox"></span>
+<a href="#">					<span>Sandbox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API introduction</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+
+
+<!--content-->
+    <div id="content">
+<div class="xml-wrap">
+<h2 class="cts-title">XML</h2>
+
+<ul class="list mgt_30">
+<li>You can run a simple test using an XML message.</li>
+<li>Enter the XML body in the value to send, then run the test.</li>
+<li>Direct input: enter XML directly to display the result.</li>
+<li>URL input method - enter the URL of a saved XML document to display the result.</li>
+<li>Automatic input: select a sample XML message to display the result.</li>
+</ul>
+
+<form name="xml" method="post" action="#" data-local-form="true">
+<ul class="xml-tab">
+<li class="ov"><label><a href="#"><input type="radio" name="select" id="select" value="direct" data-local-action="xml-mode">Direct input mode</a></label></li>
+<li><label><a href="#"><input type="radio" name="select" id="select" value="urlXml" data-local-action="xml-mode">XML URL input method</a></label></li>
+<li><label><a href="#"><input type="radio" name="select" id="select" value="sample" data-local-action="xml-mode">Automatic XML generation method</a></label></li>
+</ul>
+
+<ul class="list tab-cts1">
+<li>Enter an XML message to run a test.</li>
+<li>Enter the URL of a saved XML document to run a test.</li>
+<li>Select an XML message to test.</li>
+</ul>
+
+<div class="mgt_20">
+<h3 class="title-xmlform">Service URL</h3>
+<div class="xml-sel">
+<select name="urlName" id="urlName">
+<option value="">Please select</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">Product registration/update</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_list.php">Shoplinker product query</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_price_insert.html">Marketplace sale price registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/goods_info_reg.php">Product disclosure information registration/update</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">Marketplace product registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">Method 001_Update marketplace product [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">Method 002_Update marketplace product [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_product_list.php">Marketplace product query</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">Marketplace listing period extension</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/orderlist.php">Order collection</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/delivery.php">Shoplinker waybill registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/DeliveryLinkage.php">Marketplace waybill registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Clame/Clame_Xml.php">Claim collection</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Cs/Cs_Xml.php">CS collection</option>
+<!--option value="">CS 처리</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/CategoryList.php">Category query</option>
+<!--option value="">매핑카테고리 유효검사</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupList.php">Shoplinker product group information</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">Add/update product group information</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">Marketplace SCM login</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/api_basic.php">Basic information query</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Stock.php">Inventory registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_image_register.php">Image registration/update</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">SKU attribute query</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">Add SKU</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">Product registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">Update SKU/product</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallSendStock.php">(Legacy) Partial marketplace synchronization</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Partupdate.php">Method 001_(New) Partial marketplace synchronization [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/part_thred.php">Method 002_(New) Partial marketplace synchronization [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/v7/order/newOrderlist.php">[New version] New order query</option>
+
+</select>
+<select name="urlNameXml" id="urlNameXml" style="display:none">
+<option value="">Please select</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">Product registration/update</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">Marketplace product registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">Method 001_Update marketplace product [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">Method 002_Update marketplace product [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">Marketplace listing period extension</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">Marketplace SCM login</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">Add/update product group information</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">SKU attribute query</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">Add SKU</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">Product registration</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">Update SKU/product</option>
+</select>
+<span id="xmlB" style="display:none"><input class="bn bn-submit" type="button" value="View test XML" data-local-action="xml-sample"></span>
+</div>
+</div>
+
+<div class="xml-url2" id="xmlUrl2">
+<h3 class="title-xmlform">xml URL</h3>
+<div class="xml-sel2"><input type="text" name="xmlUrl" id="xmlUrl" size="56" value="" placeholder=" Enter the XML file URL"></div>
+</div>
+
+<div class="xml-bx">
+<div class="xml-bx-cts">
+<h3>Value to send</h3>
+<textarea name="xmlSend" id="xmlSend" cols="30" rows="10" placeholder="Enter the XML to test here"></textarea>
+</div>
+<div class="xml-bx-cts fl_r">
+<h3>Result value</h3>
+<div class="frame-wrap">
+<iframe name="result" class="frame" src="about:blank"></iframe>
+</div>
+</div>
+</div>
+
+<div class="xml-submit"><input class="bn" type="button" value="Send" data-local-action="official-sandbox"></div>
+<input type="hidden" name="type_gubun" id="type_gubun" value="003">
+</form>
+</div>
+</div>
+<!--//content-->
+
+</div>
+
+</div><script src="../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../samples.js?v=6524adec2b11"></script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body></html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 샵링커 API</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/jquery.fullPage.css"> <!--풀페이지에만 적용--><link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/content.css">
+
+
+<!--풀페이지에만 적용-->
+ <!--풀페이지에만 적용-->
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../ShoplinkerApi/ver3/xml.html"><link rel="alternate" hreflang="en" href="../../../en/ShoplinkerApi/ver3/xml.html"><link rel="alternate" hreflang="ko" href="xml.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head><body class="full"><nav class="language-switch" aria-label="페이지 언어"><a href="../../../ShoplinkerApi/ver3/xml.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="../../../en/ShoplinkerApi/ver3/xml.html" lang="en" data-language="en" hreflang="en">English</a><a href="xml.html" lang="ko" data-language="ko" hreflang="ko" aria-current="page">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>대메뉴 바로가기</span></a>
+<a href="#content"><span>컨텐츠 바로가기</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="003">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap intro">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html"> 					<span>ERP</span></a>
+</li>
+<li class="ov">
+<span class="ico-sandbox"></span>
+<a href="#">					<span>sandBox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API소개</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+
+
+<!--content-->
+    <div id="content">
+<div class="xml-wrap">
+<h2 class="cts-title">XML</h2>
+
+<ul class="list mgt_30">
+<li>XML 메시지를 가지고 간단한 테스트를 할 수 있습니다.</li>
+<li>보내는 값에 XML 본문을 넣고 테스트 하시면 됩니다.</li>
+<li>직접 입력 방식 - XML을 직접 입력하여 결과 값을 출력하는 방식입니다 .</li>
+<li>URL 입력 방식 - XML이 저장 된 URL을 입력 하여 결과 값을 출력하는 방식입니다.</li>
+<li>자동 입력 방식 - 샘플 XML을 선택하여 결과 값을 출력하는 방식입니다.</li>
+</ul>
+
+<form name="xml" method="post" action="#" data-local-form="true">
+<ul class="xml-tab">
+<li class="ov"><label><a href="#"><input type="radio" name="select" id="select" value="direct" data-local-action="xml-mode">직접 입력 방식</a></label></li>
+<li><label><a href="#"><input type="radio" name="select" id="select" value="urlXml" data-local-action="xml-mode">xml url 입력 방식</a></label></li>
+<li><label><a href="#"><input type="radio" name="select" id="select" value="sample" data-local-action="xml-mode">xml 자동 생성 방식</a></label></li>
+</ul>
+
+<ul class="list tab-cts1">
+<li>XML 메세지를 입력 후 테스트 할 수 있습니다.</li>
+<li>XML이 저장 된 URL을 입력해 테스트 할 수 있습니다.</li>
+<li>테스트 해볼 수 있는 XML 메세지를 선택 하여 테스트 할 수 있습니다.</li>
+</ul>
+
+<div class="mgt_20">
+<h3 class="title-xmlform">서비스 URL</h3>
+<div class="xml-sel">
+<select name="urlName" id="urlName">
+<option value="">선택하세요</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">상품등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_list.php">샵링커 상품조회</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_price_insert.html">쇼핑몰 판매가 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/goods_info_reg.php">품목정보 등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">쇼핑몰 상품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">001방식_쇼핑몰 상품 수정 [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">002방식_쇼핑몰 상품 수정 [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_product_list.php">쇼핑물 상품 조회</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">쇼핑몰 기간 연장</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/orderlist.php">주문 수집</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/delivery.php">샵링커 송장 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Order/DeliveryLinkage.php">쇼핑몰 송장 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Clame/Clame_Xml.php">클레임 수집</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Cs/Cs_Xml.php">CS 수집</option>
+<!--option value="">CS 처리</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/CategoryList.php">카테고리 조회</option>
+<!--option value="">매핑카테고리 유효검사</option-->
+						<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupList.php">샵링커 그룹 정보</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">그룹 정보 등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">쇼핑몰 scm로그인</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/api_basic.php">기본정보 조회</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Stock.php">재고등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/product_image_register.php">이미지 등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">단품 속성조회</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">단품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">상품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">단품/상품 수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallSendStock.php">(구)쇼핑몰 부분연동</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Partupdate.php">001방식_(신)쇼핑몰 부분연동 [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/part_thred.php">002방식_(신)쇼핑몰 부분연동 [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/v7/order/newOrderlist.php">[신규버전] 신규주문 조회</option>
+
+</select>
+<select name="urlNameXml" id="urlNameXml" style="display:none">
+<option value="">선택하세요</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php">상품등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallProductReg.html">쇼핑몰 상품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarket_soldout.html">001방식_쇼핑몰 상품 수정 [1:1]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/Shopmall_soldout_thred.html">002방식_쇼핑몰 상품 수정 [1:N]</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OpenMarketContinue.html">쇼핑몰 기간 연장</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Admin/ScmLogin.php">쇼핑몰 scm로그인</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/GroupMallUpdate.php">그룹 정보 등록/수정</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_list.php">단품 속성조회</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_insert.php">단품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_prod_insert.php">상품 등록</option>
+<option value="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/attribute_modify.php">단품/상품 수정</option>
+</select>
+<span id="xmlB" style="display:none"><input class="bn bn-submit" type="button" value="테스트 XML 보기" data-local-action="xml-sample"></span>
+</div>
+</div>
+
+<div class="xml-url2" id="xmlUrl2">
+<h3 class="title-xmlform">xml URL</h3>
+<div class="xml-sel2"><input type="text" name="xmlUrl" id="xmlUrl" size="56" value="" placeholder=" XML파일 URL을 입력하세요"></div>
+</div>
+
+<div class="xml-bx">
+<div class="xml-bx-cts">
+<h3>보내는 값</h3>
+<textarea name="xmlSend" id="xmlSend" cols="30" rows="10" placeholder="이 곳에 테스트 할 XML을 입력하세요"></textarea>
+</div>
+<div class="xml-bx-cts fl_r">
+<h3>결과 값</h3>
+<div class="frame-wrap">
+<iframe name="result" class="frame" src="about:blank"></iframe>
+</div>
+</div>
+</div>
+
+<div class="xml-submit"><input class="bn" type="button" value="보내기" data-local-action="official-sandbox"></div>
+<input type="hidden" name="type_gubun" id="type_gubun" value="003">
+</form>
+</div>
+</div>
+<!--//content-->
+
+</div>
+
+</div><script src="../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../samples.js?v=6524adec2b11"></script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body></html>

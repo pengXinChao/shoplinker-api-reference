@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 샵링커 API</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../../ShoplinkerApi/ver3/Product/MallList.html"><link rel="alternate" hreflang="en" href="../../../../en/ShoplinkerApi/ver3/Product/MallList.html"><link rel="alternate" hreflang="ko" href="MallList.html"><link rel="stylesheet" href="../../../../mirror.css?v=f82648a712af"></head><body><nav class="language-switch" aria-label="페이지 언어"><a href="../../../../ShoplinkerApi/ver3/Product/MallList.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="../../../../en/ShoplinkerApi/ver3/Product/MallList.html" lang="en" data-language="en" hreflang="en">English</a><a href="MallList.html" lang="ko" data-language="ko" hreflang="ko" aria-current="page">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>대메뉴 바로가기</span></a>
+<a href="#content"><span>컨텐츠 바로가기</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo" value="t">
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li class="ov">
+<span class="ico-dev"></span>
+<a href="../_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>sandBox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../introduce.html?type_gubun=004"><span>API소개</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li><a href="../_customer.html">API-view</a></li>
+<li class="ov">
+<a href="#" class="login-btn"> 	API-Dev</a>
+</li>
+
+</ul>
+<ol class="menu">
+
+<li>가.상품관리(일반버전)
+<ul>
+<li class=""><a href="ProductInfo.html?spec_001=ov&amp;guTwo=t">  1. 샵링커 상품 등록/수정</a></li>
+<li class=""><a href="ProductStock.html?spec_025=ov&amp;guTwo=t">  2. 샵링커 재고 등록/수정</a></li>
+<li class=""><a href="MallProductLink.html?spec_006=ov&amp;guTwo=t">  3. 쇼핑몰 상품수정</a></li>
+<!--<li class=""><a href="/ShoplinkerApi/ver3/Product/ProductLinkStock.html?spec_024=ov&guTwo=t">- 쇼핑몰 상품 부분연동</a></li>-->
+                            <li class=""><a href="Productpartlink.html?spec_024=ov&amp;guTwo=t">  4. 쇼핑몰 상품 부분연동</a></li>
+<li class=""><a href="MallContinue.html?spec_008=ov&amp;guTwo=t">  5. 쇼핑몰 기간연장</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>다. 상품공통정보
+<ul>
+<li class=""><a href="MallProductLinkReg.html?spec_005=ov&amp;guTwo=t">  1. 쇼핑몰 상품등록</a></li>
+
+
+<li class="ov"><a href="MallList.html?spec_007=ov&amp;guTwo=t">  2. 쇼핑몰 상품조회</a></li>
+<li class=""><a href="ProductList.html?spec_002=ov&amp;guTwo=t">  3. 샵링커 상품조회</a></li>
+<li class=""><a href="MallPrice.html?spec_003=ov&amp;guTwo=t">  4. 샵링커 몰별 판매가설정</a></li>
+<li class=""><a href="GoodsInfo.html?spec_004=ov&amp;guTwo=t">  5. 샵링커 품목정보 등록/수정</a></li>
+<li class=""><a href="CertInfo.html?spec_033=ov&amp;guTwo=t">  6. 샵링커 인증 정보 등록/수정</a></li>
+<li class=""><a href="ProductImageUpdate.html?spec_034=ov&amp;guTwo=t">  7. 샵링커 이미지 등록/수정</a></li>
+<li class=""><a href="ProductDelete.html?spec_027=ov&amp;guTwo=t">  8. 샵링커 코드 삭제</a></li>
+<li class=""><a href="joinProductDelete.html?spec_044=ov&amp;guTwo=t">  9. 연동 상품 삭제</a></li>
+</ul>
+</li>
+<li>라.주문관리
+<ul>
+<li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">  1. 주문수집</a></li>
+<li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. 주문 상세조회</a></li>
+<li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. 샵링커 송장등록</a></li>
+<li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. 쇼핑몰 송장전송</a></li>
+<li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. 주문 수동등록</a></li>
+<li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. 주문 수정</a></li>
+</ul>
+</li>
+<li>마.클레임/CS관리
+<ul>
+<li class=""><a href="../Clame/ClameList.html?spec_012=ov&amp;guTwo=t">  1. 클레임 수집</a></li>
+<li class=""><a href="../Clame/CSList.html?spec_013=ov&amp;guTwo=t">  2. CS수집</a></li>
+<li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS처리</a></li>
+</ul>
+</li>
+<li>바.카테고리 정보
+<ul>
+<li class=""><a href="CategoryList.html?spec_015=ov&amp;guTwo=t">  1. 카테고리 조회</a></li>
+<li class=""><a href="MappingCategoryList.html?spec_021=ov&amp;guTwo=t">  2. 매핑 카테고리 조회</a></li>
+<li class=""><a href="cateEffective.html?spec_023=ov&amp;guTwo=t">  3. 매핑카테고리 유효검사</a></li>
+</ul>
+</li>
+<li>사.관리자 부가기능
+<ul>
+<li class=""><a href="GroupList.html?spec_017=ov&amp;guTwo=t">  1. 샵링커 그룹정보조회</a></li>
+<!-- #51694 메가존(신세계시코르)  그룹정보 등록/수정 제외-->
+															<li class=""><a href="GroupUpdate.html?spec_018=ov&amp;guTwo=t">  2. 그룹정보 등록/수정</a></li>
+<li class=""><a href="../Admin/ScmLogin.html?spec_019=ov&amp;guTwo=t">  3. SCM로그인</a></li>
+<!--<li><a href="/ShoplinkerApi/ver3/Admin/DefaultSearch.html" onclick="alert('준비중입니다.');" >- 기본정보 조회</a></li>-->
+								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. 기본정보 조회</a></li>
+<li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. 품목고시 조회</a></li>
+<li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. 공지사항 조회</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. 매입처 조회</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+</div>
+
+<!--//header-->
+
+	<!--content-->
+    <div id="content">
+<h2 class="cts-title">쇼핑몰 상품조회</h2>
+<p class="mgt_30">쇼핑몰 상품 조회하는 api입니다.</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/mall_product_list.php?iteminfo_url=xml주소[url인코딩]
+</div>
+
+<h3 class="section-title">Request Paramatter</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">파라미터</th>
+<th class="txt_c" scope="col">타입</th>
+<th scope="col">설명</th>
+<th scope="col">값의 범위</th>
+<th scope="col">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">필수</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>고객사 코드(샵링커 가입코드)</td>
+<td>
+</td>
+<td>샵링커에서 발급받은 코드<br>ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td><span class="ico ico-css">필수</span> st_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>시작날짜</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td><span class="ico ico-css">필수</span> ed_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>마지막날짜</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td> partner_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>자사 상품코드 (상품관리코드)</td>
+<td></td>
+<td>자사에서 관리하는 상품코드</td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td> partner_product_yn_view</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>고객사 상품코드 노출여부 </td>
+<td>
+<span class="ico-select">선택</span>
+<ul>
+<li>-Y : 고객사 상품코드 셋팅된 상품과 상관없이 전부노출</li>
+<li>-N : 고객사 상품코드 셋팅된 상품만 노출</li>
+</ul>
+</td>
+<td>기본값 : N</td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> page</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>페이지 번호 </td>
+<td></td>
+<td>상품갯수가 1000개가 넘을경우 페이지번호로 넣어주시기 바랍니다</td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> total_standard_count</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>페이지당 노출할 총 갯수</td>
+<td></td>
+<td>기본은 1000개로 셋팅됩니다</td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> mall_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 코드 </td>
+<td>
+<span class="ico-select">선택</span>
+<ol>
+<li> - 전체 수집 : 코드없음</li>
+<li> - 쇼핑몰별 수집 : <input type="button" style="cursor:hand" value="샵링커 쇼핑몰 코드 리스트" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></li>
+</ol>
+</td>
+<td><span class="txt-red">* 해당 코드를 정확하게 입력해주셔야 하며, 해당되는 쇼핑몰이 없을경우 입점셋팅에 추가하여 주시기 바랍니다.<br>ex )APISHOP_0001</span></td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> detail_desc_yn</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상세설명 노출여부 </td>
+<td>
+<span class="ico-select">선택</span>
+<ul>
+<li>-Y : 상품 상세 설명 노출</li>
+<li>-N : 상품 상세 설명 미노출</li>
+</ul>
+</td>
+<td>기본값 : N</td>
+</tr>
+
+</tbody>
+</table>
+
+<h4 class="section-title2">XML샘플</h4>
+<div class="code-txt">
+<pre>
+<code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">Product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a1234567</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">st_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110709</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">st_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110711</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a123</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">partner_product_yn_view</span><span class="GreaterThan">&gt;</span><span class="othertext">N</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_product_yn_view</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">page</span><span class="GreaterThan">&gt;</span><span class="othertext">1</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">page</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="othertext">500</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="othertext">APISHOP_0000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></code>
+</pre>
+        </div>
+
+<h3 class="section-title">Response</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">파라미터</th>
+<th class="txt_c" scope="col">타입</th>
+<th scope="col">설명</th>
+<th scope="col">값의 범위</th>
+<th scope="col">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> count_all</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>총 상품수</td>
+<td>MessageHeader에 위치함</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> total_page</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>총 페이지</td>
+<td>MessageHeader에 위치함</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> currently_page</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>현재페이지</td>
+<td>MessageHeader에 위치함</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td> currently_count</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>현재 페이지에 노출된 상품수</td>
+<td>MessageHeader에 위치함</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td> total_standard_count</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>페이지당 노출할 총 갯수</td>
+<td>MessageHeader에 위치함</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> partner_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>고객사 상품코드</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> shoplinker_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>샵링커 계정</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>샵링커 상품코드</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> mall_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 명</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> mall_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 코드</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">11.</td>
+<td> mall_user_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 계정</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">12.</td>
+<td> mall_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 상품코드</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">13.</td>
+<td> mall_product_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 상품명</td>
+<td>	</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">14.</td>
+<td> sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td> 판매가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">15.</td>
+<td> supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>  공급가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">16.</td>
+<td> sale_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>판매상태</td>
+<td>
+<span class="ico-select">선택</span>
+<ol>
+<li>- 판매중 : 001</li>
+<li>- 판매중지 : 003</li>
+<li>- 품절 : 004</li>
+<li> - 판매종료 : 006</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">17.</td>
+<td> update_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상품 수정 성공여부</td>
+<td>
+<span class="ico-select">선택</span>
+<ol>
+<li> - Y : 성공</li>
+<li> - N : 실패</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">18.</td>
+<td> err_msg</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>에러 메세지</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">19.</td>
+<td> end_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상품에 대한 종료 날짜</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">20.</td>
+<td> register_date </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>등록 날짜</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">21.</td>
+<td>master_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옥션/지마켓만 해당됨</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">22.</td>
+<td>mall_group_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>쇼핑몰 그룹명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">23.</td>
+<td>mall_product_url</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상품url</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">24.</td>
+<td>maker</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>제조업체</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">25.</td>
+<td>origin</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>원산지</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">26.</td>
+<td>barcode</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>바코드</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">27.</td>
+<td>market_price_p</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>매입처 시중가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">28.</td>
+<td>sale_price_p</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>매입처 판매가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">29.</td>
+<td>supply_price_p</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>매입처 공급가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">30.</td>
+<td>detail_desc</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상세설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">31.</td>
+<td>new_desc_top</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>신상세설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">38.</td>
+<td>new_desc_center</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>추가구성 상세설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">33.</td>
+<td>new_desc_bottom</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>광고/홍보 상세설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">34.</td>
+<td>desc_type_tag</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품질표시 TAG 및 상세설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">35.</td>
+<td>quantity</td>
+<td class="txt_c"><span class="ico ico-integer">string</span></td>
+<td>공급가능수량 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">36.</td>
+<td>keyword</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>상품키워드(상품약어)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">37.</td>
+<td>model</td>
+<td class="txt_c"><span class="ico ico-sample">integer</span></td>
+<td>모델명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">38.</td>
+<td>model_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>모델 NO</td>
+<td></td>
+<td>isbn(도서코드)사용시 반드시 "isbn-"으로 시작하여야 합니다.</td>
+</tr>
+<tr>
+<td class="txt_c">39.</td>
+<td>brand</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>브랜드명 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">40.</td>
+<td>auth_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>auth_no</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">41.</td>
+<td>option_info</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션정보</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">42.</td>
+<td>item_group_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품목고시 그룹 seq</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">43.</td>
+<td>item_group_title</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품목고시 그룹 타이틀 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">44.</td>
+<td>gosi_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품목고시 개별 제목 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">45.</td>
+<td>gosi_seq </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품목고시 개별 seq </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">46.</td>
+<td>gosi_value </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>품목고시 개별 내용 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">47.</td>
+<td>market_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>시중가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">48.</td>
+<td>update_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>업데이트 날짜</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">48.</td>
+<td>mall_category</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>카테고리 정보 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">50.</td>
+<td>send_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>최종 전송일자</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">51.</td>
+<td>esm_ver</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>esm2.0 상품여부 </td>
+<td>
+<span class="ico-select">선택</span>
+<ol>
+<li> - Y : 사용</li>
+<li> - N : 미사용</li>
+</ol>
+</td>
+<td></td>
+</tr>
+
+
+</tbody>
+</table>
+
+<div class="code-txt">
+<pre>
+<span style="color:#004a43; ">&lt;?</span><span style="color:#200080; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#308080; ">=</span><span style="color:#800000; ">'</span><span style="color:#7d0045; ">1.0</span><span style="color:#800000; ">'</span><span style="color:#004a43; "> </span><span style="color:#074726; ">encoding</span><span style="color:#308080; ">=</span><span style="color:#800000; ">'</span><span style="color:#1060b6; ">EUC-KR</span><span style="color:#800000; ">'</span><span style="color:#004a43; "> </span><span style="color:#004a43; ">?&gt;</span>
+<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">Shoplinker</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">ProductInfo</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">MessageHeader</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">count_all</span><span style="color:#0057a6; ">&gt;</span>6<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">count_all</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">total_page</span><span style="color:#0057a6; ">&gt;</span>1<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">total_page</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">currently_page</span><span style="color:#0057a6; ">&gt;</span>1<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">currently_page</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">currently_count</span><span style="color:#0057a6; ">&gt;</span>6<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">currently_count</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">total_standard_count</span><span style="color:#0057a6; ">&gt;</span>50<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">total_standard_count</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">MessageHeader</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">Product</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">partner_product_id</span><span style="color:#0057a6; ">&gt;</span>288401<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">partner_product_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">shoplinker_id</span><span style="color:#0057a6; ">&gt;</span>0163348정48<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">shoplinker_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">product_id</span><span style="color:#0057a6; ">&gt;</span>prod32582643<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">product_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>(주)옥션<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span><span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_name</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_id</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>APISHOP_0003<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_user_id</span><span style="color:#0057a6; ">&gt;</span>eawardmall<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_user_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">sael_status</span><span style="color:#0057a6; ">&gt;</span>001<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">sael_status</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">sale_status</span><span style="color:#0057a6; ">&gt;</span>001<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">sale_status</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_product_id</span><span style="color:#0057a6; ">&gt;</span>B239553162<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_product_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_product_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>산돌 통합 패키지 265종 폰트 (Win버전)<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_product_name</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">supply_price</span><span style="color:#0057a6; ">&gt;</span>1401360<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">supply_price</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">sale_price</span><span style="color:#0057a6; ">&gt;</span>1333400<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">sale_price</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">user_info</span><span style="color:#0057a6; ">&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">user_info</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">end_date</span><span style="color:#0057a6; ">&gt;</span>20150719<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">end_date</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">update_status</span><span style="color:#0057a6; ">&gt;</span>y<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">update_status</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">err_msg</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>상품수정<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>정정상<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">err_msg</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">register_date</span><span style="color:#0057a6; ">&gt;</span>20150420135330<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">register_date</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">master_id</span><span style="color:#0057a6; ">&gt;</span>icoda1<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">master_id</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_group_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_group_name</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_product_url</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>http://itempage.auction.co.kr/detailview.aspx?ItemNo=B239553162<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_product_url</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">maker</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>산돌커뮤니케이<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">maker</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">origin</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>APIORIGIN_009<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">origin</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">barcode</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>test_code1<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">barcode</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">market_price_p</span><span style="color:#0057a6; ">&gt;</span>1401360<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">market_price_p</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">sale_price_p</span><span style="color:#0057a6; ">&gt;</span>1401360<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">sale_price_p</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">supply_price_p</span><span style="color:#0057a6; ">&gt;</span>1401360<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">supply_price_p</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">detail_desc</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>&lt;P&gt; &lt;/P&gt;&lt;P align=center&gt;&lt;IMG src=http://img3.icoda.co.kr/web_images/img_etc/software.jpg&gt; &lt;/P&gt;&lt;DIV align=center&gt;&lt;BR&gt;&lt;BR&gt;&lt;IMG src=http://img3.icoda.co.kr/itemphoto_275000/288401/1422851745.gif&gt;&lt;/DIV&gt;<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">detail_desc</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">new_desc_top</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;P align=center&gt;&lt;IMG src=http://img3.icoda.co.kr/web_images/img_etc/software.jpg&gt; &lt;/P&gt;&lt;DIV align=center&gt;&lt;BR&gt;&lt;BR&gt;&lt;IMG src=http://img3.icoda.co.kr/itemphoto_275000/288401/1422851745.gif&gt;&lt;/DIV&gt;<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">new_desc_top</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">new_desc_center</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">new_desc_center</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">new_desc_bottom</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">new_desc_bottom</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">desc_type_tag</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">desc_type_tag</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">quantity</span><span style="color:#0057a6; ">&gt;</span>990<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">quantity</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">keyword</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">keyword</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">model</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">model</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">model_no</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">model_no</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">brand</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">brand</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">auth_no</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">auth_no</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">option_info</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">option_info</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">item_gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">item_group_no</span><span style="color:#0057a6; ">&gt;</span>i35<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">item_group_no</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">item_group_title</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>기타<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">item_group_title</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>품명 및 모델명<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>3501<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>업체배송 산돌커뮤니케이<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span> 산돌 통합 패키지 265종 폰트 (Win버전)<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>법에 <span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>한 인증,허가 등을 받<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>음을 확인할<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span> 있는 경우 그에 대한 사항<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>3502<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>해당없음<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>제조국<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>는 원산지<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>3503<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>한국<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>제조자<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>입품<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span> 경우<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>입자를 함<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span> 표기<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>3504<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>산돌커뮤니케이<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span><span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>AS책임자와 전화번<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>호<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>는 소비자상담 관련 전화번<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>호<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_name</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>3505<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_seq</span><span style="color:#0057a6; ">&gt;</span>
+			<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>산돌커뮤니케이<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>/02-741-3685<span style="color:#004a43; ">]]&gt;</span><span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_value</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">item_gosi_info</span><span style="color:#0057a6; ">&gt;</span>
+		<span style="color:#0057a6; ">&lt;</span><span style="color:#333385; ">mall_category</span><span style="color:#0057a6; ">&gt;</span><span style="color:#004a43; ">&lt;![CDATA[</span>의류<span style="color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; "></span>/여성의류]]&gt;<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">mall_category</span><span style="color:#0057a6; ">&gt;</span>
+	<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">Product</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">ProductInfo</span><span style="color:#0057a6; ">&gt;</span>
+<span style="color:#0057a6; ">&lt;/</span><span style="color:#333385; ">Shoplinker</span><span style="color:#0057a6; ">&gt;</span>
+</pre>
+		</div>
+
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            ㈜샵링커지앤씨 | 대표이사 : 김영식 | 경기도 성남시 분당구 황새울로 359번길 7, 경림빌딩 5층 | 고객센터 : 1544-4211 | FAX : 031-706-2180<br>
+            사업자등록번호 : 120-87-41757 | 통신판매업신고번호 : 제2020-성남분당B-0792호 | 개인정보관리책임자 : 노해용 | E-MAIL : security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../../mirror.js?v=1e324fd01b7c"></script></body></html>

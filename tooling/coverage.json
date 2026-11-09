@@ -1,0 +1,989 @@
+[
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupList.html?spec_017=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/GroupList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CategoryList.html?spec_015=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/CategoryList.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderList.html?spec_037=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/OrderList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/BasicList.html?spec_020=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/BasicList.html",
+    "tables": 3,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInsert.html?spec_028=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/OrderInsert.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/introduce.html?type_gubun=004",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/introduce.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MappingCategoryList.html?spec_021=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MappingCategoryList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Info.html?spec_135=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Attribute_Info.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Productpartlink.html?spec_024=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Productpartlink.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallContinue.html?spec_008=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MallContinue.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/_customer.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductImageUpdate.html?spec_034=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductImageUpdate.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLink.html?spec_006=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MallProductLink.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/NoticList.html?spec_036=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Admin/NoticList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/CSList.html?spec_013=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Clame/CSList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/xml.html?type_gubun=003",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/xml.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallPrice.html?spec_003=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MallPrice.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Modify.html?spec_137=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Attribute_Modify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/SkuInfo.html?spec_001=ov&type_gubun=006",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/SkuInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallList.html?spec_007=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MallList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/ClameList.html?spec_012=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Clame/ClameList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/code_info.html?customer_id=a0014792",
+    "language": "zh",
+    "local": "ShoplinkerApi/Docs2/pop/code_info.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductDelete.html?spec_027=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderModify.html?spec_035=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/OrderModify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfoList.html?spec_026=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/GoodsInfoList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CertInfo.html?spec_033=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/CertInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/CsInfo/csAction.html?spec_022=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/CsInfo/csAction.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/DeliveryLinker.html?spec_011=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/DeliveryLinker.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfo.html?spec_004=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/GoodsInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupUpdate.html?spec_018=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/GroupUpdate.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductStock.html?spec_025=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://www.shoplinker.co.kr/service/api",
+    "language": "zh",
+    "local": "service/api.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductInfo.html?spec_001=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductInfo.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/index.html?type_gubun=001",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/index.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/ScmLogin.html?spec_019=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Admin/ScmLogin.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html?spec_010=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html?spec_14=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Product.html?spec_136=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Attribute_Product.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLinkReg.html?spec_005=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/MallProductLinkReg.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html?spec_5=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductList.html?spec_002=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/ProductList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/goods_cert.html",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/goods_cert.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/cateEffective.html?spec_023=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/cateEffective.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInfo.html?spec_009=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Order/OrderInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/partner_list.html?spec_038=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/partner_list.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/joinProductDelete.html?spec_044=ov&guTwo=t",
+    "language": "zh",
+    "local": "ShoplinkerApi/ver3/Product/joinProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupList.html?spec_017=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/GroupList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CategoryList.html?spec_015=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/CategoryList.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderList.html?spec_037=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/OrderList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/BasicList.html?spec_020=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/BasicList.html",
+    "tables": 3,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInsert.html?spec_028=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/OrderInsert.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/introduce.html?type_gubun=004",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/introduce.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MappingCategoryList.html?spec_021=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MappingCategoryList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Info.html?spec_135=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Attribute_Info.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Productpartlink.html?spec_024=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Productpartlink.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallContinue.html?spec_008=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MallContinue.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/_customer.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductImageUpdate.html?spec_034=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductImageUpdate.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLink.html?spec_006=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MallProductLink.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/NoticList.html?spec_036=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Admin/NoticList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/CSList.html?spec_013=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Clame/CSList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/xml.html?type_gubun=003",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/xml.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallPrice.html?spec_003=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MallPrice.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Modify.html?spec_137=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Attribute_Modify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/SkuInfo.html?spec_001=ov&type_gubun=006",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/SkuInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallList.html?spec_007=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MallList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/ClameList.html?spec_012=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Clame/ClameList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/code_info.html?customer_id=a0014792",
+    "language": "en",
+    "local": "en/ShoplinkerApi/Docs2/pop/code_info.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductDelete.html?spec_027=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderModify.html?spec_035=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/OrderModify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfoList.html?spec_026=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/GoodsInfoList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CertInfo.html?spec_033=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/CertInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/CsInfo/csAction.html?spec_022=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/CsInfo/csAction.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/DeliveryLinker.html?spec_011=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/DeliveryLinker.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfo.html?spec_004=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/GoodsInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupUpdate.html?spec_018=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/GroupUpdate.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductStock.html?spec_025=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://www.shoplinker.co.kr/service/api",
+    "language": "en",
+    "local": "en/service/api.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductInfo.html?spec_001=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductInfo.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/index.html?type_gubun=001",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/index.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/ScmLogin.html?spec_019=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Admin/ScmLogin.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html?spec_010=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html?spec_14=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Product.html?spec_136=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Attribute_Product.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLinkReg.html?spec_005=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/MallProductLinkReg.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html?spec_5=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductList.html?spec_002=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/ProductList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/goods_cert.html",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/goods_cert.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/cateEffective.html?spec_023=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/cateEffective.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInfo.html?spec_009=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Order/OrderInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/partner_list.html?spec_038=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/partner_list.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/joinProductDelete.html?spec_044=ov&guTwo=t",
+    "language": "en",
+    "local": "en/ShoplinkerApi/ver3/Product/joinProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupList.html?spec_017=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/GroupList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CategoryList.html?spec_015=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/CategoryList.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderList.html?spec_037=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/OrderList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/BasicList.html?spec_020=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/BasicList.html",
+    "tables": 3,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInsert.html?spec_028=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/OrderInsert.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/introduce.html?type_gubun=004",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/introduce.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MappingCategoryList.html?spec_021=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MappingCategoryList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Info.html?spec_135=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Attribute_Info.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Productpartlink.html?spec_024=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Productpartlink.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallContinue.html?spec_008=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MallContinue.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/_customer.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductImageUpdate.html?spec_034=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductImageUpdate.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLink.html?spec_006=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MallProductLink.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/NoticList.html?spec_036=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Admin/NoticList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/CSList.html?spec_013=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Clame/CSList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/xml.html?type_gubun=003",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/xml.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallPrice.html?spec_003=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MallPrice.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Modify.html?spec_137=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Attribute_Modify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/SkuInfo.html?spec_001=ov&type_gubun=006",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/SkuInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallList.html?spec_007=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MallList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/ClameList.html?spec_012=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Clame/ClameList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/code_info.html?customer_id=a0014792",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/Docs2/pop/code_info.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductDelete.html?spec_027=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderModify.html?spec_035=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/OrderModify.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfoList.html?spec_026=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/GoodsInfoList.html",
+    "tables": 2,
+    "examples": 4
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CertInfo.html?spec_033=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/CertInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/CsInfo/csAction.html?spec_022=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/CsInfo/csAction.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/DeliveryLinker.html?spec_011=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/DeliveryLinker.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfo.html?spec_004=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/GoodsInfo.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GroupUpdate.html?spec_018=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/GroupUpdate.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductStock.html?spec_025=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductStock.html",
+    "tables": 2,
+    "examples": 3
+  },
+  {
+    "source": "https://www.shoplinker.co.kr/service/api",
+    "language": "ko",
+    "local": "ko/service/api.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductInfo.html?spec_001=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductInfo.html",
+    "tables": 4,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/index.html?type_gubun=001",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/index.html",
+    "tables": 0,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/ScmLogin.html?spec_019=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Admin/ScmLogin.html",
+    "tables": 1,
+    "examples": 1
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html?spec_010=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/ShoplinkerDelivery.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html?spec_14=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Product.html?spec_136=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Attribute_Product.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MallProductLinkReg.html?spec_005=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/MallProductLinkReg.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html?spec_5=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductList.html?spec_002=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/ProductList.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/goods_cert.html",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/goods_cert.html",
+    "tables": 1,
+    "examples": 0
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/cateEffective.html?spec_023=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/cateEffective.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInfo.html?spec_009=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Order/OrderInfo.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/partner_list.html?spec_038=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/partner_list.html",
+    "tables": 2,
+    "examples": 2
+  },
+  {
+    "source": "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/joinProductDelete.html?spec_044=ov&guTwo=t",
+    "language": "ko",
+    "local": "ko/ShoplinkerApi/ver3/Product/joinProductDelete.html",
+    "tables": 2,
+    "examples": 2
+  }
+]

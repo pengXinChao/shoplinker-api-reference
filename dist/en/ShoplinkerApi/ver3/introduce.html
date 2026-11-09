@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - English reference</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/jquery.fullPage.css"> <!--풀페이지에만 적용--><link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/content.css">
+
+
+<!--풀페이지에만 적용-->
+ <!--풀페이지에만 적용-->
+
+<!--풀페이지에만 적용-->
+
+<!--//풀페이지에만 적용-->
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../ShoplinkerApi/ver3/introduce.html"><link rel="alternate" hreflang="en" href="introduce.html"><link rel="alternate" hreflang="ko" href="../../../ko/ShoplinkerApi/ver3/introduce.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head><body class="full"><nav class="language-switch" aria-label="Page language"><a href="../../../ShoplinkerApi/ver3/introduce.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="introduce.html" lang="en" data-language="en" hreflang="en" aria-current="page">English</a><a href="../../../ko/ShoplinkerApi/ver3/introduce.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>Skip to main menu</span></a>
+<a href="#content"><span>Skip to content</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="004">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap intro">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>Sandbox</span></a>
+</li>
+
+<li class="ov">
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API introduction</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<!--//header-->
+    <!--content-->
+	<div id="content">
+
+<div class="design-wrap">
+
+<ul id="menu">
+<li data-menuanchor="firstPage"><a href="#firstPage">Customer API</a></li>
+<li data-menuanchor="secondPage"><a href="#secondPage">Marketplace API</a></li>
+<li data-menuanchor="3rdPage"><a href="#3rdPage">ERP-API</a></li>
+</ul>
+
+<div id="fullpage" class="">
+
+<div class="section" id="section0" data-anchor="firstPage">
+<div class="sec-wrap">
+<h2>Customer API introduction</h2>
+<span class="main-img"><span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/intro/img_apiint_1.jpg" alt=""><span style="left:5.295007564296521%;top:56.98924731182796%;width:17.39788199697428%;height:13.440860215053764%;">Own store</span></span></span>
+<p class="mgt_15">Manage products, orders, and inventory across partner marketplaces from your own store.<br> Manage partner marketplace products, confirm orders, and register waybills from your own store with one click. You can also check inventory accurately for products sold in your own store and partner marketplaces.</p>
+<h3>Key features of the customer API</h3>
+<ul class="mgt_10">
+<li>Register a product once in your own store and send it to partner marketplaces!</li>
+<li>Manage sale status, sale periods, sale price updates, and detailed descriptions from your own store!</li>
+<li>View all partner marketplace orders in your own store at once!</li>
+<li>Handle partner marketplace order confirmation, waybill registration, and waybill transmission in bulk from your own store!</li>
+<li>Check inventory and update partner marketplace stock from your own store in one operation!</li>
+</ul>
+<h3>Representative customers using the customer API</h3>
+<p class="logo-list">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api1.jpg" alt="Homeplus">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api2.jpg" alt="LesMore">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api3.jpg" alt="Barunson">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api4.jpg" alt="Descente">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api5.jpg" alt="Agricultural and Fisheries Cyber Trading Exchange">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api6.jpg" alt="Tier Zero">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api7.jpg" alt="Carex">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api8.jpg" alt="10x10">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api9.jpg" alt="Orga">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api10.jpg" alt="Compuzone">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api11.jpg" alt="Casamia">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api12.jpg" alt="Kidsnet">
+</p>
+</div>
+</div>
+
+<div class="section" id="section1" data-anchor="secondPage">
+<div class="sec-wrap">
+<h2>Marketplace API introduction</h2>
+<span class="main-img"><img src="../../../ShoplinkerApi/ver3/images/intro/img_apiint_2.jpg" alt=""></span>
+<p class="mgt_10">Shoplinker has one of the industry's largest seller bases, with about 4,500 sellers and a product database, and is ready to partner with your business. Developing a Shoplinker marketplace API gives sellers on your marketplace convenient product/order management and helps increase sales by bringing in Shoplinker sellers.</p>
+<h3>Key features of the marketplace API</h3>
+<p class="mgt_10">Access to product databases of sellers using Shoplinker<br>Reduce costs by reducing product sourcing work through merchandisers<br>Increase sales by growing seller and product databases<br>Ongoing marketplace exposure in Shoplinker increases awareness</p>
+<h3>Representative customers using the marketplace API</h3>
+<p class="logo-list">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api13.jpg" alt="NS Home Shopping">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api14.jpg" alt="Lotte iMall">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api15.jpg" alt="11st">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api16.jpg" alt="Store Farm">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api17.jpg" alt="Gmarket">
+<img src="../../../ShoplinkerApi/ver3/images/logo/logo_api18.jpg" alt="Babo Sarang">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api19.jpg" alt="GS Shop">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api20.jpg" alt="Interpark">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api21.jpg" alt="CJ Mall">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api1.jpg" alt="Homeplus">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api22.jpg" alt="Lotte.com">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api23.jpg" alt="AK Plaza">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api24.jpg" alt="Hyundai Home Shopping">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api25.jpg" alt="Auction">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api26.jpg" alt="Hyundai H Mall">
+<img class="pdt_10" src="../../../ShoplinkerApi/ver3/images/logo/logo_api27.jpg" alt="Hi-Mart Shopping">
+</p>
+</div>
+</div>
+
+<div class="section" id="section2" data-anchor="3rdPage">
+<div class="sec-wrap sec2">
+<h2>ERP automation service introduction</h2>
+<p class="mgt_25">
+<strong>What is ERP (Enterprise Resource Planning)?</strong>
+                            ERP integrates business management, human resources, finance, production, and other enterprise systems to improve productivity and efficiency. Solutions include Douzone, Ecount, and in-house ERP, and many companies use ERP systems.
+</p>
+<ol>
+<li>
+<span class="sec-txt1">Waybill and data transmission (Excel, API calls)</span>
+<span class="sec-txt2">Send data (batch)</span>
+</li>
+<li>
+<span class="sec-txt3">Waybill and data transmission</span>
+<span class="sec-txt4">Send data (API call)</span>
+</li>
+</ol>
+<ol class="sec-list">
+<li class="list1">Integrated online management, marketplace product registration, product updates and sold-out status, order consolidation, waybill transmission, and customer management</li>
+<li class="list2"><strong>Shoplinker &amp; ERP providers<br> (Developed after agreement between both parties)</strong> From collecting Shoplinker orders to entering them in ERP, no code conversion or separate Excel work is needed. Using both programs together improves operational efficiency.</li>
+<li class="list3"><strong>By using a shared module<br> Minimize maintenance</strong> Integrated online management, marketplace product registration, product updates and sold-out status, order consolidation, waybill transmission, and customer management</li>
+</ol>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--div id="content" style="margin:0 30px 0 120px;">
+        <h2 class="cts-title">API 소개</h2>
+
+		<div class="design-wrap">
+
+			<h3 class="custom-title">자사 쇼핑몰 관리만으로 각 제휴 쇼핑몰의 <br>상품/주문/재고까지 통합관리하는 서비스입니다.</h3>
+			<p class="mgt_30"><img src="./images/img_intro1.jpg" alt="" /></p>
+			<p class="custom-txt">제휴쇼핑몰의 상품관리, 주문확인,송장 등록을 자사쇼핑몰에서 자사 쇼핑몰에서 제휴 쇼핑몰까지 원클릭으로 한번에 <br>자사 쇼핑몰과 제휴 쇼핑몰 판매 상품의 재고도 정확하게 확인 가능합니다.</p>
+			<h3 class="custom-title">고객 API 주요 특징</h3>
+			<p class="mgt_30"><img src="./images/img_intro2.jpg" alt="" /></p>
+			<p class="mgt_30"><img src="./images/img_intro3.jpg" alt="" /></p>
+
+		</div>
+
+    </div-->
+    <!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            Shoplinker G&amp;C Co., Ltd. | CEO: Kim Young-sik | 5F, Gyeongrim Building, 7, Hwangsaeul-ro 359beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do | Customer service: 1544-4211 | FAX: 031-706-2180<br>
+            Business registration number: 120-87-41757 | Mail-order business registration number: 2020-Seongnam Bundang B-0792 | Personal information officer: Noh Hae-yong | E-MAIL: security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div></div>
+
+
+</div><script src="../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.easing.1.3.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.fullPage.min.js"></script><script>/* 使用官方展示库恢复介绍和总览分页；保留官方锚点及循环规则。 */ jQuery(function(){jQuery('#fullpage').fullpage({anchors:["firstPage", "secondPage", "3rdPage"],menu:'#menu',easingcss3:'cubic-bezier(0.175, 0.885, 0.320, 1.275)',loopTop:true,loopBottom:true});});</script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body></html>

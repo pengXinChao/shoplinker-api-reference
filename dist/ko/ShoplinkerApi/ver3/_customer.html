@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scaleable=no">
+<title>Shoplinker API - 샵링커 API</title>
+<!--link rel="shortcut icon" href="../images/ico/favicon.ico"-->
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/jquery.fullPage.css"> <!--풀페이지에만 적용-->
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+
+
+
+
+<!--풀페이지에만 적용-->
+
+<!--//풀페이지에만 적용-->
+
+<!--[if lt IE 9]>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../ShoplinkerApi/ver3/_customer.html"><link rel="alternate" hreflang="en" href="../../../en/ShoplinkerApi/ver3/_customer.html"><link rel="alternate" hreflang="ko" href="_customer.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head>
+<body>
+<nav class="language-switch" aria-label="페이지 언어"><a href="../../../ShoplinkerApi/ver3/_customer.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="../../../en/ShoplinkerApi/ver3/_customer.html" lang="en" data-language="en" hreflang="en">English</a><a href="_customer.html" lang="ko" data-language="ko" hreflang="ko" aria-current="page">한국어</a></nav><!-- skip navigation -->
+<div id="skip">
+<a href="#gnb"><span>대메뉴 바로가기</span></a>
+<a href="#content"><span>컨텐츠 바로가기</span></a>
+</div>
+<!-- //skip navigation -->
+<div class="wrap customer">
+
+<!--header-->
+	<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li class="ov">
+<span class="ico-api"></span>
+<a href="_customer.html?type_gubun=002"> 					<span>API</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#" class="login-btn"> 					<span>sandBox</span></a>
+</li>
+<li>
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API소개</span></a>
+</li>
+<li>
+<span class="ico-key"></span>
+<a href="#" class="login-btn"> 					<span>업체설정</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout</a>
+</div>
+</div>
+
+</div>
+<!--//header-->
+
+	<!--content-->
+	<div id="content">
+
+
+
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li class="ov"><a href="_customer.html">API-view</a></li>
+<li>
+<a href="#" class="login-btn">						API-Dev</a>
+</li>
+</ul>
+<ol id="menu2">
+<li>샵링커 상품관리
+<ul>
+<li data-menuanchor="0rdPage"><a href="#0rdPage">- 상품 등록/수정</a></li>
+<li data-menuanchor="1rdPage"><a href="#1rdPage">- 샵링커 상품조회</a></li>
+<li data-menuanchor="2rdPage"><a href="#2rdPage">- 쇼핑몰 판매가등록</a></li>
+<li data-menuanchor="3rdPage"><a href="#3rdPage">- 품목정보 등록/수정</a></li>
+</ul>
+</li>
+<li>쇼핑몰 연동 상품관리
+<ul>
+<li data-menuanchor="4rdPage"><a href="#4rdPage">- 쇼핑몰 상품등록</a></li>
+<li data-menuanchor="5rdPage"><a href="#5rdPage">- 쇼핑몰 상품수정</a></li>
+<li data-menuanchor="6rdPage"><a href="#6rdPage">- 쇼핑몰 상품조회</a></li>
+<li data-menuanchor="7rdPage"><a href="#7rdPage">- 쇼핑몰 기간연장</a></li>
+</ul>
+</li>
+<li>주문관리
+<ul>
+<li data-menuanchor="8rdPage"><a href="#8rdPage">- 주문수집</a></li>
+<li data-menuanchor="9rdPage"><a href="#9rdPage">- 샵링커 송장등록</a></li>
+</ul>
+</li>
+<li>클레임/CS관리
+<ul>
+<li data-menuanchor="10rdPage"><a href="#10rdPage">- 클레임 수집</a></li>
+<li data-menuanchor="11rdPage"><a href="#11rdPage">- CS수집</a></li>
+</ul>
+</li>
+<li>공지사항 수집
+<ul>
+<li data-menuanchor="12rdPage"><a href="#12rdPage">- 공지사항 수집</a></li>
+</ul>
+</li>
+<li>카테고리 정보
+<ul>
+<li data-menuanchor="13rdPage"><a href="#13rdPage">- 카테고리 조회</a></li>
+</ul>
+</li>
+<li>관리자 부가기능
+<ul>
+<li data-menuanchor="14rdPage"><a href="#14rdPage">- 샵링커 그룹정보조회</a></li>
+<li data-menuanchor="15rdPage"><a href="#15rdPage">- 그룹정보 등록/수정</a></li>
+<li data-menuanchor="16rdPage"><a href="#16rdPage">- SCM로그인</a></li>
+<li data-menuanchor="17rdPage"><a href="#17rdPage">- 기본정보 조회</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+
+<div id="fullpage2" class="">
+
+<div class="section" id="section0" data-anchor="0rdPage">
+<div class="custom-sec custom-0">
+<h2 class="custom-title">상품 등록/수정</h2>
+<p class="custom-txt">Shoplinker와 자사몰 간의 “고객 API” 를 진행 하시면 너무나 익숙한 “자사몰” 에 등록 한 상품들을...<br>이제 shoplinker 로 원하는 상품을 원하는 시간에 원하는 만큼 한 번에 보낼 수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer0.jpg" alt="자사몰 - 샵링커">
+<p class="custom-txt1">자동 수동 전송</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section1" data-anchor="1rdPage">
+<div class="custom-sec custom-1">
+<h2 class="custom-title">샵링커 상품조회</h2>
+<p class="custom-txt">샵링커에 로그인 할 필요 없이 샵링커 에 등록(전송)한 상품 을 조회 할 수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer1.jpg" alt="">
+<p class="custom-txt1">샵링커 가입코드, 시작날짜, 마지막날짜</p>
+<p class="custom-txt2">판매상태 , 가격 , 원산지 등등</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section2" data-anchor="2rdPage">
+<div class="custom-sec custom-2">
+<h2 class="custom-title">쇼핑몰 판매가등록</h2>
+<p class="custom-txt">샵링커 는 판매처(쇼핑몰) 별 수수료 , 판매가 , 공급가 가 등을 쉽고 빠르게 적용 할 수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2.jpg" alt="">
+<p class="custom-txt1">쇼핑몰명 , 시중가 , 판매가  마진율 등등</p>
+<p class="custom-txt2">등록 성공 or 실패 결과값</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section3" data-anchor="3rdPage">
+<div class="custom-sec custom-3">
+<h2 class="custom-title">품목정보 등록/수정</h2>
+<p class="custom-txt">37가지 품목정보(상품 정보제공고 시)도 샵링커 등록 상품 에 쉽게 적용 할수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer3.jpg" alt="">
+<p class="custom-txt1">쇼핑몰명 , 시중가 , 판매가  마진율 등등</p>
+<p class="custom-txt2">등록 성공 or 실패 결과값</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section4" data-anchor="4rdPage">
+<div class="custom-sec custom-4_2">
+<h2 class="custom-title">쇼핑몰 상품등록</h2>
+<p class="custom-txt">샵링커에 등록된 상품을  한번에 여러 쇼핑몰에 상품등록 할 수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_1.jpg" alt="">
+<p class="custom-txt1">샵링커 상품코드, 쇼핑몰계정, 쇼핑몰코드 등등</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section5" data-anchor="5rdPage">
+<div class="custom-sec custom-4">
+<h2 class="custom-title">쇼핑몰 상품수정</h2>
+<p class="custom-txt">자사몰 의 상품 정보를(가격 / 판매상태 등) 변경 하면 원하시는 판매처(쇼핑몰)에<br>원하시는 상품 만 실시간 바로바로 자사몰 과 동일 하게 변경 됩니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer4.jpg" alt="">
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section6" data-anchor="6rdPage">
+<div class="custom-sec custom-5">
+<h2 class="custom-title">쇼핑몰 상품조회</h2>
+<p class="custom-txt">샵링커를 통하여 연동 하신 쇼핑몰(판매처) 상품도 한번에 조회가 가능합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer5.jpg" alt="">
+<p class="custom-txt1">샵링커 가입코드, 시작 날짜  마지막 날짜</p>
+<p class="custom-txt2">쇼핑몰 상품연동 내역</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section7" data-anchor="7rdPage">
+<div class="custom-sec custom-6">
+<h2 class="custom-title">쇼핑몰 기간연장</h2>
+<p class="custom-txt">ESM(옥션, 지마켓) 의 판매기간 연장을 고객 API 로 편하게 진행 하실수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer6.jpg" alt="">
+<p class="custom-txt-s">Shoplinker 주문리스트에 송장등록</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section8" data-anchor="8rdPage">
+<div class="custom-sec custom-7">
+<h2 class="custom-title">주문수집</h2>
+<p class="custom-txt">샵링커에 자동으로 수집 된 주문리스트를 빠르고 정확하게 자사몰로...</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer7.jpg" alt="">
+<p class="custom-txt1">샵링커 가입코드, 쇼핑몰 코드</p>
+<p class="custom-txt-s">주문 수집 스케줄링 설정</p>
+<p class="custom-txt3">쇼핑몰 주문리스트</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section9" data-anchor="9rdPage">
+<div class="custom-sec custom-8">
+<h2 class="custom-title">샵링커 송장등록</h2>
+<p class="custom-txt">자사몰 에서 직접 송장번호 를 입력 하면 판매처(쇼핑몰)<br>구매 고객에게 송장번호 일괄 전송 이 가능 합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer8.jpg" alt="">
+<p class="custom-txt1">Shoplinker 주문리스트에 송장등록</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section10" data-anchor="10rdPage">
+<div class="custom-sec custom-10">
+<h2 class="custom-title">클레임 수집</h2>
+<p class="custom-txt">수집 후 처리 가능 여부 체크 (샵링커 까지 전송 )</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer10.jpg" alt="">
+<p class="custom-txt1">클레임 시작 클레임 종료 날짜</p>
+<p class="custom-txt2">클레임 상태, 종류, 메모, 날짜 등 내역</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section11" data-anchor="11rdPage">
+<div class="custom-sec custom-11">
+<h2 class="custom-title">CS수집</h2>
+<p class="custom-txt">수집 후 처리 가능 여부 체크 (샵링커까지 전송)</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer11.jpg" alt="">
+<p class="custom-txt1">C/S 시작 C/S종료 날짜</p>
+<p class="custom-txt2">C/S 제목, 사유, 처리상태 내역</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section12" data-anchor="12rdPage">
+<div class="custom-sec custom-12">
+<h2 class="custom-title">공지사항 수집</h2>
+<p class="custom-txt">판매처(쇼핑몰) 의 공지사항을 자사몰 에서 확인 할수 있습니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer12.jpg" alt="">
+<p class="custom-txt1">게시판종류 , 공지사항 날짜</p>
+<p class="custom-txt2">공지사항 제목, 내용, 조회수 등</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section13" data-anchor="13rdPage">
+<div class="custom-sec custom-13">
+<h2 class="custom-title">카테고리 조회</h2>
+<p class="custom-txt">카테고리조회 api 타입정보에 따라 카테고리 정보 조회가 가능합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_5.jpg" alt="">
+<p class="custom-txt1">고객사코드, 타입정보</p>
+<p class="custom-txt2">카테고리 정보</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section14" data-anchor="14rdPage">
+<div class="custom-sec custom-14">
+<h2 class="custom-title">샵링커 그룹정보조회</h2>
+<p class="custom-txt">그룹정보조회 api를  통하여 그룹정보(그룹명, 그룹id등) 조회가  가능합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_6.jpg" alt="">
+<p class="custom-txt1">고객사코드 쇼핑몰계정 쇼핑몰코드 등등</p>
+<p class="custom-txt2">그룹 정보(그룹명, 그룹id등</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section15" data-anchor="15rdPage">
+<div class="custom-sec custom-15">
+<h2 class="custom-title">그룹정보 등록/수정</h2>
+<p class="custom-txt">그룹등록 api 를 통하여  샵링커 그룹정보 등록페이지로 이동됩니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_3.jpg" alt="">
+<p class="custom-txt1">고객사코드, 쇼핑몰계정, 쇼핑몰코드</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section16" data-anchor="16rdPage">
+<div class="custom-sec custom-16">
+<h2 class="custom-title">SCM로그인</h2>
+<p class="custom-txt">Scm 로그인 api를  통하여 직접 접속 가능합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_2.jpg" alt="">
+<p class="custom-txt1">고객사코드, 쇼핑몰계정, 쇼핑몰코드</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section17" data-anchor="17rdPage">
+<div class="custom-sec custom-17">
+<h2 class="custom-title">기본정보 조회</h2>
+<p class="custom-txt">기본정보 api 타입정보에 따라 정보 조회가 가능합니다.</p>
+<img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_4.jpg" alt="">
+<p class="custom-txt1">고객사코드, 타입정보</p>
+<p class="custom-txt2">원산지, 택배사 리스트, 쇼핑몰리스트, 품목고시리스트</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!--//content-->
+
+</div>
+
+<!------------------------------------------------------------------------------->
+<div class="modalpop login-modal">
+<h2 class="modal-title"><span>로그인</span></h2>
+<form method="post" name="nemo" id="nemo" action="#" data-local-form="true">
+<input name="return_url" id="return_url" type="hidden" value="">
+<input name="mode" id="mode" type="hidden" value="login">
+<fieldset>
+<legend>로그인</legend>
+<div class="login-bx">
+<p><label><span class="label-hid">회원아이디</span> <input type="text" name="user_id" id="user_id" value=""></label></p>
+<p class="login-pass"><label><span class="label-hid">비밀번호</span> <input type="password" name="password" id="password" value=""></label></p>
+<div class="id-check"><label><input type="checkbox" name="idSave" id="idSave" value="on"> 아이디 저장하기</label></div>
+<input class="login-submit" id="" name="" type="button" value="로그인" data-local-action="official-login">
+
+
+<div class="login-bnlist">
+<a href="#" class="bn2">회원가입</a>
+<a href="#" class="bn2">아이디/비밀번호 찾기</a>
+</div>
+
+</div>
+</fieldset>
+</form>
+
+<div class="bn-close"><button type="button"><span>닫기</span></button></div>
+</div>
+
+<!------------------------------------------------------------------------------->
+
+<script src="../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.easing.1.3.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.fullPage.min.js"></script><script>/* 使用官方展示库恢复介绍和总览分页；保留官方锚点及循环规则。 */ jQuery(function(){jQuery('#fullpage2').fullpage({anchors:["0rdPage", "1rdPage", "2rdPage", "3rdPage", "4rdPage", "5rdPage", "6rdPage", "7rdPage", "8rdPage", "9rdPage", "10rdPage", "11rdPage", "12rdPage", "13rdPage", "14rdPage", "15rdPage", "16rdPage", "17rdPage"],menu:'#menu2',easingcss3:'cubic-bezier(0.175, 0.885, 0.320, 1.275)',loopTop:true,loopBottom:true});});</script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body>
+</html>

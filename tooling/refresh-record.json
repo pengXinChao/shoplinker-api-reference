@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-09",
+  "source_pages": 47,
+  "languages": [
+    "zh",
+    "en",
+    "ko"
+  ],
+  "changed_existing_content": [
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_qty_ref_v7.html?spec_5=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_Info.html?spec_135=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/index.html?type_gubun=001",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Attribute_price_ref_v7.html?spec_14=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderInfo.html?spec_009=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Order/OrderList.html?spec_037=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Clame/ClameList.html?spec_012=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html"
+  ],
+  "new_pages": [
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/CertInfo.html?spec_033=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/partner_list.html?spec_038=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/GoodsInfoList.html?spec_026=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/MappingCategoryList.html?spec_021=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/joinProductDelete.html?spec_044=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductDelete.html?spec_027=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductStock.html?spec_025=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/Productpartlink.html?spec_024=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/ProductLinkStock.html",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Admin/NoticList.html?spec_036=ov&guTwo=t",
+    "https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/Product/cateEffective.html?spec_023=ov&guTwo=t"
+  ],
+  "access_note": "官方响应含登录及权限提示，但同时返回完整正文；未验证账户专属规范或业务 API 行为。"
+}

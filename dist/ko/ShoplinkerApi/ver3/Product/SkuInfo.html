@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 샵링커 API</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../../ShoplinkerApi/ver3/Product/SkuInfo.html"><link rel="alternate" hreflang="en" href="../../../../en/ShoplinkerApi/ver3/Product/SkuInfo.html"><link rel="alternate" hreflang="ko" href="SkuInfo.html"><link rel="stylesheet" href="../../../../mirror.css?v=f82648a712af"></head><body><nav class="language-switch" aria-label="페이지 언어"><a href="../../../../ShoplinkerApi/ver3/Product/SkuInfo.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="../../../../en/ShoplinkerApi/ver3/Product/SkuInfo.html" lang="en" data-language="en" hreflang="en">English</a><a href="SkuInfo.html" lang="ko" data-language="ko" hreflang="ko" aria-current="page">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>대메뉴 바로가기</span></a>
+<a href="#content"><span>컨텐츠 바로가기</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="006">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html">
+<span>API</span></a>
+</li>
+
+<li class="ov">
+<span class="ico-dev"></span>
+<a href="../_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>sandBox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../introduce.html?type_gubun=004"><span>API소개</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li><a href="../_customer.html">ERP-view</a></li>
+<li class="ov">
+<a href="#" class="login-btn"> 	ERP-Dev</a>
+</li>
+
+</ul>
+<ol class="menu">
+<li>ERP 단품관리
+<ul>
+<li class="ov"><a href="ProductInfo.html?spec_001=ov&amp;guTwo=t">- 단품 수정</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+</div>
+<!--//header-->
+
+	<!--content-->
+    <div id="content">
+<h2 class="cts-title">단품수정연동</h2>
+<p class="mgt_30">샵링커 단품별로 수정하는 api입니다.</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/OptionSendStock.php?iteminfo_url=xml주소[url인코딩]&amp;type=타입값
+<ul class="list mgt_15">
+<li><font color="red">type  : 001 -  상품관리에 있는 상품의 단품만 수정 </font> </li>
+<li><font color="blue">type : 002 - 쇼핑몰 조회수정에 있는 연동상품의 단품만 수정</font> </li>
+<li><font color="blue">type : 003 - 상품관리,쇼핑몰 조회수정에 있는 상품의 매칭되는 모든 단품 수정</font> </li>
+</ul>
+</div>
+
+<h3 class="section-title">Request Paramatter</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">파라미터</th>
+<th class="txt_c" scope="col">타입</th>
+<th scope="col">설명</th>
+<th scope="col">값의 범위</th>
+<th scope="col">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">필수</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>고객사코드(샵링커 가입코드)</td>
+<td>
+</td>
+<td>샵링커에서 발급받은 코드<br> ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td><span class="ico ico-css">필수</span> stock_code</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션 관리코드</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> stock_barcode</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션 바코드</td>
+<td></td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td> stock_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션 타이틀</td>
+<td></td>
+<td>
+</td>
+</tr>
+
+<tr>
+<td class="txt_c">5.</td>
+<td> <span class="ico ico-css">필수</span> stock_quantity</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>옵션수량</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> stock_sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>옵션 추가가격</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> stock_supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>옵션 공급가격</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> stock_keyword</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션 키워드</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td class="txt_c">9.</td>
+<td> stock_supplier</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>옵션 매입처</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> stock_supplier</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>옵션 안전재고</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 class="section-title2">XML샘플</h4>
+<div class="code-txt">
+<pre>
+<code><pre class="codeHTML"><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace"></span>
+<span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">ProductInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">StockInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">a0001555</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_code</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">abc123456</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_code</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_name</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">색상/사이즈</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_name</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_value</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">노랑/100</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_value</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">10</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1200</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_keyword</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">키워드</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_keyword</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_supplier</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">p01234</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_supplier</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_safety</span><span class="GreaterThan">&gt;</span><span class="othertext">12</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_safety</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">/StockInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">ProductInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+<span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></pre></code>
+			</pre>
+		</div>
+
+
+<h3 class="section-title">Response</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">파라미터</th>
+<th class="txt_c" scope="col">타입</th>
+<th scope="col">설명</th>
+<th scope="col">값의 범위</th>
+<th scope="col">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> result</td>
+<td class="txt_c"><span class="ico ico-cdata">bool</span></td>
+<td>결과플래그 </td>
+<td>
+<span class="ico-select">선택</span>
+<ol>
+<li>- 성공 : true</li>
+<li> - 실패 : false</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>샵링커 상품코드</td>
+<td></td>
+<td>샵링커 상품코드<br> ex) prod0001213 </td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> message</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>결과메세지 </td>
+<td></td>
+<td>성공 및 실패에 대한 메세지</td>
+</tr>
+</tbody>
+</table>
+
+<div class="code-txt">
+<pre>
+<span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>;
+	<span class="LessThan">&lt;</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span>true<span class="LessThan">&lt;/</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>P012545<span class="LessThan">&lt;/</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span>수정성공<span class="LessThan">&lt;/</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span>
+<span class="LessThan">&lt;/</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+</pre>
+</div>
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            ㈜샵링커지앤씨 | 대표이사 : 김영식 | 경기도 성남시 분당구 황새울로 359번길 7, 경림빌딩 5층 | 고객센터 : 1544-4211 | FAX : 031-706-2180<br>
+            사업자등록번호 : 120-87-41757 | 통신판매업신고번호 : 제2020-성남분당B-0792호 | 개인정보관리책임자 : 노해용 | E-MAIL : security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../../mirror.js?v=1e324fd01b7c"></script></body></html>

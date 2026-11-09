@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - English reference</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../../ShoplinkerApi/ver3/Clame/CSList.html"><link rel="alternate" hreflang="en" href="CSList.html"><link rel="alternate" hreflang="ko" href="../../../../ko/ShoplinkerApi/ver3/Clame/CSList.html"><link rel="stylesheet" href="../../../../mirror.css?v=f82648a712af"></head><body><nav class="language-switch" aria-label="Page language"><a href="../../../../ShoplinkerApi/ver3/Clame/CSList.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="CSList.html" lang="en" data-language="en" hreflang="en" aria-current="page">English</a><a href="../../../../ko/ShoplinkerApi/ver3/Clame/CSList.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>Skip to main menu</span></a>
+<a href="#content"><span>Skip to content</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo" value="t">
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li class="ov">
+<span class="ico-dev"></span>
+<a href="../_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>Sandbox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../introduce.html?type_gubun=004"><span>API introduction</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li><a href="../_customer.html">API Overview</a></li>
+<li class="ov">
+<a href="#" class="login-btn"> 	Developer Guide</a>
+</li>
+
+</ul>
+<ol class="menu">
+
+<li>A. Product Management (Standard Version)
+<ul>
+<li class=""><a href="../Product/ProductInfo.html?spec_001=ov&amp;guTwo=t">  1. Register / Update Shoplinker Products</a></li>
+<li class=""><a href="../Product/ProductStock.html?spec_025=ov&amp;guTwo=t">  2. Register / Update Shoplinker Inventory</a></li>
+<li class=""><a href="../Product/MallProductLink.html?spec_006=ov&amp;guTwo=t">  3. Update Mall Products</a></li>
+<!--<li class=""><a href="/ShoplinkerApi/ver3/Product/ProductLinkStock.html?spec_024=ov&guTwo=t">- 쇼핑몰 상품 부분연동</a></li>-->
+                            <li class=""><a href="../Product/Productpartlink.html?spec_024=ov&amp;guTwo=t">  4. Partial Mall Product Synchronization</a></li>
+<li class=""><a href="../Product/MallContinue.html?spec_008=ov&amp;guTwo=t">  5. Extend Mall Sales Period</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>C. Common Product Information
+<ul>
+<li class=""><a href="../Product/MallProductLinkReg.html?spec_005=ov&amp;guTwo=t">  1. Register Mall Products</a></li>
+
+
+<li class=""><a href="../Product/MallList.html?spec_007=ov&amp;guTwo=t">  2. Query Mall Products</a></li>
+<li class=""><a href="../Product/ProductList.html?spec_002=ov&amp;guTwo=t">  3. Query Shoplinker Products</a></li>
+<li class=""><a href="../Product/MallPrice.html?spec_003=ov&amp;guTwo=t">  4. Set Shoplinker Selling Prices by Mall</a></li>
+<li class=""><a href="../Product/GoodsInfo.html?spec_004=ov&amp;guTwo=t">  5. Add/update Shoplinker product disclosure information</a></li>
+<li class=""><a href="../Product/CertInfo.html?spec_033=ov&amp;guTwo=t">  6. Register / Update Shoplinker Certifications</a></li>
+<li class=""><a href="../Product/ProductImageUpdate.html?spec_034=ov&amp;guTwo=t">  7. Register / Update Shoplinker Images</a></li>
+<li class=""><a href="../Product/ProductDelete.html?spec_027=ov&amp;guTwo=t">  8. Delete Shoplinker Product Codes</a></li>
+<li class=""><a href="../Product/joinProductDelete.html?spec_044=ov&amp;guTwo=t">  9. Delete Linked Products</a></li>
+</ul>
+</li>
+<li>D. Order Management
+<ul>
+<li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">  1. Order collection</a></li>
+<li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. Order detail query</a></li>
+<li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. Shoplinker waybill registration</a></li>
+<li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. Send waybills to marketplace</a></li>
+<li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. Add order manually</a></li>
+<li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. Update order</a></li>
+</ul>
+</li>
+<li>V. Claims/CS management
+<ul>
+<li class=""><a href="ClameList.html?spec_012=ov&amp;guTwo=t">  1. Claim collection</a></li>
+<li class="ov"><a href="CSList.html?spec_013=ov&amp;guTwo=t">  2. CS collection</a></li>
+<li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS processing</a></li>
+</ul>
+</li>
+<li>F. Category Information
+<ul>
+<li class=""><a href="../Product/CategoryList.html?spec_015=ov&amp;guTwo=t">  1. Query Categories</a></li>
+<li class=""><a href="../Product/MappingCategoryList.html?spec_021=ov&amp;guTwo=t">  2. Query Category Mappings</a></li>
+<li class=""><a href="../Product/cateEffective.html?spec_023=ov&amp;guTwo=t">  3. Validate Category Mappings</a></li>
+</ul>
+</li>
+<li>G. Additional Administration Features
+<ul>
+<li class=""><a href="../Product/GroupList.html?spec_017=ov&amp;guTwo=t">  1. Query Shoplinker Product Groups</a></li>
+<!-- #51694 메가존(신세계시코르)  그룹정보 등록/수정 제외-->
+															<li class=""><a href="../Product/GroupUpdate.html?spec_018=ov&amp;guTwo=t">  2. Register / Update Product Groups</a></li>
+<li class=""><a href="../Admin/ScmLogin.html?spec_019=ov&amp;guTwo=t">  3. SCM Login</a></li>
+<!--<li><a href="/ShoplinkerApi/ver3/Admin/DefaultSearch.html" onclick="alert('준비중입니다.');" >- 기본정보 조회</a></li>-->
+								<li class=""><a href="../Product/BasicList.html?spec_020=ov&amp;guTwo=t">  4. Query Basic Information</a></li>
+<li class=""><a href="../Product/GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. Query Product Disclosures</a></li>
+<li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. Query Announcements</a></li>
+<li class=""><a href="../Product/partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Purchasing Partners</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+</div>
+
+<!--//header-->
+    
+    	<!--content-->
+    <div id="content">
+<h2 class="cts-title">CS collection</h2>
+<p class="mgt_30">API for collecting CS inquiries.</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Cs/Cs_Xml.php?iteminfo_url=XML_URL[URL-encoded]
+</div>
+
+<h3 class="section-title">Request Parameters</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">Parameter</th>
+<th class="txt_c" scope="col">Type</th>
+<th scope="col">Description</th>
+<th scope="col">Value range</th>
+<th scope="col">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">Required</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> Customer code (Shoplinker registration code)</td>
+<td></td>
+<td>Code issued by Shoplinker<br> ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td><span class="ico ico-css">Required</span> shoplinker_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker account</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td class="txt_c">3.</td>
+<td><span class="ico ico-css">Required</span> st_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>CS start date</td>
+<td>yyyymmdd</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td><span class="ico ico-css">Required</span> ed_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>CS end date</td>
+<td>yyyymmdd</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td>sdt_time</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Query start time</td>
+<td>hhiiss</td>
+<td>Query start time</td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> edt_time</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Query end time</td>
+<td>hhiiss</td>
+<td>Query end time</td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> page_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Page number</td>
+<td></td>
+<td>If there are more than 500 CS records, specify a page number</td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> total_standard_count</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Total items displayed per page </td>
+<td></td>
+<td>The default is 500 records</td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> mall_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker marketplace code	 </td>
+<td><input type="button" style="cursor:hand" value="Shoplinker marketplace code list" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td>cs_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Whether to collect replies</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - Collect all (DEFAULT) : NULL OR empty value</li>
+<li> - Collect unanswered inquiries : 001</li>
+<li> - Collect answered inquiries : 002</li>
+</ol>
+
+</td>
+<td></td>
+</tr>
+
+</tbody>
+</table>
+
+<h4 class="section-title2">XML sample</h4>
+<div class="code-txt">
+<pre>
+<code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">Csinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">고객사코드</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">shoplinker_id</span><span class="GreaterThan">&gt;</span><span class="othertext">42917246</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">shoplinker_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">st_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110709</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">st_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110711</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">page_no</span><span class="GreaterThan">&gt;</span><span class="othertext">1</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">page_no</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="othertext">500</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">total_standard_count</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="othertext">APISHOP_0021</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+    </span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Csinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></code>
+</pre>
+		</div>
+
+<h3 class="section-title">Response</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">Parameter</th>
+<th class="txt_c" scope="col">Type</th>
+<th scope="col">Description</th>
+<th scope="col">Value range</th>
+<th scope="col">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> shoplinker_order_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker CS number </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> reg_dm  </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker CS registration date </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> product_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product name </td>
+<td></td>
+<td>
+</td></tr><tr>
+<td class="txt_c">4.</td>
+<td> mall_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Marketplace name  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td> mall_product_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> Marketplace product number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> product_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker product code</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> cs_title </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>CS title </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> cs_contents </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>CS reason  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> cs_status </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>CS processing status</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - Unprocessed : 001</li>
+<li> - Processing completed : 002</li>
+</ol>
+</td><td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> mall_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker marketplace code</td>
+<td><input type="button" style="cursor:hand" value="Shoplinker marketplace code list" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></td>
+<td>ex) APISHOP_0003</td>
+</tr>
+<tr>
+<td class="txt_c">11.</td>
+<td> mall_user_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Marketplace account</td>
+<td></td>
+<td>ex) Auction login ID -A123</td>
+</tr>
+<tr>
+<td class="txt_c">12.</td>
+<td> cs_order_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Marketplace order number</td>
+<td></td>
+<td>ex) Auction order number - 12345883</td>
+</tr>
+<tr>
+<td class="txt_c">13.</td>
+<td> total_count </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Total CS count</td>
+<td></td>
+<td>Located in the header tag </td>
+</tr>
+<tr>
+<td class="txt_c">14.</td>
+<td> total_page </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Total page count</td>
+<td></td>
+<td>Located in the header tag </td>
+</tr>
+<tr>
+<td class="txt_c">15.</td>
+<td> total_standard_count </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Total items displayed per page </td>
+<td></td>
+<td>Located in the header tag </td>
+</tr>
+<tr>
+<td class="txt_c">16.</td>
+<td> currently_page  </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Page number requested by the current call </td>
+<td></td>
+<td>Located in the header tag </td>
+</tr>
+<tr>
+<td class="txt_c">17.</td>
+<td> currently_count  </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Number of CS records returned by the current call</td>
+<td></td>
+<td>header location</td>
+</tr>
+<tr>
+<td class="txt_c">18.</td>
+<td> receipt_date </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> Marketplace CS receipt date  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">19.</td>
+<td> receipt_user_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> CS recipient  </td>
+<td></td>
+<td>For Smart Store, receipt_user_id is shown.</td>
+</tr>
+<tr>
+<td class="txt_c">20.</td>
+<td> partner_product_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer product code  </td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="code-txt">
+<pre>
+<code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">EUC-KR</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">header</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">total_count</span><span class="LessThan">&gt;</span><span class="othertext">300</span><span class="LessThan">&lt;/</span><span class="OpenTag">total_count</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">total_page</span><span class="LessThan">&gt;</span><span class="othertext">2</span><span class="LessThan">&lt;/</span><span class="OpenTag">total_page</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">currently_page</span><span class="LessThan">&gt;</span><span class="othertext">1</span><span class="LessThan">&lt;/</span><span class="OpenTag">currently_page</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">currently_count</span><span class="LessThan">&gt;</span><span class="othertext">100</span><span class="LessThan">&lt;/</span><span class="OpenTag">currently_count</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">header</span><span class="LessThan">&gt;</span>
+        <span class="LessThan">&lt;</span><span class="OpenTag">Csinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+            </span><span class="LessThan">&lt;</span><span class="OpenTag">cslist</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">shoplinker_order_id</span><span class="GreaterThan">&gt;</span><span class="othertext">샵링커</span><span class="XMLwhitespace"> </span><span class="othertext">cs코드</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">shoplinker_order_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">reg_dm</span><span class="GreaterThan">&gt;</span><span class="othertext">CS</span><span class="XMLwhitespace"> </span><span class="othertext">날짜</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">reg_dm</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">product_name</span><span class="GreaterThan">&gt;</span><span class="othertext">상품명</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product_name</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">mall_name</span><span class="GreaterThan">&gt;</span><span class="othertext">쇼핑몰명</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_name</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">mall_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">쇼핑몰</span><span class="XMLwhitespace"> </span><span class="othertext">상품번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">샵링커</span><span class="XMLwhitespace"> </span><span class="othertext">상품번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">cs_title</span><span class="GreaterThan">&gt;</span><span class="othertext">제목</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cs_title</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">cs_contents</span><span class="GreaterThan">&gt;</span><span class="othertext">CS</span><span class="XMLwhitespace"> </span><span class="othertext">사유</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cs_contents</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">cs_status</span><span class="GreaterThan">&gt;</span><span class="othertext">CS</span><span class="XMLwhitespace"> </span><span class="othertext">상태</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cs_status</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="OpenTag">cs_order_id</span><span class="GreaterThan">&gt;</span><span class="othertext">cs</span><span class="XMLwhitespace"> </span><span class="othertext">주문번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cs_order_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+                </span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cslist</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+        </span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Csinfo</span><span class="GreaterThan">&gt;</span>
+<span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></code>
+			</pre>
+		</div>
+
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            Shoplinker G&amp;C Co., Ltd. | CEO: Kim Young-sik | 5F, Gyeongrim Building, 7, Hwangsaeul-ro 359beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do | Customer service: 1544-4211 | FAX: 031-706-2180<br>
+            Business registration number: 120-87-41757 | Mail-order business registration number: 2020-Seongnam Bundang B-0792 | Personal information officer: Noh Hae-yong | E-MAIL: security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../../mirror.js?v=1e324fd01b7c"></script></body></html>

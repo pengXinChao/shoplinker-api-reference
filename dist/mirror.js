@@ -1,5 +1,26 @@
 /* 本地页面只恢复阅读交互；真实测试和账号操作由官网完成，避免把参考快照当作业务客户端。 */
 (() => {
+  const language = document.documentElement.lang.startsWith('zh') ? 'zh' : document.documentElement.lang;
+  // 存储可能被浏览器禁用，语言切换和站内链接仍应正常工作。
+  document.querySelectorAll('[data-language]').forEach(link => {
+    const target = new URL(link.href);
+    target.search = location.search; target.hash = location.hash;
+    link.href = target.href;
+    link.addEventListener('click', () => {
+      try {
+        localStorage.setItem('shoplinker-language', link.dataset.language);
+        sessionStorage.setItem('shoplinker-scroll:' + target.pathname, String(window.scrollY));
+      } catch (e) { /* 浏览器禁用存储时使用链接中的语言路径。 */ }
+    });
+  });
+  try {
+    const key = 'shoplinker-scroll:' + location.pathname;
+    const scroll = sessionStorage.getItem(key);
+    if (scroll !== null) {
+      sessionStorage.removeItem(key);
+      window.addEventListener('load', () => requestAnimationFrame(() => window.scrollTo(0, Number(scroll))));
+    }
+  } catch (e) { /* 未启用存储时保留浏览器默认的锚点定位。 */ }
   const officialSandbox = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/xml.html?type_gubun=003';
   const officialHome = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/index.html';
   const byId = id => document.getElementById(id);
@@ -15,7 +36,8 @@
     const selector = byId('urlNameXml');
     const textarea = byId('xmlSend');
     if (!selector || !textarea) return;
-    textarea.value = (window.shoplinkerSamples || [])[selector.selectedIndex - 1] || '暂无示例。';
+    textarea.value = (window.shoplinkerSamples || [])[selector.selectedIndex - 1] ||
+      ({zh: '暂无示例。', en: 'No sample available.', ko: '예제가 없습니다.'}[language]);
   }
   document.querySelectorAll('form').forEach(form => form.addEventListener('submit', e => {
     e.preventDefault(); window.open(byId('xmlSend') ? officialSandbox : officialHome, '_blank', 'noopener');

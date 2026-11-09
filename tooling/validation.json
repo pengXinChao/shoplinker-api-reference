@@ -1,0 +1,13 @@
+{
+  "html_pages": 144,
+  "missing_local_targets": [],
+  "official_gate_scripts": [],
+  "contract_tests": "8 passed",
+  "browser_checks": [
+    "中文→English→한국어切换、查询参数及滚动位置保留",
+    "三语站内导航",
+    "SKU单位价格展开",
+    "英文菜单无正文覆盖",
+    "总览章节锚点"
+  ]
+}

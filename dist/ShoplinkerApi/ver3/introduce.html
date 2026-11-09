@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head>
+
+
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="apple-mobile-web-app-title" content="Shoplinker">
@@ -11,170 +14,168 @@
 <link rel="stylesheet" href="css/jquery.fullPage.css"> <!--풀페이지에만 적용--><link rel="stylesheet" href="css/content.css">
 
 
- <!--풀페이지에만 적용-->
+<!--풀페이지에만 적용-->
  <!--풀페이지에만 적용-->
 
 <!--풀페이지에만 적용-->
 
 <!--//풀페이지에만 적용-->
 
-<meta charset="utf-8"><link rel="stylesheet" href="../../mirror.css?v=adae082f7bd0"></head>
-<body class="full" style="overflow: hidden; height: 100%;"><!-- skip navigation -->
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="introduce.html"><link rel="alternate" hreflang="en" href="../../en/ShoplinkerApi/ver3/introduce.html"><link rel="alternate" hreflang="ko" href="../../ko/ShoplinkerApi/ver3/introduce.html"><link rel="stylesheet" href="../../mirror.css?v=f82648a712af"></head><body class="full"><nav class="language-switch" aria-label="页面语言"><a href="introduce.html" lang="zh-CN" data-language="zh" hreflang="zh-CN" aria-current="page">中文</a><a href="../../en/ShoplinkerApi/ver3/introduce.html" lang="en" data-language="en" hreflang="en">English</a><a href="../../ko/ShoplinkerApi/ver3/introduce.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
 
 <div id="skip">
-    <a href="#gnb"><span>跳转至主菜单</span></a>
-    <a href="#content"><span>跳转至正文</span></a>
+<a href="#gnb"><span>跳转至主菜单</span></a>
+<a href="#content"><span>跳转至正文</span></a>
 </div>
 
-<input type="hidden" name="type_gubun">
+<input type="hidden" name="type_gubun" value="004">
 <!-- //skip navigation -->
 
 
 
 <div class="wrap intro">
 
-	<div class="header">
-        <h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
-        <div class="gnb">
-            <ul id="gnb">
-                <li>
-                    <span class="ico-home"></span>
-                    <a href="index.html?type_gubun=001"><span>首页</span></a>
-                </li>
-                <li>
-                    <span class="ico-dev"></span>
-										                    <a href="Product/Attribute_Info.html?spec_135=ov&amp;guTwo=t">
-										<span>API</span></a>
-                </li>
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>首页</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html">
+<span>API</span></a>
+</li>
 
-                <li>
-                    <span class="ico-dev"></span>
-					                    <a href="Product/SkuInfo.html?spec_001=ov&amp;type_gubun=006">
-										<span>ERP</span></a>
-                </li>
-                <li>
-                    <span class="ico-sandbox"></span>
-                    					<a href="xml.html?type_gubun=003">
-										<span>沙箱</span></a>
-				</li>
+<li>
+<span class="ico-dev"></span>
+<a href="_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>沙箱</span></a>
+</li>
 
-                <li class="ov">
-                    <span class="ico-service"></span>
-                    <a href="introduce.html?type_gubun=004"><span>API 介绍</span></a>
-                </li>
-				            </ul>
-            <div class="bn-logout">
-                <span class="ico-logout"></span>
-                <a href="#" data-local-action="official-login">logout_</a>
-            </div>
-        </div>
-	    <!--//header-->
+<li class="ov">
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API 介绍</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<!--//header-->
     <!--content-->
 	<div id="content">
 
-        <div class="design-wrap">
+<div class="design-wrap">
 
-            <ul id="menu">
-                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">客户 API</a></li>
-                <li data-menuanchor="secondPage"><a href="#secondPage">商城 API</a></li>
-                <li data-menuanchor="3rdPage"><a href="#3rdPage">ERP-API</a></li>
-            </ul>
+<ul id="menu">
+<li data-menuanchor="firstPage"><a href="#firstPage">客户 API</a></li>
+<li data-menuanchor="secondPage"><a href="#secondPage">商城 API</a></li>
+<li data-menuanchor="3rdPage"><a href="#3rdPage">ERP-API</a></li>
+</ul>
 
-            <div id="fullpage" class="">
+<div id="fullpage" class="">
 
-                <div class="section" id="section0" data-anchor="firstPage">
-                    <div class="sec-wrap">
-                        <h2>客户 API 介绍</h2>
-                        <span class="main-img"><span class="zh-image-label"><img src="images/intro/img_apiint_1.jpg" alt=""><span style="left:5.295007564296521%;top:56.98924731182796%;width:17.39788199697428%;height:13.440860215053764%;">自有商城</span></span></span>
-                        <p class="mgt_15">只管理自有商城，即可整合管理各合作商城的商品、订单、库存。<br> 在自有商城管理合作商城的商品、确认订单并登记运单。从自有商城到合作商城，一键完成。还可准确查询自有商城与合作商城所售商品的库存。</p>
-                        <h3>客户 API 主要特点</h3>
-                        <ul class="mgt_10">
-                            <li>在自有商城新增一次商品，即可发送至合作商城！</li>
-                            <li>在自有商城处理销售状态、销售期限、售价修改、详情修改等！</li>
-                            <li>在自有商城一次查看全部合作商城订单！</li>
-                            <li>在自有商城批量处理合作商城的订单确认、运单登记和发送！</li>
-                            <li>从库存查询到合作商城库存更新，都能在自有商城一次完成！</li>
-                        </ul>
-                        <h3>使用客户 API 的代表客户</h3>
-                        <p class="logo-list">
-                            <img src="images/logo/logo_api1.jpg" alt="Homeplus">
-                            <img src="images/logo/logo_api2.jpg" alt="LesMore">
-                            <img src="images/logo/logo_api3.jpg" alt="Barunson">
-                            <img src="images/logo/logo_api4.jpg" alt="Descente">
-                            <img src="images/logo/logo_api5.jpg" alt="农水产品网络交易所">
-                            <img src="images/logo/logo_api6.jpg" alt="Tier Zero">
-                            <img class="pdt_10" src="images/logo/logo_api7.jpg" alt="Carex">
-                            <img class="pdt_10" src="images/logo/logo_api8.jpg" alt="10x10">
-                            <img class="pdt_10" src="images/logo/logo_api9.jpg" alt="Orga">
-                            <img class="pdt_10" src="images/logo/logo_api10.jpg" alt="Compuzone">
-                            <img class="pdt_10" src="images/logo/logo_api11.jpg" alt="Casamia">
-                            <img class="pdt_10" src="images/logo/logo_api12.jpg" alt="Kidsnet">
-                        </p>
-                    </div>
-                </div>
+<div class="section" id="section0" data-anchor="firstPage">
+<div class="sec-wrap">
+<h2>客户 API 介绍</h2>
+<span class="main-img"><span class="zh-image-label"><img src="images/intro/img_apiint_1.jpg" alt=""><span style="left:5.295007564296521%;top:56.98924731182796%;width:17.39788199697428%;height:13.440860215053764%;">自有商城</span></span></span>
+<p class="mgt_15">只管理自有商城，即可整合管理各合作商城的商品、订单、库存。<br> 在自有商城管理合作商城的商品、确认订单并登记运单。从自有商城到合作商城，一键完成。还可准确查询自有商城与合作商城所售商品的库存。</p>
+<h3>客户 API 主要特点</h3>
+<ul class="mgt_10">
+<li>在自有商城新增一次商品，即可发送至合作商城！</li>
+<li>在自有商城处理销售状态、销售期限、售价修改、详情修改等！</li>
+<li>在自有商城一次查看全部合作商城订单！</li>
+<li>在自有商城批量处理合作商城的订单确认、运单登记和发送！</li>
+<li>从库存查询到合作商城库存更新，都能在自有商城一次完成！</li>
+</ul>
+<h3>使用客户 API 的代表客户</h3>
+<p class="logo-list">
+<img src="images/logo/logo_api1.jpg" alt="Homeplus">
+<img src="images/logo/logo_api2.jpg" alt="LesMore">
+<img src="images/logo/logo_api3.jpg" alt="Barunson">
+<img src="images/logo/logo_api4.jpg" alt="Descente">
+<img src="images/logo/logo_api5.jpg" alt="农水产品网络交易所">
+<img src="images/logo/logo_api6.jpg" alt="Tier Zero">
+<img class="pdt_10" src="images/logo/logo_api7.jpg" alt="Carex">
+<img class="pdt_10" src="images/logo/logo_api8.jpg" alt="10x10">
+<img class="pdt_10" src="images/logo/logo_api9.jpg" alt="Orga">
+<img class="pdt_10" src="images/logo/logo_api10.jpg" alt="Compuzone">
+<img class="pdt_10" src="images/logo/logo_api11.jpg" alt="Casamia">
+<img class="pdt_10" src="images/logo/logo_api12.jpg" alt="Kidsnet">
+</p>
+</div>
+</div>
 
-                <div class="section" id="section1" data-anchor="secondPage">
-                    <div class="sec-wrap">
-                        <h2>商城 API 介绍</h2>
-                        <span class="main-img"><img src="images/intro/img_apiint_2.jpg" alt=""></span>
-                        <p class="mgt_10">Shoplinker 拥有同行业最多的卖家，约4,500家卖家及商品 DB，将成为贵公司的合作伙伴。通过开发 Shoplinker 商城 API，为入驻贵公司商城的卖家提供便捷的商品/订单管理环境，并通过引入 Shoplinker 卖家促进销售增长。</p>
-                        <h3>商城 API 主要特点</h3>
-                        <p class="mgt_10">可引入 Shoplinker 卖家的商品 DB<br>减少通过 MD 进行商品采购的工作，降低成本<br>卖家及商品 DB 增长，促进销售增加<br>商城持续展示于 Shoplinker 中，提高知名度</p>
-                        <h3>使用商城 API 的代表客户</h3>
-                        <p class="logo-list">
-                            <img src="images/logo/logo_api13.jpg" alt="NS 电视购物">
-                            <img src="images/logo/logo_api14.jpg" alt="Lotte iMall">
-                            <img src="images/logo/logo_api15.jpg" alt="11st">
-                            <img src="images/logo/logo_api16.jpg" alt="Store Farm">
-                            <img src="images/logo/logo_api17.jpg" alt="Gmarket">
-                            <img src="images/logo/logo_api18.jpg" alt="Babo Sarang">
-                            <img class="pdt_10" src="images/logo/logo_api19.jpg" alt="GS Shop">
-                            <img class="pdt_10" src="images/logo/logo_api20.jpg" alt="Interpark">
-                            <img class="pdt_10" src="images/logo/logo_api21.jpg" alt="CJ Mall">
-                            <img class="pdt_10" src="images/logo/logo_api1.jpg" alt="Homeplus">
-                            <img class="pdt_10" src="images/logo/logo_api22.jpg" alt="Lotte.com">
-                            <img class="pdt_10" src="images/logo/logo_api23.jpg" alt="AK Plaza">
-                            <img class="pdt_10" src="images/logo/logo_api24.jpg" alt="现代电视购物">
-                            <img class="pdt_10" src="images/logo/logo_api25.jpg" alt="Auction">
-                            <img class="pdt_10" src="images/logo/logo_api26.jpg" alt="现代 H Mall">
-                            <img class="pdt_10" src="images/logo/logo_api27.jpg" alt="Hi-Mart Shopping">
-                        </p>
-                    </div>
-                </div>
+<div class="section" id="section1" data-anchor="secondPage">
+<div class="sec-wrap">
+<h2>商城 API 介绍</h2>
+<span class="main-img"><img src="images/intro/img_apiint_2.jpg" alt=""></span>
+<p class="mgt_10">Shoplinker 拥有同行业最多的卖家，约4,500家卖家及商品 DB，将成为贵公司的合作伙伴。通过开发 Shoplinker 商城 API，为入驻贵公司商城的卖家提供便捷的商品/订单管理环境，并通过引入 Shoplinker 卖家促进销售增长。</p>
+<h3>商城 API 主要特点</h3>
+<p class="mgt_10">可引入 Shoplinker 卖家的商品 DB<br>减少通过 MD 进行商品采购的工作，降低成本<br>卖家及商品 DB 增长，促进销售增加<br>商城持续展示于 Shoplinker 中，提高知名度</p>
+<h3>使用商城 API 的代表客户</h3>
+<p class="logo-list">
+<img src="images/logo/logo_api13.jpg" alt="NS 电视购物">
+<img src="images/logo/logo_api14.jpg" alt="Lotte iMall">
+<img src="images/logo/logo_api15.jpg" alt="11st">
+<img src="images/logo/logo_api16.jpg" alt="Store Farm">
+<img src="images/logo/logo_api17.jpg" alt="Gmarket">
+<img src="images/logo/logo_api18.jpg" alt="Babo Sarang">
+<img class="pdt_10" src="images/logo/logo_api19.jpg" alt="GS Shop">
+<img class="pdt_10" src="images/logo/logo_api20.jpg" alt="Interpark">
+<img class="pdt_10" src="images/logo/logo_api21.jpg" alt="CJ Mall">
+<img class="pdt_10" src="images/logo/logo_api1.jpg" alt="Homeplus">
+<img class="pdt_10" src="images/logo/logo_api22.jpg" alt="Lotte.com">
+<img class="pdt_10" src="images/logo/logo_api23.jpg" alt="AK Plaza">
+<img class="pdt_10" src="images/logo/logo_api24.jpg" alt="现代电视购物">
+<img class="pdt_10" src="images/logo/logo_api25.jpg" alt="Auction">
+<img class="pdt_10" src="images/logo/logo_api26.jpg" alt="现代 H Mall">
+<img class="pdt_10" src="images/logo/logo_api27.jpg" alt="Hi-Mart Shopping">
+</p>
+</div>
+</div>
 
-                <div class="section" id="section2" data-anchor="3rdPage">
-                    <div class="sec-wrap sec2">
-                        <h2>ERP 自动化服务介绍</h2>
-                        <p class="mgt_25">
-                            <strong>什么是 ERP（Enterprise Resource Planning：企业资源计划）？</strong>
+<div class="section" id="section2" data-anchor="3rdPage">
+<div class="sec-wrap sec2">
+<h2>ERP 自动化服务介绍</h2>
+<p class="mgt_25">
+<strong>什么是 ERP（Enterprise Resource Planning：企业资源计划）？</strong>
                             ERP 是将企业经营、人事、财务、生产等系统整合为一体，以提高生产力和效率的管理策略。
 有 Douzone、Ecount、自建 ERP 等多种方案，众多企业已采用 ERP 系统。
-                        </p>
-                        <ol>
-                            <li>
-                                <span class="sec-txt1">运单、数据发送（Excel、调用）</span>
-                                <span class="sec-txt2">数据发送（批量）</span>
-                            </li>
-                            <li>
-                                <span class="sec-txt3">运单、数据发送</span>
-                                <span class="sec-txt4">数据发送（调用）</span>
-                            </li>
-                        </ol>
-                        <ol class="sec-list">
-                            <li class="list1">在线综合管理、商城商品新增、商品修改及售罄、订单汇总、运单发送、客户管理</li>
-                            <li class="list2"><strong>Shoplinker &amp; ERP 企业<br> （双方协商后开发）</strong> 从 Shoplinker 订单采集到 ERP 录入，无需代码转换和额外 Excel 操作。整合使用两个程序，可以提高工作效率。</li>
-                            <li class="list3"><strong>通过采用共同模块<br> 减少维护工作</strong> 在线综合管理、商城商品新增、商品修改及售罄、订单汇总、运单发送、客户管理</li>
-                        </ol>
-                    </div>
-                </div>
+</p>
+<ol>
+<li>
+<span class="sec-txt1">运单、数据发送（Excel、调用）</span>
+<span class="sec-txt2">数据发送（批量）</span>
+</li>
+<li>
+<span class="sec-txt3">运单、数据发送</span>
+<span class="sec-txt4">数据发送（调用）</span>
+</li>
+</ol>
+<ol class="sec-list">
+<li class="list1">在线综合管理、商城商品新增、商品修改及售罄、订单汇总、运单发送、客户管理</li>
+<li class="list2"><strong>Shoplinker &amp; ERP 企业<br> （双方协商后开发）</strong> 从 Shoplinker 订单采集到 ERP 录入，无需代码转换和额外 Excel 操作。整合使用两个程序，可以提高工作效率。</li>
+<li class="list3"><strong>通过采用共同模块<br> 减少维护工作</strong> 在线综合管理、商城商品新增、商品修改及售罄、订单汇总、运单发送、客户管理</li>
+</ol>
+</div>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
-    <!--div id="content" style="margin:0 30px 0 120px;">
+<!--div id="content" style="margin:0 30px 0 120px;">
         <h2 class="cts-title">API 소개</h2>
 
 		<div class="design-wrap">
@@ -193,12 +194,12 @@
 
 	<!--endview-->
 	    <div class="footer">
-        <p class="foot-txt">
+<p class="foot-txt">
             Shoplinker G&amp;C 股份有限公司 | 代表董事：金永植 | 京畿道城南市盆唐区黄鸟路359号街7，庆林大厦5层 | 客服：1544-4211 | FAX：031-706-2180<br>
             营业登记号：120-87-41757 | 通信销售业备案号：第2020-城南盆唐B-0792号 | 个人信息管理负责人：卢海勇 | E-MAIL：security@shoplinkergnc.com
-        </p>
-        <p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
-    </div></div>
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div></div>
 
 
-</div><script src="js/jquery-1.8.1.min.js"></script><script src="js/jquery.color-2.1.2.min.js"></script><script src="js/common.js"></script><script src="js/jquery.easing.1.3.min.js"></script><script src="js/jquery.fullPage.min.js"></script><script>/* 使用官方展示库恢复介绍和总览分页；保留官方锚点及循环规则。 */ jQuery(function(){jQuery('#fullpage').fullpage({anchors:["firstPage", "secondPage", "3rdPage"],menu:'#menu',easingcss3:'cubic-bezier(0.175, 0.885, 0.320, 1.275)',loopTop:true,loopBottom:true});});</script><script src="../../mirror.js?v=7fa53730dc5f"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
+</div><script src="js/jquery-1.8.1.min.js"></script><script src="js/jquery.color-2.1.2.min.js"></script><script src="js/common.js"></script><script src="js/jquery.easing.1.3.min.js"></script><script src="js/jquery.fullPage.min.js"></script><script>/* 使用官方展示库恢复介绍和总览分页；保留官方锚点及循环规则。 */ jQuery(function(){jQuery('#fullpage').fullpage({anchors:["firstPage", "secondPage", "3rdPage"],menu:'#menu',easingcss3:'cubic-bezier(0.175, 0.885, 0.320, 1.275)',loopTop:true,loopBottom:true});});</script><script src="../../mirror.js?v=1e324fd01b7c"></script></body></html>

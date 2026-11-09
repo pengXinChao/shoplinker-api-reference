@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scaleable=no">
+<title>Shoplinker API - English reference</title>
+<!--link rel="shortcut icon" href="../images/ico/favicon.ico"-->
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/jquery.fullPage.css"> <!--풀페이지에만 적용-->
+<link rel="stylesheet" href="../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+
+
+
+
+<!--풀페이지에만 적용-->
+
+<!--//풀페이지에만 적용-->
+
+<!--[if lt IE 9]>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../ShoplinkerApi/ver3/_customer.html"><link rel="alternate" hreflang="en" href="_customer.html"><link rel="alternate" hreflang="ko" href="../../../ko/ShoplinkerApi/ver3/_customer.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head>
+<body>
+<nav class="language-switch" aria-label="Page language"><a href="../../../ShoplinkerApi/ver3/_customer.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="_customer.html" lang="en" data-language="en" hreflang="en" aria-current="page">English</a><a href="../../../ko/ShoplinkerApi/ver3/_customer.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+<div id="skip">
+<a href="#gnb"><span>Skip to main menu</span></a>
+<a href="#content"><span>Skip to content</span></a>
+</div>
+<!-- //skip navigation -->
+<div class="wrap customer">
+
+<!--header-->
+	<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li class="ov">
+<span class="ico-api"></span>
+<a href="_customer.html?type_gubun=002"> 					<span>API</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#" class="login-btn"> 					<span>Sandbox</span></a>
+</li>
+<li>
+<span class="ico-service"></span>
+<a href="introduce.html?type_gubun=004"><span>API introduction</span></a>
+</li>
+<li>
+<span class="ico-key"></span>
+<a href="#" class="login-btn"> 					<span>Company settings</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout</a>
+</div>
+</div>
+
+</div>
+<!--//header-->
+
+	<!--content-->
+	<div id="content">
+
+
+
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li class="ov"><a href="_customer.html">API Overview</a></li>
+<li>
+<a href="#" class="login-btn">						Developer Guide</a>
+</li>
+</ul>
+<ol id="menu2">
+<li>Shoplinker product management
+<ul>
+<li data-menuanchor="0rdPage"><a href="#0rdPage">- Add/update product</a></li>
+<li data-menuanchor="1rdPage"><a href="#1rdPage">- Shoplinker product query</a></li>
+<li data-menuanchor="2rdPage"><a href="#2rdPage">- Register marketplace selling price</a></li>
+<li data-menuanchor="3rdPage"><a href="#3rdPage">- Add/update product disclosure information</a></li>
+</ul>
+</li>
+<li>Linked marketplace product management
+<ul>
+<li data-menuanchor="4rdPage"><a href="#4rdPage">- Add marketplace product</a></li>
+<li data-menuanchor="5rdPage"><a href="#5rdPage">- Update marketplace product</a></li>
+<li data-menuanchor="6rdPage"><a href="#6rdPage">- Marketplace product query</a></li>
+<li data-menuanchor="7rdPage"><a href="#7rdPage">- Extend marketplace sales period</a></li>
+</ul>
+</li>
+<li>Order management
+<ul>
+<li data-menuanchor="8rdPage"><a href="#8rdPage">- Order collection</a></li>
+<li data-menuanchor="9rdPage"><a href="#9rdPage">- Shoplinker waybill registration</a></li>
+</ul>
+</li>
+<li>Claims/CS management
+<ul>
+<li data-menuanchor="10rdPage"><a href="#10rdPage">- Claim collection</a></li>
+<li data-menuanchor="11rdPage"><a href="#11rdPage">- CS collection</a></li>
+</ul>
+</li>
+<li>Notice collection
+<ul>
+<li data-menuanchor="12rdPage"><a href="#12rdPage">- Notice collection</a></li>
+</ul>
+</li>
+<li>Category information
+<ul>
+<li data-menuanchor="13rdPage"><a href="#13rdPage">- Category query</a></li>
+</ul>
+</li>
+<li>Additional administrator functions
+<ul>
+<li data-menuanchor="14rdPage"><a href="#14rdPage">- Shoplinker product group information query</a></li>
+<li data-menuanchor="15rdPage"><a href="#15rdPage">- Add/update product group information</a></li>
+<li data-menuanchor="16rdPage"><a href="#16rdPage">- SCM login</a></li>
+<li data-menuanchor="17rdPage"><a href="#17rdPage">- Basic information query</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+
+<div id="fullpage2" class="">
+
+<div class="section" id="section0" data-anchor="0rdPage">
+<div class="custom-sec custom-0">
+<h2 class="custom-title">Product registration/update</h2>
+<p class="custom-txt">Use the customer API between Shoplinker and your own store to work with products registered in your familiar store...<br>With Shoplinker, send the products you want, when you want, in the quantities you want, in one operation.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer0.jpg" alt="Your own store - Shoplinker">
+<span style="left:5.279034690799397%;top:58.064516129032256%;width:17.49622926093514%;height:13.440860215053764%;">Own store</span></span><p class="custom-txt1">Automatic/manual transmission</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section1" data-anchor="1rdPage">
+<div class="custom-sec custom-1">
+<h2 class="custom-title">Shoplinker product query</h2>
+<p class="custom-txt">Query products registered in (sent to) Shoplinker without logging in to Shoplinker.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer1.jpg" alt="">
+<span style="left:5.319148936170213%;top:53.80434782608695%;width:17.62917933130699%;height:13.043478260869565%;">Own store</span></span><p class="custom-txt1">Shoplinker registration code, start date, end date</p>
+<p class="custom-txt2">Sale status, price, country of origin, etc.</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section2" data-anchor="2rdPage">
+<div class="custom-sec custom-2">
+<h2 class="custom-title">Marketplace sale price registration</h2>
+<p class="custom-txt">Shoplinker lets you quickly and easily set commissions, sale prices, and supply prices for each sales channel (marketplace).</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2.jpg" alt="">
+<span style="left:7.30593607305936%;top:70.96774193548387%;width:13.850837138508371%;height:10.75268817204301%;">Own store</span><span style="left:12.024353120243532%;top:12.903225806451612%;width:9.436834094368342%;height:11.290322580645162%;">List price</span><span style="left:12.024353120243532%;top:24.193548387096776%;width:9.436834094368342%;height:11.290322580645162%;">Sale price</span><span style="left:12.024353120243532%;top:36.02150537634409%;width:9.436834094368342%;height:10.75268817204301%;">Supply price</span></span><p class="custom-txt1">Marketplace name, list price, sale price, margin, etc.</p>
+<p class="custom-txt2">Registration success or failure result</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section3" data-anchor="3rdPage">
+<div class="custom-sec custom-3">
+<h2 class="custom-title">Product disclosure information registration/update</h2>
+<p class="custom-txt">The 37 product information categories (product disclosure information) can also be easily applied to products registered in Shoplinker.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer3.jpg" alt="">
+<span style="left:7.435508345978755%;top:70.96774193548387%;width:13.505311077389985%;height:11.290322580645162%;">Own store</span></span><p class="custom-txt1">Marketplace name, list price, sale price, margin, etc.</p>
+<p class="custom-txt2">Registration success or failure result</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section4" data-anchor="4rdPage">
+<div class="custom-sec custom-4_2">
+<h2 class="custom-title">Marketplace product registration</h2>
+<p class="custom-txt">Products registered in Shoplinker can be listed on multiple marketplaces in one operation.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_1.jpg" alt="">
+<span style="left:5.223880597014926%;top:53.80434782608695%;width:16.865671641791046%;height:12.5%;">Own store</span><span style="left:88.80597014925372%;top:70.65217391304348%;width:7.462686567164179%;height:19.02173913043478%;">Marketplaces</span></span><p class="custom-txt1">Shoplinker product code, marketplace account, marketplace code, etc.</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section5" data-anchor="5rdPage">
+<div class="custom-sec custom-4">
+<h2 class="custom-title">Marketplace product update</h2>
+<p class="custom-txt">When you change product information (price, sale status, etc.) in your own store, your selected sales channels (marketplaces)<br>Selected products are updated in real time to match your own store.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer4.jpg" alt="">
+<span style="left:5.216095380029806%;top:57.75401069518717%;width:17.2876304023845%;height:13.368983957219251%;">Own store</span><span style="left:88.37555886736214%;top:68.98395721925134%;width:7.600596125186289%;height:20.32085561497326%;">Marketplaces</span></span><div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section6" data-anchor="6rdPage">
+<div class="custom-sec custom-5">
+<h2 class="custom-title">Marketplace product query</h2>
+<p class="custom-txt">You can also query products synchronized to marketplaces (sales channels) through Shoplinker in one operation.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer5.jpg" alt="">
+<span style="left:7.32824427480916%;top:71.71717171717172%;width:13.740458015267176%;height:10.606060606060606%;">Own store</span></span><p class="custom-txt1">Shoplinker registration code, start date, end date</p>
+<p class="custom-txt2">Marketplace product synchronization details</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section7" data-anchor="7rdPage">
+<div class="custom-sec custom-6">
+<h2 class="custom-title">Marketplace listing period extension</h2>
+<p class="custom-txt">The customer API lets you easily extend the sales period on ESM (Auction, Gmarket).</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer6.jpg" alt="">
+<span style="left:5.303030303030303%;top:52.972972972972975%;width:17.272727272727273%;height:13.513513513513514%;">Own store</span><span style="left:76.51515151515152%;top:20.54054054054054%;width:18.939393939393938%;height:11.35135135135135%;">Sales period</span><span style="left:76.51515151515152%;top:31.89189189189189%;width:18.939393939393938%;height:11.891891891891891%;">15–90 days</span></span><p class="custom-txt-s">Register waybills in the Shoplinker order list</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section8" data-anchor="8rdPage">
+<div class="custom-sec custom-7">
+<h2 class="custom-title">Order collection</h2>
+<p class="custom-txt">Quickly and accurately transfer orders automatically collected by Shoplinker to your own store...</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer7.jpg" alt="">
+<span style="left:7.32824427480916%;top:70.96774193548387%;width:13.893129770992367%;height:11.827956989247312%;">Own store</span></span><p class="custom-txt1">Shoplinker registration code, marketplace code</p>
+<p class="custom-txt-s">Order collection schedule settings</p>
+<p class="custom-txt3">Marketplace order list</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section9" data-anchor="9rdPage">
+<div class="custom-sec custom-8">
+<h2 class="custom-title">Shoplinker waybill registration</h2>
+<p class="custom-txt">When you enter a waybill number directly in your own store, the sales channel (marketplace)<br>Waybill numbers can be sent to buyers in bulk.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer8.jpg" alt="">
+<span style="left:7.368421052631579%;top:70.58823529411765%;width:13.834586466165414%;height:11.229946524064172%;">Own store</span></span><p class="custom-txt1">Register waybills in the Shoplinker order list</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section10" data-anchor="10rdPage">
+<div class="custom-sec custom-10">
+<h2 class="custom-title">Claim collection</h2>
+<p class="custom-txt">Check whether processing is possible after collection (send to Shoplinker)</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer10.jpg" alt="">
+<span style="left:5.50314465408805%;top:57.75401069518717%;width:18.238993710691823%;height:13.368983957219251%;">Own store</span></span><p class="custom-txt1">Claim start date, claim end date</p>
+<p class="custom-txt2">Claim details including status, type, memo, and date</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section11" data-anchor="11rdPage">
+<div class="custom-sec custom-11">
+<h2 class="custom-title">CS collection</h2>
+<p class="custom-txt">Check whether processing is possible after collection (send to Shoplinker)</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer11.jpg" alt="">
+<span style="left:5.477308294209703%;top:53.475935828877006%;width:17.84037558685446%;height:12.834224598930481%;">Own store</span></span><p class="custom-txt1">C/S start date and C/S end date</p>
+<p class="custom-txt2">C/S title, reason, and processing status details</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section12" data-anchor="12rdPage">
+<div class="custom-sec custom-12">
+<h2 class="custom-title">Notice collection</h2>
+<p class="custom-txt">View sales channel (marketplace) notices from your own store.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer12.jpg" alt="">
+<span style="left:5.537974683544304%;top:53.763440860215056%;width:18.037974683544302%;height:12.903225806451612%;">Own store</span></span><p class="custom-txt1">Notice board type and notice date</p>
+<p class="custom-txt2">Notice title, content, view count, etc.</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section13" data-anchor="13rdPage">
+<div class="custom-sec custom-13">
+<h2 class="custom-title">Category query</h2>
+<p class="custom-txt">Query category information according to the category query API type.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_5.jpg" alt="">
+<span style="left:5.451713395638629%;top:54.09836065573771%;width:17.757009345794394%;height:12.568306010928962%;">Own store</span></span><p class="custom-txt1">Customer code and type information</p>
+<p class="custom-txt2">Category information</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section14" data-anchor="14rdPage">
+<div class="custom-sec custom-14">
+<h2 class="custom-title">Shoplinker product group information query</h2>
+<p class="custom-txt">The product group information query API retrieves group information (group name, group ID, etc.).</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_6.jpg" alt="">
+<span style="left:5.351681957186544%;top:54.09836065573771%;width:17.431192660550458%;height:12.568306010928962%;">Own store</span></span><p class="custom-txt1">Customer code, marketplace account, marketplace code, etc.</p>
+<p class="custom-txt2">Product group information (group name, group ID, etc.</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section15" data-anchor="15rdPage">
+<div class="custom-sec custom-15">
+<h2 class="custom-title">Add/update product group information</h2>
+<p class="custom-txt">The group registration API opens the Shoplinker product group information registration page.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_3.jpg" alt="">
+<span style="left:5.359877488514548%;top:53.55191256830601%;width:17.304747320061256%;height:12.568306010928962%;">Own store</span><span style="left:88.3614088820827%;top:69.94535519125684%;width:7.656967840735069%;height:19.12568306010929%;">Marketplaces</span></span><p class="custom-txt1">Customer code, marketplace account, marketplace code</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section16" data-anchor="16rdPage">
+<div class="custom-sec custom-16">
+<h2 class="custom-title">SCM login</h2>
+<p class="custom-txt">You can access it directly through the SCM login API.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_2.jpg" alt="">
+<span style="left:5.351681957186544%;top:53.513513513513516%;width:17.2782874617737%;height:12.432432432432432%;">Own store</span><span style="left:88.2262996941896%;top:69.1891891891892%;width:7.6452599388379205%;height:18.91891891891892%;">Marketplaces</span></span><p class="custom-txt1">Customer code, marketplace account, marketplace code</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+<div class="section" id="section17" data-anchor="17rdPage">
+<div class="custom-sec custom-17">
+<h2 class="custom-title">Basic information query</h2>
+<p class="custom-txt">Query information according to the type specified in the basic information API.</p>
+<span class="zh-image-label"><img src="../../../ShoplinkerApi/ver3/images/customer/img_customer2_4.jpg" alt="">
+<span style="left:4.814305364511692%;top:53.80434782608695%;width:15.680880330123797%;height:13.043478260869565%;">Own store</span></span><p class="custom-txt1">Customer code and type information</p>
+<p class="custom-txt2">Country of origin, carrier list, marketplace list, product disclosure list</p>
+<div class="mgt_30">
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!--//content-->
+
+</div>
+
+<!------------------------------------------------------------------------------->
+<div class="modalpop login-modal">
+<h2 class="modal-title"><span>Log in</span></h2>
+<form method="post" name="nemo" id="nemo" action="#" data-local-form="true">
+<input name="return_url" id="return_url" type="hidden" value="">
+<input name="mode" id="mode" type="hidden" value="login">
+<fieldset>
+<legend>Log in</legend>
+<div class="login-bx">
+<p><label><span class="label-hid">Member ID</span> <input type="text" name="user_id" id="user_id" value=""></label></p>
+<p class="login-pass"><label><span class="label-hid">Password</span> <input type="password" name="password" id="password" value=""></label></p>
+<div class="id-check"><label><input type="checkbox" name="idSave" id="idSave" value="on"> Remember ID</label></div>
+<input class="login-submit" id="" name="" type="button" value="Log in" data-local-action="official-login">
+
+
+<div class="login-bnlist">
+<a href="#" class="bn2">Sign up</a>
+<a href="#" class="bn2">Find ID/password</a>
+</div>
+
+</div>
+</fieldset>
+</form>
+
+<div class="bn-close"><button type="button"><span>Close</span></button></div>
+</div>
+
+<!------------------------------------------------------------------------------->
+
+<script src="../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.easing.1.3.min.js"></script><script src="../../../ShoplinkerApi/ver3/js/jquery.fullPage.min.js"></script><script>/* 使用官方展示库恢复介绍和总览分页；保留官方锚点及循环规则。 */ jQuery(function(){jQuery('#fullpage2').fullpage({anchors:["0rdPage", "1rdPage", "2rdPage", "3rdPage", "4rdPage", "5rdPage", "6rdPage", "7rdPage", "8rdPage", "9rdPage", "10rdPage", "11rdPage", "12rdPage", "13rdPage", "14rdPage", "15rdPage", "16rdPage", "17rdPage"],menu:'#menu2',easingcss3:'cubic-bezier(0.175, 0.885, 0.320, 1.275)',loopTop:true,loopBottom:true});});</script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body>
+</html>

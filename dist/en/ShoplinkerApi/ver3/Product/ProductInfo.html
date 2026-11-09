@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - English reference</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="../../../../ShoplinkerApi/ver3/Product/ProductInfo.html"><link rel="alternate" hreflang="en" href="ProductInfo.html"><link rel="alternate" hreflang="ko" href="../../../../ko/ShoplinkerApi/ver3/Product/ProductInfo.html"><link rel="stylesheet" href="../../../../mirror.css?v=f82648a712af"></head><body><nav class="language-switch" aria-label="Page language"><a href="../../../../ShoplinkerApi/ver3/Product/ProductInfo.html" lang="zh-CN" data-language="zh" hreflang="zh-CN">中文</a><a href="ProductInfo.html" lang="en" data-language="en" hreflang="en" aria-current="page">English</a><a href="../../../../ko/ShoplinkerApi/ver3/Product/ProductInfo.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>Skip to main menu</span></a>
+<a href="#content"><span>Skip to content</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo" value="t">
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../index.html?type_gubun=001"><span>Home</span></a>
+</li>
+<li class="ov">
+<span class="ico-dev"></span>
+<a href="../_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>Sandbox</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../introduce.html?type_gubun=004"><span>API introduction</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li><a href="../_customer.html">API Overview</a></li>
+<li class="ov">
+<a href="#" class="login-btn"> 	Developer Guide</a>
+</li>
+
+</ul>
+<ol class="menu">
+
+<li>A. Product Management (Standard Version)
+<ul>
+<li class="ov"><a href="ProductInfo.html?spec_001=ov&amp;guTwo=t">  1. Register / Update Shoplinker Products</a></li>
+<li class=""><a href="ProductStock.html?spec_025=ov&amp;guTwo=t">  2. Register / Update Shoplinker Inventory</a></li>
+<li class=""><a href="MallProductLink.html?spec_006=ov&amp;guTwo=t">  3. Update Mall Products</a></li>
+<!--<li class=""><a href="/ShoplinkerApi/ver3/Product/ProductLinkStock.html?spec_024=ov&guTwo=t">- 쇼핑몰 상품 부분연동</a></li>-->
+                            <li class=""><a href="Productpartlink.html?spec_024=ov&amp;guTwo=t">  4. Partial Mall Product Synchronization</a></li>
+<li class=""><a href="MallContinue.html?spec_008=ov&amp;guTwo=t">  5. Extend Mall Sales Period</a></li>
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>C. Common Product Information
+<ul>
+<li class=""><a href="MallProductLinkReg.html?spec_005=ov&amp;guTwo=t">  1. Register Mall Products</a></li>
+
+
+<li class=""><a href="MallList.html?spec_007=ov&amp;guTwo=t">  2. Query Mall Products</a></li>
+<li class=""><a href="ProductList.html?spec_002=ov&amp;guTwo=t">  3. Query Shoplinker Products</a></li>
+<li class=""><a href="MallPrice.html?spec_003=ov&amp;guTwo=t">  4. Set Shoplinker Selling Prices by Mall</a></li>
+<li class=""><a href="GoodsInfo.html?spec_004=ov&amp;guTwo=t">  5. Add/update Shoplinker product disclosure information</a></li>
+<li class=""><a href="CertInfo.html?spec_033=ov&amp;guTwo=t">  6. Register / Update Shoplinker Certifications</a></li>
+<li class=""><a href="ProductImageUpdate.html?spec_034=ov&amp;guTwo=t">  7. Register / Update Shoplinker Images</a></li>
+<li class=""><a href="ProductDelete.html?spec_027=ov&amp;guTwo=t">  8. Delete Shoplinker Product Codes</a></li>
+<li class=""><a href="joinProductDelete.html?spec_044=ov&amp;guTwo=t">  9. Delete Linked Products</a></li>
+</ul>
+</li>
+<li>D. Order Management
+<ul>
+<li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">  1. Order collection</a></li>
+<li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. Order detail query</a></li>
+<li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. Shoplinker waybill registration</a></li>
+<li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. Send waybills to marketplace</a></li>
+<li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. Add order manually</a></li>
+<li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. Update order</a></li>
+</ul>
+</li>
+<li>V. Claims/CS management
+<ul>
+<li class=""><a href="../Clame/ClameList.html?spec_012=ov&amp;guTwo=t">  1. Claim collection</a></li>
+<li class=""><a href="../Clame/CSList.html?spec_013=ov&amp;guTwo=t">  2. CS collection</a></li>
+<li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS processing</a></li>
+</ul>
+</li>
+<li>F. Category Information
+<ul>
+<li class=""><a href="CategoryList.html?spec_015=ov&amp;guTwo=t">  1. Query Categories</a></li>
+<li class=""><a href="MappingCategoryList.html?spec_021=ov&amp;guTwo=t">  2. Query Category Mappings</a></li>
+<li class=""><a href="cateEffective.html?spec_023=ov&amp;guTwo=t">  3. Validate Category Mappings</a></li>
+</ul>
+</li>
+<li>G. Additional Administration Features
+<ul>
+<li class=""><a href="GroupList.html?spec_017=ov&amp;guTwo=t">  1. Query Shoplinker Product Groups</a></li>
+<!-- #51694 메가존(신세계시코르)  그룹정보 등록/수정 제외-->
+															<li class=""><a href="GroupUpdate.html?spec_018=ov&amp;guTwo=t">  2. Register / Update Product Groups</a></li>
+<li class=""><a href="../Admin/ScmLogin.html?spec_019=ov&amp;guTwo=t">  3. SCM Login</a></li>
+<!--<li><a href="/ShoplinkerApi/ver3/Admin/DefaultSearch.html" onclick="alert('준비중입니다.');" >- 기본정보 조회</a></li>-->
+								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. Query Basic Information</a></li>
+<li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. Query Product Disclosures</a></li>
+<li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. Query Announcements</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Purchasing Partners</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+</div>
+
+<!--//header-->
+
+	<!--content-->
+    <div id="content">
+<h2 class="cts-title">Shoplinker product registration and update</h2>
+<p class="mgt_30">API for registering or updating your own products in Shoplinker.</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/xmlInsert.php?iteminfo_url=XML_URL[URL-encoded]
+</div>
+
+<h3 class="section-title">Request Parameters</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">Parameter</th>
+<th class="txt_c" scope="col">Type</th>
+<th scope="col">Description</th>
+<th scope="col">Value range</th>
+<th scope="col">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">Required</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer code (Shoplinker registration code)</td>
+<td>
+</td>
+<td>Code issued by Shoplinker<br> ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td><span class="ico ico-css">Required</span> partner_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Your own product code (product management code)</td>
+<td></td>
+<td>Product code managed in your own system</td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td><span class="ico ico-css">Required</span> product_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td><span class="ico ico-css">Required</span> sale_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product sale status</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - On sale : 001</li>
+<li> - Sales suspended : 003</li>
+<li> - Sold out : 004</li>
+<li> - Sales ended : 006</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td><span class="ico ico-css">Required</span> ccategory_l</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer category level 1 code</td>
+<td>Up to 10 alphanumeric characters</td>
+<td>Example: A01</td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> ccategory_m</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer category level 2 code</td>
+<td>Up to 10 alphanumeric characters</td>
+<td>Example: A01-01</td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> ccategory_s</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer category level 3 code</td>
+<td>Up to 10 alphanumeric characters</td>
+<td>Example: A01-01-01</td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> ccategory_d</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Customer category level 4 code</td>
+<td>Up to 10 alphanumeric characters</td>
+<td>Example: A01-01-01-1</td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td><span class="ico ico-css">Required</span> maker</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Manufacturer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> maker_dt</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Publication date (manufacturing date)</td>
+<td>yyyymmdd </td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">11.</td>
+<td><span class="ico ico-css">Required</span> origin</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Country of origin name/code </td>
+<td><input type="button" style="cursor:hand" value="Country of origin list" ;< td data-open-url="../../Docs2/pop/code_info.html?customer_id=">
+</td><td>Enter either the exact country of origin name or its code. e.g. South Korea OR APIORIGIN_031<br> Default : South Korea</td>
+</tr>
+<tr>
+<td class="txt_c">12.</td>
+<td> image_type</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Image method</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - URL method : URL </li>
+<li> - File method : FILE</li>
+</ol>
+</td>
+<td>
+<h1> URL method </h1>
+<table>
+<th>    - Image url</th>
+<tr>
+<td>A web-accessible path</td>
+</tr>
+<tr>
+<td colspan="2">ex) http://image.shoplinker.co.kr/images/banner/bn_admin_150210_3.jpg</td>
+</tr>
+</table>
+<br>
+<h1> FILE method </h1>
+<table>
+<th scope="col">    - Image file format^^image content</th>
+<tr>
+<td>Image file format, such as jpg or png</td>
+</tr>
+<tr>
+<td>Image content (base_64 encode)</td>
+</tr>
+<tr>
+<td colspan="2">ex) jpg^^/9j/4AAQSkZJRgABAQAAAQABAAD//gA8Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpL</td>
+</tr>
+</table>
+<br>
+                Default : URL
+</td>
+</tr>
+<tr>
+<td class="txt_c">13.</td>
+<td><span class="ico ico-css">Required</span> image_url num='1'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Main image</td>
+<td></td>
+<td>700 * 700 or 500 * 500</td>
+</tr>
+<tr>
+<td class="txt_c">14.</td>
+<td>image_url num='2'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Auction &amp; Gmarket image</td>
+<td></td>
+<td>400 * 400 or 700 * 700</td>
+</tr>
+<tr>
+<td class="txt_c">15.</td>
+<td>image_url num='3'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Coupang image</td>
+<td></td>
+<td>1000*1000</td>
+</tr>
+<tr>
+<td class="txt_c">16.</td>
+<td>image_url num='4'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>11st listing image </td>
+<td></td>
+<td>300*300</td>
+</tr>
+<tr>
+<td class="txt_c">17.</td>
+<td>image_url num='5'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>General marketplace/home shopping image</td>
+<td></td>
+<td>700 * 700 or 500 * 500, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">18.</td>
+<td>image_url num='6~12'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Additional images '6'~'12'</td>
+<td></td>
+<td>Additional images 6 through 12 can be registered.</td>
+</tr>
+<tr>
+<td class="txt_c">19.</td>
+<td>image_url num='13~14'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>ESM (Auction &amp; Gmarket) additional images 1~2</td>
+<td></td>
+<td>700 * 700 or 500 * 500, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">20.</td>
+<td>image_url num='15'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>WeMakePrice</td>
+<td></td>
+<td>460 * 460, 500 * 500, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">21.</td>
+<td>image_url num='16'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>WeMakePrice 2.0 listing image</td>
+<td></td>
+<td>600 * 400, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">22.</td>
+<td>image_url num='17'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>W Concept main image</td>
+<td></td>
+<td>960 * 1280, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">23.</td>
+<td>image_url num='18'</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Halfclub horizontal banner image
+<br>GS/Ezwel mobile image
+<br>Shopping &amp; T mobile image
+</td>
+<td></td>
+<td>640 * 320, JPG format</td>
+</tr>
+<tr>
+<td class="txt_c">24.</td>
+<td><span class="ico ico-css">Required</span> market_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Marketplace list price (book list price)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">25.</td>
+<td><span class="ico ico-css">Required</span> sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Marketplace sale price</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">26.</td>
+<td><span class="ico ico-css">Required</span> supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Marketplace supply price</td>
+<td></td>
+<td> </td>
+</tr>
+<tr>
+<td class="txt_c">27.</td>
+<td><span class="ico ico-css">Required</span> market_price_p</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Purchasing partner market price (book list price)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">28.</td>
+<td><span class="ico ico-css">Required</span> sale_price_p</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Purchasing partner selling price</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">29.</td>
+<td><span class="ico ico-css">Required</span> supply_price_p </td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Purchasing partner supply price</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">30.</td>
+<td><span class="ico ico-css">Required</span> delivery_charge_type</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shipping fee type</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li>- Free shipping : 001</li>
+<li>- Freight collect : 002</li>
+<li>- Freight collect/prepaid : 003</li>
+<li>- Free shipping for orders of KRW 30,000 or more : 004</li>
+<li>- Free shipping for orders of KRW 50,000 or more : 005</li>
+<li>- Free shipping for orders of KRW 70,000 or more : 006</li>
+<li>- Free shipping for orders of KRW 100,000 or more : 007</li>
+<li>- Free shipping for orders of KRW 40,000 or more : 008</li>
+<li>- Free shipping for orders of KRW 9,800 or more : 009</li>
+<li>- Free shipping for orders of KRW 20,000 or more : 010</li>
+<li>- Free shipping for orders of KRW 60,000 or more : 011</li>
+<li>- Free shipping in the Seoul metropolitan area : 012</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">31.</td>
+<td>delivery_charge</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Collect-on-delivery shipping amount</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">32.</td>
+<td><span class="ico ico-css">Required</span> tax_yn</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Taxable</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li>- Taxable : 001</li>
+<li>- Tax-exempt : 002</li>
+<li>- Zero-rated : 005</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">33.</td>
+<td><span class="ico ico-css">Required</span> detail_desc</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Detailed description</td>
+<td></td>
+<td></td>
+</tr>
+<!-- 		<tr> -->
+<!--             <td class="txt_c">34.</td> -->
+<!--             <td>new_desc_top</td> -->
+<!--             <td class="txt_c"><span class="ico ico-sample">string</span></td> -->
+<!--             <td>신상세설명</td> -->
+<!--             <td></td> -->
+<!--             <td>ESM상품일경우 선택가능값</td> -->
+<!--         </tr> -->
+<!-- 		<tr> -->
+<!--             <td class="txt_c">35.</td> -->
+<!--             <td>new_desc_center</td> -->
+<!--             <td class="txt_c"><span class="ico ico-sample">string</span></td> -->
+<!--             <td>추가구성 상세설명</td> -->
+<!--             <td></td> -->
+<!--             <td>ESM상품일경우 선택가능값 </td> -->
+<!--         </tr> -->
+<!-- 		<tr> -->
+<!--             <td class="txt_c">36.</td> -->
+<!--             <td>new_desc_bottom</td> -->
+<!--             <td class="txt_c"><span class="ico ico-sample">string</span></td> -->
+<!--             <td>광고/홍보 상세설명</td> -->
+<!--             <td></td> -->
+<!--             <td>ESM상품일경우 선택가능값</td> -->
+<!--         </tr> -->
+		<tr>
+<td class="txt_c">34.</td>
+<td><span class="ico ico-css">Required</span> quantity</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>Available supply quantity</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">35.</td>
+<td>salearea</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Sales region</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">36.</td>
+<td>partner_id_tmp </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Supplier (purchasing partner) ID</td>
+<td></td>
+<td>The supplier ID can only be set when adding a product and cannot be updated.<br>Changing the supplier ID may create duplicate products. Use caution.</td>
+</tr>
+<tr>
+<td class="txt_c">37.</td>
+<td>sex</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product gender</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li>- Unisex : 001</li>
+<li>- Men's : 002</li>
+<li>- Women's : 003</li>
+</ol>
+</td>
+<td> Default : Unisex</td>
+</tr>
+<tr>
+<td class="txt_c">38.</td>
+<td>keyword</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product keywords (short product name)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">39.</td>
+<td>model </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Model name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">40.</td>
+<td>model_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Model NO</td>
+<td></td>
+<td>When using isbn (book code), the value must start with "isbn-".</td>
+</tr>
+<tr>
+<td class="txt_c">41.</td>
+<td><span class="ico ico-css">Required</span> option_kind</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Option registration type</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - No options [single SKU] : 000</li>
+<li> - Has options : 002</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">42.</td>
+<td>opt_info</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Option information</td>
+<td>
+                1. With one option field [color]<br>
+                Example: OptionTitle||OptionAttribute^^Quantity&lt;**&gt;Price,OptionAttribute^^Quantity&lt;**&gt;Price,repeat..<br>
+                Color||black^^10&lt;**&gt;1000,yellow^^20&lt;**&gt;2000,..<br><br>
+                2. With two option fields [color-size] - combinations<br>
+                Example: OptionTitle1/OptionTitle2||OptionAttribute1/OptionAttribute2^^Quantity&lt;**&gt;Price,OptionAttribute1/OptionAttribute2^^Quantity&lt;**&gt;Price,repeat..<br>
+                Color/size||black/xl^^10&lt;**&gt;0,black/L^^20&lt;**&gt;1000,black/m^^30&lt;**&gt;1000...<br><br>
+<b>* If option attributes contain '/', '(', ')', '|', spaces, or similar characters<br> An error occurs during product synchronization.</b>
+</td>
+<td>When option_kind is 002</td>
+</tr>
+<tr>
+<td class="txt_c">43.</td>
+<td>brand </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Brand name </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">44.</td>
+<td>auth_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">45.</td>
+<td>expirydate </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Valid date</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">46.</td>
+<td>trans_product_id  </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker product migration code</td>
+<td></td>
+<td>Recommended for updating your own product code for products migrated to Shoplinker. (Only your own product code is updated.)</td>
+</tr>
+<tr>
+<td class="txt_c"></td>
+<td>goodsinfo  </td>
+<td class="txt_c"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">47.</td>
+<td> lclass_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker level 1 product category code</td>
+<td><input type="button" value="Product disclosure category" data-open-url="http://ad2.shoplinker.co.kr/Product/item/good_cate_info_New3.xls"></td>
+<td>	Refer to the Excel data	</td>
+</tr>
+<tr>
+<td class="txt_c">48.</td>
+<td> item_seq</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Item detail code</td>
+<td></td>
+<td>Refer to the Excel data </td>
+</tr>
+<tr>
+<td class="txt_c">49.</td>
+<td> item_info</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Item detailed description</td>
+<td><input type="button" value="Product disclosure certification code" data-open-url="../goods_cert.html"></td>
+<td>Refer to the Excel data </td>
+</tr>
+<tr>
+<td class="txt_c">50.</td>
+<td> adult_info</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Adult product</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - Adult product : Y </li>
+<li> - Not an adult product : N</li>
+</ol>
+</td>
+<td>Default : N</td>
+</tr>
+
+<tr>
+<td class="txt_c"></td>
+<td>certinfo  </td>
+<td class="txt_c" colspan="2"> Up to 5 entries can be registered.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">51.</td>
+<td> cert_item</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification code</td>
+<td></td>
+<td> When entering certification information <span class="ico ico-css">Required</span> item. <br>You can query this in Additional Administrator Functions -&gt; Basic Information Query.</td>
+</tr>
+<tr>
+<td class="txt_c">52.</td>
+<td> cert_organ</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification authority name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">53.</td>
+<td> cert_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification number</td>
+<td></td>
+<td> When entering certification information <span class="ico ico-css">Required</span> item. </td>
+</tr>
+<tr>
+<td class="txt_c">54.</td>
+<td> cert_notify_no</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification declaration number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">55.</td>
+<td> cert_issuedate</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification issue date</td>
+<td> yyyymmdd  </td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">56.</td>
+<td> cert_valid_from</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification validity start date</td>
+<td> yyyymmdd  </td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">57.</td>
+<td> cert_valid_until</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification validity end date</td>
+<td> yyyymmdd  </td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">58.</td>
+<td> cert_image_url</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Certification image URL</td>
+<td> http://image.shoplinker.co.kr/images/banner/bn_admin_150210_3.jpg</td>
+<td> A web-accessible path</td>
+</tr>
+<tr>
+<td class="txt_c">59.</td>
+<td> product_description</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product summary description</td>
+<td> </td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">60.</td>
+<td>desc_type_tag</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Quality labeling TAG and detailed description</td>
+<td></td>
+<td>Applies only to Hyundai Home Shopping</td>
+</tr>
+<tr>
+<td class="txt_c">61.</td>
+<td>weight</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Weight</td>
+<td></td>
+<td>Digits only; decimal points are not allowed<br>ex)11</td>
+</tr>
+<tr>
+<td class="txt_c">62.</td>
+<td>expiry</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Use-by date text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">63.</td>
+<td>product_name_delv</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Product name for shipping labels</td>
+<td></td>
+<td>Used as a short product name when printing waybills.<br>(Not synchronized to the marketplace.)</td>
+</tr>
+<tr class="toggle-parent" style="cursor:pointer;" data-local-action="unit-price">
+<td class="txt_c">64.</td>
+<td>
+        unit_price
+<span id="unit_price_arrow" style="margin-left:6px;">▼</span>
+</td>
+<td class="txt_c"><span class="ico ico-sample">object</span></td>
+<td>Unit price information</td>
+<td>
+</td>
+<td>Click to expand child fields.</td>
+</tr>
+<tr class="unit_price_child" style="display:none; background:#fafafa;">
+<td class="txt_c"></td>
+<td style="padding-left:30px;">ㄴ type</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Unit price input method</td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li>- Default input : default</li>
+<li>- Manual input : manual</li>
+</ol>
+</td>
+<td></td>
+</tr>
+
+<tr class="unit_price_child" style="display:none; background:#fafafa;">
+<td class="txt_c"></td>
+<td style="padding-left:30px;">ㄴ totalCapacity</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Total capacity</td>
+<td>Example: numbers such as 1000, 2000</td>
+<td>Required when type is default</td>
+</tr>
+
+<tr class="unit_price_child" style="display:none; background:#fafafa;">
+<td class="txt_c"></td>
+<td style="padding-left:30px;">ㄴ unitCapacity</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Unit capacity</td>
+<td>Example: numbers such as 10, 20</td>
+<td>Required when type is default</td>
+</tr>
+
+<tr class="unit_price_child" style="display:none; background:#fafafa;">
+<td class="txt_c"></td>
+<td style="padding-left:30px;">ㄴ indicationUnit</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Display unit</td>
+<td>Example: g, kg, ml, L, cm, m, piece, pieces per pack, sheet, sheets per pack, item, capsule, gummy, sachet, ball</td>
+<td>Required when type is default</td>
+</tr>
+
+<tr class="unit_price_child" style="display:none; background:#fafafa;">
+<td class="txt_c"></td>
+<td style="padding-left:30px;">ㄴ direct_input_text</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Manually entered text</td>
+<td>Total capacity / displayed capacity / display unit (e.g. 100/10/kg)</td>
+<td>Required when type is manual</td>
+</tr>
+<tr>
+<td class="txt_c">65.</td>
+<td>memo</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Short memo</td>
+<td></td>
+<td>Enter a short administrator memo.<br>(Not synchronized to the marketplace.)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 class="section-title2">XML sample</h4>
+<div class="code-txt">
+<pre>
+<code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">openMarket</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">a0000018</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">p_56438</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">product_name</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="unknownchar">[</span><span class="othertext">Senti</span><span class="unknownchar">]</span><span class="XMLwhitespace"> </span><span class="othertext">걸리쉬한</span><span class="XMLwhitespace"> </span><span class="othertext">롱</span><span class="XMLwhitespace"> </span><span class="othertext">골지</span><span class="XMLwhitespace"> </span><span class="othertext">가디건</span><span class="XMLwhitespace"> </span><span class="othertext">mo1552</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product_name</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">sale_status</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sale_status</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ccategory_l</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">a001</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ccategory_l</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ccategory_m</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">b001</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ccategory_m</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ccategory_s</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">c001</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ccategory_s</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">ccategory_d</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">d001</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ccategory_d</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">maker</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">브랜드샵</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">maker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">maker_dt</span><span class="GreaterThan">&gt;</span><span class="othertext">20090201</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">maker_dt</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">origin</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">한국</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">origin</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">image_type</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">URL</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">image_type</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">image_url</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">num</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">1</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">image</span><span class="unknownchar">.</span><span class="othertext">shoplinker</span><span class="unknownchar">.</span><span class="othertext">co</span><span class="unknownchar">.</span><span class="othertext">kr</span><span class="unknownchar">/</span><span class="othertext">images</span><span class="unknownchar">/</span><span class="othertext">banner</span><span class="unknownchar">/</span><span class="othertext">bn_admin_150210_3</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">image_url</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">market_price</span><span class="GreaterThan">&gt;</span><span class="othertext">34000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">market_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">sale_price</span><span class="GreaterThan">&gt;</span><span class="othertext">25000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sale_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">supply_price</span><span class="GreaterThan">&gt;</span><span class="othertext">23000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">supply_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">market_price_p</span><span class="GreaterThan">&gt;</span><span class="othertext">30000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">market_price_p</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">sale_price_p</span><span class="GreaterThan">&gt;</span><span class="othertext">22000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sale_price_p</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">supply_price_p</span><span class="GreaterThan">&gt;</span><span class="othertext">20000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">supply_price_p</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge_type</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">착불</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">delivery_charge_type</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">delivery_charge</span><span class="GreaterThan">&gt;</span><span class="othertext">2500</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">delivery_charge</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">tax_yn</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">tax_yn</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">detail_desc</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="LessThan">&lt;</span><span class="OpenTag">img</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">src</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">사이트주소</span><span class="unknownchar">/</span><span class="othertext">aa</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">detail_desc</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">new_desc_top</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="LessThan">&lt;</span><span class="OpenTag">img</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">src</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">사이트주소</span><span class="unknownchar">/</span><span class="othertext">aa</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">new_desc_top</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">new_desc_center</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="LessThan">&lt;</span><span class="OpenTag">img</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">src</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">사이트주소</span><span class="unknownchar">/</span><span class="othertext">aa</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">new_desc_center</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">new_desc_bottom</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="LessThan">&lt;</span><span class="OpenTag">img</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">src</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">사이트주소</span><span class="unknownchar">/</span><span class="othertext">aa</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">new_desc_bottom</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">desc_type_tag</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="LessThan">&lt;</span><span class="OpenTag">img</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">src</span><span class="unknownchar">=</span><span class="unknownchar">'</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">사이트주소</span><span class="unknownchar">/</span><span class="othertext">aa</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">'</span><span class="GreaterThan">&gt;</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">desc_type_tag</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">900</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">salearea</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">전국</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">salearea</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">partner_id_tmp</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_id_tmp</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">sex</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sex</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">keyword</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">걸리쉬</span><span class="unknownchar">,</span><span class="othertext">가디건</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">keyword</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">model</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">MO1552</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">model</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">model_no</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">s222</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">model_no</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">option_kind</span><span class="GreaterThan">&gt;</span><span class="othertext">002</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">option_kind</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">opt_info</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">색상</span><span class="unknownchar">/</span><span class="othertext">사이즈</span><span class="unknownchar">|</span><span class="unknownchar">|</span><span class="othertext">black</span><span class="unknownchar">/</span><span class="othertext">xl</span><span class="unknownchar">^</span><span class="unknownchar">^</span><span class="othertext">10</span><span class="LessThan">&lt;</span><span class="OpenTag">**</span><span class="GreaterThan">&gt;</span><span class="othertext">0</span><span class="unknownchar">,</span><span class="othertext">black</span><span class="unknownchar">/</span><span class="othertext">L</span><span class="unknownchar">^</span><span class="unknownchar">^</span><span class="othertext">20</span><span class="LessThan">&lt;</span><span class="OpenTag">**</span><span class="GreaterThan">&gt;</span><span class="othertext">1000</span><span class="unknownchar">,</span><span class="othertext">black</span><span class="unknownchar">/</span><span class="othertext">m</span><span class="unknownchar">^</span><span class="unknownchar">^</span><span class="othertext">30</span><span class="LessThan">&lt;</span><span class="OpenTag">**</span><span class="GreaterThan">&gt;</span><span class="othertext">500</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">opt_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">brand</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">Senti</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">brand</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">auth_no</span><span class="GreaterThan">&gt;</span><span class="othertext">2010546875</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">auth_no</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">expirydate</span><span class="GreaterThan">&gt;</span><span class="othertext">20090201</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">expirydate</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">goodsinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">lclass_id</span><span class="GreaterThan">&gt;</span><span class="othertext">i01</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">lclass_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="othertext">0101</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_info</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">제품소재</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="othertext">0102</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_info</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">색상</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="othertext">내용</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_seq</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">item_info</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">내용</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item_info</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				.
+				.
+				.
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					반복
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">goodsinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">certinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_item</span><span class="GreaterThan">&gt;</span><span class="othertext">C001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_organ</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">image</span><span class="unknownchar">.</span><span class="othertext">shoplinker</span><span class="unknownchar">.</span><span class="othertext">co</span><span class="unknownchar">.</span><span class="othertext">kr</span><span class="unknownchar">/</span><span class="othertext">images</span><span class="unknownchar">/</span><span class="othertext">banner</span><span class="unknownchar">/</span><span class="othertext">bn_admin_150210_3</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_organ</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_no</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">KN-05891</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_no</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_issuedate</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">20160909</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_issuedate</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_valid_from</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">20160909</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_valid_from</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_valid_until</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">20160909</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_valid_until</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_image_url</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">http</span><span class="unknownchar">:</span><span class="unknownchar">/</span><span class="unknownchar">/</span><span class="othertext">image</span><span class="unknownchar">.</span><span class="othertext">shoplinker</span><span class="unknownchar">.</span><span class="othertext">co</span><span class="unknownchar">.</span><span class="othertext">kr</span><span class="unknownchar">/</span><span class="othertext">images</span><span class="unknownchar">/</span><span class="othertext">banner</span><span class="unknownchar">/</span><span class="othertext">bn_admin_150210_3</span><span class="unknownchar">.</span><span class="othertext">jpg</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_image_url</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_item</span><span class="GreaterThan">&gt;</span><span class="othertext">C001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_item</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					</span><span class="LessThan">&lt;</span><span class="OpenTag">cert_no</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">KN-05891</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert_no</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				.
+				.
+				.
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+					반복
+				</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">cert</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">certinfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			<span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="OpenTag">unit_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">type</span><span class="GreaterThan">&gt;</span><span class="Text">default</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">type</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">totalCapacity</span><span class="GreaterThan">&gt;</span><span class="Text">1000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">totalCapacity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">unitCapacity</span><span class="GreaterThan">&gt;</span><span class="Text">10</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">unitCapacity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+				</span><span class="LessThan">&lt;</span><span class="OpenTag">indicationUnit</span><span class="GreaterThan">&gt;</span><span class="Text">g</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">indicationUnit</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+			</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">unit_price</span><span class="GreaterThan">&gt;</span>
+		</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">productInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">openMarket</span><span class="GreaterThan">&gt;</span></code>
+			</pre>
+		</div>
+
+<h3 class="section-title">Response</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">Parameter</th>
+<th class="txt_c" scope="col">Type</th>
+<th scope="col">Description</th>
+<th scope="col">Value range</th>
+<th scope="col">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> result</td>
+<td class="txt_c"><span class="ico ico-cdata">bool</span></td>
+<td>Result flag </td>
+<td>
+<span class="ico-select">Optional</span>
+<ol>
+<li> - Success : true</li>
+<li> - Failure : false</li>
+</ol>
+</td>
+<td>Code issued by Shoplinker<br>ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker product code</td>
+<td></td>
+<td>Shoplinker product code<br>ex) prod0001213 </td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> message</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Result message</td>
+<td></td>
+<td>Success or failure message</td>
+</tr>
+</tbody>
+</table>
+
+<div class="code-txt">
+<pre>
+<code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span><span class="othertext">true</span><span class="LessThan">&lt;/</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span><span class="othertext">P1524578</span><span class="LessThan">&lt;/</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span><span class="othertext">등록성공</span><span class="LessThan">&lt;/</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;/</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;/</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span></code>
+</pre>
+</div>
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            Shoplinker G&amp;C Co., Ltd. | CEO: Kim Young-sik | 5F, Gyeongrim Building, 7, Hwangsaeul-ro 359beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do | Customer service: 1544-4211 | FAX: 031-706-2180<br>
+            Business registration number: 120-87-41757 | Mail-order business registration number: 2020-Seongnam Bundang B-0792 | Personal information officer: Noh Hae-yong | E-MAIL: security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../../mirror.js?v=1e324fd01b7c"></script></body></html>

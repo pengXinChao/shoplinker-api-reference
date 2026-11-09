@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 中文参考</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="ProductLinkStock.html"><link rel="alternate" hreflang="en" href="../../../en/ShoplinkerApi/ver3/Product/ProductLinkStock.html"><link rel="alternate" hreflang="ko" href="../../../ko/ShoplinkerApi/ver3/Product/ProductLinkStock.html"><link rel="stylesheet" href="../../../mirror.css?v=f82648a712af"></head><body><nav class="language-switch" aria-label="页面语言"><a href="ProductLinkStock.html" lang="zh-CN" data-language="zh" hreflang="zh-CN" aria-current="page">中文</a><a href="../../../en/ShoplinkerApi/ver3/Product/ProductLinkStock.html" lang="en" data-language="en" hreflang="en">English</a><a href="../../../ko/ShoplinkerApi/ver3/Product/ProductLinkStock.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>跳转至主菜单</span></a>
+<a href="#content"><span>跳转至正文</span></a>
+</div>
+
+<input type="hidden" name="type_gubun" value="">
+<!-- //skip navigation -->
+
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../index.html?type_gubun=001"><span>首页</span></a>
+</li>
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="../_customer.html"> 					<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="#">					<span>沙箱</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../introduce.html?type_gubun=004"><span>API 介绍</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<!--//header-->
+
+	<!--content-->
+    <div id="content">
+<h2 class="cts-title">（旧版）商城商品部分同步</h2>
+<p class="mgt_30">用于按指定字段选择性修改已匹配 Shoplinker 的商城商品的 API。</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Product/MallSendStock.php?iteminfo_url=XML地址[URL编码]&amp;type=类型值
+
+<ul class="list mgt_15">
+<li><font color="red">type：001 - 按商城商品代码 -&gt; 逐条发送商城商品 - 1:1</font> </li>
+<li><font color="blue">type：002 - 按自有商城商品代码 -&gt; 批量发送商城商品 - 1:N</font> </li>
+<li><font color="blue">type : 003 - 按自有商城商品代码 -&gt; 商城商品批量发送 - 1:N -&gt; 修改 Shoplinker 原商品</font> </li>
+</ul>
+</div>
+
+<h3 class="section-title">请求参数</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">参数</th>
+<th class="txt_c" scope="col">类型</th>
+<th scope="col">说明</th>
+<th scope="col">取值范围</th>
+<th scope="col">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">必填</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>客户代码（Shoplinker 注册代码）</td>
+<td>
+</td>
+<td>Shoplinker 分配的代码<br> ex) a0000001</td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> mall_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商城商品代码</td>
+<td></td>
+<td>type 为 001 时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> mall_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker 商城代码</td>
+<td><input type="button" style="cursor:hand" value="Shoplinker 商城代码列表" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></td>
+<td>type 为 001 时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td> partner_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>客户商品代码（商品管理代码）</td>
+<td></td>
+<td>type 为 002 或 003 时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td> sale_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>销售状态 </td>
+<td>
+<span class="ico-select">选填</span>
+<ol>
+<li> - 销售中 : 001</li>
+<li> - 停售 : 003</li>
+<li> - 售罄 : 004</li>
+<li> - 删除 : 005</li>
+<li> - 销售结束 : 006</li>
+<li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> market_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>商城市价</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>商城售价</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td>supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>商城供货价</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> quantity</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>商品数量</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> stock_gubun</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>必选选项类型</td>
+<td>
+<span class="ico-select">选填</span>
+<ol>
+<li> - 按代码修改：001</li>
+<li> - 重置后修改 : 002</li>
+<li>
+</ol>
+</td>
+<td>
+            - 修改选项时<span class="ico ico-css">必填</span> 输入值。<br>
+            - 按代码修改时：仅更新数量和价格<br>
+            - 重置后：删除全部选项后应用
+</td>
+</tr>
+<tr>
+<td class="txt_c">11.</td>
+<td> add_stock_gubun</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项类型</td>
+<td>
+<span class="ico-select">选填</span>
+<ol>
+<li> - 按代码修改：001</li>
+<li> - 重置后修改 : 002</li>
+<li>
+</ol>
+</td>
+<td>
+            - 修改选项时<span class="ico ico-css">必填</span> 输入值。<br>
+            - 按代码修改时：仅更新数量和价格<br>
+            - 重置后：删除全部选项后应用
+</td>
+</tr>
+<tr>
+<td class="txt_c"></td>
+<td><span class="txt-red"> stock_row</span></td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>必选选项 row 重复标签</td>
+<td></td>
+<td>- 修改必选选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">12.</td>
+<td> stock_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项标题</td>
+<td></td>
+<td>
+                - 修改必选选项时<span class="ico ico-css">必填</span> 输入值。
+<br> 组合选项用 / 分隔。例如：颜色/尺码
+</td>
+</tr>
+<tr>
+<td class="txt_c">13.</td>
+<td> stock_value</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项值</td>
+<td></td>
+<td>
+                - 修改必选选项时<span class="ico ico-css">必填</span> 输入值。
+<br> 组合选项值用 / 分隔。例如：黑色/95
+</td>
+</tr>
+<tr>
+<td class="txt_c">14.</td>
+<td> stock_quantity</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>选项数量</td>
+<td></td>
+<td>- 修改必选选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">15.</td>
+<td> stock_sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>选项附加价格</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">16.</td>
+<td> stock_supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>选项供货价格</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">17.</td>
+<td> stock_keyword</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项关键词</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">18.</td>
+<td> stock_partner_code</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项管理代码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">19.</td>
+<td> stock_barcode</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项条码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">20.</td>
+<td> stock_supplier</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项采购客户</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">21.</td>
+<td> stock_supplier</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>选项安全库存</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c"></td>
+<td> <span class="txt-red">add_stock_row</span></td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项 row 重复标签</td>
+<td></td>
+<td>- 修改附加选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">22.</td>
+<td> add_stock_name</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项标题</td>
+<td></td>
+<td>- 修改附加选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">23.</td>
+<td> add_stock_value</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项值</td>
+<td></td>
+<td>- 修改附加选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">24.</td>
+<td> add_stock_quantity</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>附加选项数量</td>
+<td></td>
+<td>- 修改附加选项时 <span class="ico ico-css">必填</span> 输入值。</td>
+</tr>
+<tr>
+<td class="txt_c">25.</td>
+<td> add_stock_sale_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>附加选项附加价格</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">26.</td>
+<td> add_stock_supply_price</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>附加选项供货价</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">27.</td>
+<td> add_stock_keyword</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项关键词</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">28.</td>
+<td> add_stock_partner_code</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项管理代码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">29.</td>
+<td> add_stock_barcode</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项条形码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">30.</td>
+<td> add_stock_supplier</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>附加选项采购客户</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">31.</td>
+<td> add_stock_supplier</td>
+<td class="txt_c"><span class="ico ico-integer">integer</span></td>
+<td>附加选项安全库存</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">32.</td>
+<td>ImageLink</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>图片修改</td>
+<td>
+<span class="ico-select">选填</span>
+<ol>
+<li> - 不使用 : NULL </li>
+<li> - 使用 : Y </li>
+<li>
+</ol>
+</td>
+<td>将原商品图片发送至商城（仅支持 Auction、Gmarket、11st）</td>
+</tr>
+
+</tbody>
+</table>
+
+<h4 class="section-title2">XML 示例</h4>
+<div class="code-txt">
+<pre>
+<code><pre class="codeHTML"><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace"></span>
+<span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">ProductInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">StockInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="othertext">APISHOP_0003</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">a0001555</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">mall_product_id</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">abc123</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_product_id</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">partner_product_id</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">abc123456</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">partner_product_id</span><span class="GreaterThan">&gt;</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_status</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sale_status</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">market_price</span><span class="GreaterThan">&gt;</span><span class="othertext">12000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">market_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">sale_price</span><span class="GreaterThan">&gt;</span><span class="othertext">13000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sale_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">supply_price</span><span class="GreaterThan">&gt;</span><span class="othertext">11000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">supply_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">10</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_gubun</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_gubun</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_gubun</span><span class="GreaterThan">&gt;</span><span class="othertext">001</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_gubun</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_name</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">색상/사이즈</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_name</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_value</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">노랑/100</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_value</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">10</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1200</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_keyword</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">키워드</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_keyword</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_partner_code</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">abc123</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_partner_code</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_barcode</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">barcode123</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_barcode</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_supplier</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">p01234</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_supplier</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">stock_safety</span><span class="GreaterThan">&gt;</span><span class="othertext">12</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">stock_safety</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">/stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="othertext">내용</span>
+			<span class="othertext">.</span>
+			<span class="othertext">.</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">/stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_name</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">종류</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_name</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_value</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">마우스</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_value</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">10</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1200</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_sale_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="othertext">1000</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_supply_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_keyword</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">키워드</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_keyword</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_partner_code</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">abc123</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_partner_code</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_barcode</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">barcode123</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_barcode</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_supplier</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">!</span><span class="unknownchar">[</span><span class="othertext">CDATA</span><span class="unknownchar">[</span><span class="othertext">p01234</span><span class="unknownchar">]</span><span class="unknownchar">]</span><span class="GreaterThan">&gt;</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_supplier</span><span class="GreaterThan">&gt;</span>
+				<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_safety</span><span class="GreaterThan">&gt;</span><span class="othertext">12</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">add_stock_safety</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">/add_stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">add_stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+			<span class="othertext">내용</span>
+			<span class="othertext">.</span>
+			<span class="othertext">.</span>
+			<span class="othertext">.</span>
+			<span class="LessThan">&lt;</span><span class="OpenTag">/add_stock_row</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">/StockInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+	<span class="LessThan">&lt;</span><span class="OpenTag">ProductInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace"></span>
+<span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></pre></code>
+			</pre>
+		</div>
+
+<h3 class="section-title">响应</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">参数</th>
+<th class="txt_c" scope="col">类型</th>
+<th scope="col">说明</th>
+<th scope="col">取值范围</th>
+<th scope="col">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> result</td>
+<td class="txt_c"><span class="ico ico-cdata">bool</span></td>
+<td>结果标志 </td>
+<td>
+<span class="ico-select">选填</span>
+<ol>
+<li>- 成功 : true</li>
+<li> - 失败 : false</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商城商品代码</td>
+<td></td>
+<td> </td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> message</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>结果消息 </td>
+<td></td>
+<td>成功或失败的消息</td>
+</tr>
+</tbody>
+</table>
+
+<div class="code-txt">
+<pre>
+<span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>;
+	<span class="LessThan">&lt;</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span>true<span class="LessThan">&lt;/</span><span class="OpenTag">result</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>P012545<span class="LessThan">&lt;/</span><span class="OpenTag">product_id</span><span class="LessThan">&gt;</span>
+		<span class="LessThan">&lt;</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span>수정성공<span class="LessThan">&lt;/</span><span class="OpenTag">message</span><span class="LessThan">&gt;</span>
+	<span class="LessThan">&lt;/</span><span class="OpenTag">ResultMessage</span><span class="LessThan">&gt;</span>
+<span class="LessThan">&lt;/</span><span class="OpenTag">Shoplinker</span><span class="LessThan">&gt;</span>
+</pre>
+</div>
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            Shoplinker G&amp;C 股份有限公司 | 代表董事：金永植 | 京畿道城南市盆唐区黄鸟路359号街7，庆林大厦5层 | 客服：1544-4211 | FAX：031-706-2180<br>
+            营业登记号：120-87-41757 | 通信销售业备案号：第2020-城南盆唐B-0792号 | 个人信息管理负责人：卢海勇 | E-MAIL：security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top"><a href="#top">top</a></div>
+</div>
+
+
+</div><script src="../js/jquery-1.8.1.min.js"></script><script src="../js/jquery.color-2.1.2.min.js"></script><script src="../js/common.js"></script><script src="../../../mirror.js?v=1e324fd01b7c"></script></body></html>
