@@ -1,6 +1,8 @@
 /* 本地页面只恢复阅读交互；真实测试和账号操作由官网完成，避免把参考快照当作业务客户端。 */
 (() => {
   const language = document.documentElement.lang.startsWith('zh') ? 'zh' : document.documentElement.lang;
+  // Sites 会将 .html 地址重定向为无扩展名地址，统一存储键才能在线上恢复阅读位置。
+  const scrollKey = pathname => 'shoplinker-scroll:' + pathname.replace(/\.html$/, '');
   // 存储可能被浏览器禁用，语言切换和站内链接仍应正常工作。
   document.querySelectorAll('[data-language]').forEach(link => {
     const target = new URL(link.href);
@@ -9,12 +11,12 @@
     link.addEventListener('click', () => {
       try {
         localStorage.setItem('shoplinker-language', link.dataset.language);
-        sessionStorage.setItem('shoplinker-scroll:' + target.pathname, String(window.scrollY));
+        sessionStorage.setItem(scrollKey(target.pathname), String(window.scrollY));
       } catch (e) { /* 浏览器禁用存储时使用链接中的语言路径。 */ }
     });
   });
   try {
-    const key = 'shoplinker-scroll:' + location.pathname;
+    const key = scrollKey(location.pathname);
     const scroll = sessionStorage.getItem(key);
     if (scroll !== null) {
       sessionStorage.removeItem(key);
