@@ -32,6 +32,14 @@ class MirrorTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.pages), 46)
         self.assertEqual(len(self.ua_pages), 18)
 
+    def test_homepages_redirect_directly_to_ua_document(self):
+        home = (SITE / 'index.html').read_text()
+        self.assertIn('ua/ShoplinkerApi/ver3/Product/Attribute_Info.html?spec_135=ov&guTwo=t', home)
+        self.assertNotIn('<a href=', home)
+        ua_home = (SITE / 'ua/index.html').read_text()
+        self.assertIn('ShoplinkerApi/ver3/Product/Attribute_Info.html', ua_home)
+        self.assertNotIn('<a href=', ua_home)
+
     def test_http_and_https_document_links_share_local_target(self):
         source = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html'
         for scheme in ('http', 'https'):

@@ -267,7 +267,9 @@ def main():
         # 首页记住语言偏好；禁用 JavaScript 时仍可通过链接进入相应语言。
         script = ("let language='zh';try{language=localStorage.getItem('shoplinker-language')||'zh'}catch(e){};"
                   "location.replace((['en','ko'].includes(language)?language+'/':'')+" + json.dumps(entry) + ");") if language == 'zh' else 'location.replace(' + json.dumps(entry) + ');'
-        index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + title + '</title></head><body><a href="' + entry + '">' + title + '</a><script>' + script + '</script></body></html>')
+        index_target = ('ua/' if language == 'zh' else '../ua/' + language + '/') + entry
+        index_script = "location.replace(" + json.dumps(index_target) + ");"
+        index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url=' + index_target + '"><title>' + title + '</title></head><body><script>' + index_script + '</script></body></html>')
         ua_routes = dict(routes)
         for page in ua_pages:
             ua_routes[page['url'].split('?')[0]] = localized_path(page['url'], language, 'ua/')
@@ -275,11 +277,12 @@ def main():
             target = SITE / localized_path(page['url'], language, 'ua/')
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(render_page(page, dictionary, ua_routes, language, 'ua/'), encoding='utf-8')
-        ua_entry = output_path(ua_pages[0]['url'])
+        ua_page = next(p for p in ua_pages if '/Product/Attribute_Info.html?' in p['url'])
+        ua_entry = output_path(ua_page['url']) + '?' + urlsplit(ua_page['url']).query
         ua_index = SITE / 'ua' / (language + '/' if language != 'zh' else '') / 'index.html'
         ua_index.parent.mkdir(parents=True, exist_ok=True)
         ua_title = {'zh': 'Shoplinker Under Armour 中文参考', 'en': 'Shoplinker Under Armour API Reference', 'ko': 'Shoplinker Under Armour API 참고 문서'}[language]
-        ua_index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + ua_title + '</title></head><body><a href="' + ua_entry + '">' + ua_title + '</a></body></html>')
+        ua_index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url=' + ua_entry + '"><title>' + ua_title + '</title></head><body><script>location.replace(' + json.dumps(ua_entry) + ');</script></body></html>')
     (ROOT / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     print('已生成普通版与 Under Armour 三语页面：', len(report), '；普通版每种语言：', len(pages), '；UA 每种语言：', len(ua_pages))
 
