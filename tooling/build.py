@@ -138,8 +138,8 @@ def render_page(page, dictionary, routes, language='zh', prefix=''):
     body.insert(0, switch)
     version_switch = etree.Element('nav', attrib={'class': 'version-switch', 'aria-label': {
         'zh': '文档版本', 'en': 'Document version', 'ko': '문서 버전'}[language]})
-    versions = [('普通版', '', {'zh': '普通版', 'en': 'General', 'ko': '일반판'}[language]),
-                ('Under Armour', 'ua/', {'zh': 'Under Armour', 'en': 'Under Armour', 'ko': 'Under Armour'}[language])]
+    versions = [('Under Armour', 'ua/', {'zh': 'Under Armour', 'en': 'Under Armour', 'ko': 'Under Armour'}[language]),
+                ('普通版', '', {'zh': '普通版', 'en': 'General', 'ko': '일반판'}[language])]
     for _, target_prefix, label in versions:
         target = posixpath.relpath(localized_path(page['url'], language, target_prefix), posixpath.dirname(destination) or '.')
         link = etree.SubElement(version_switch, 'a', href=target,
@@ -147,7 +147,11 @@ def render_page(page, dictionary, routes, language='zh', prefix=''):
         link.text = label
         if target_prefix == prefix:
             link.set('aria-current', 'page')
-    body.insert(1, version_switch)
+    menu_title = tree.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " menu-title ")]')
+    if menu_title:
+        menu_title[0].addprevious(version_switch)
+    else:
+        body.insert(1, version_switch)
     if not is_public:
         for name in ('jquery-1.8.1.min.js', 'jquery.color-2.1.2.min.js', 'common.js'):
             etree.SubElement(body, 'script', src=local_url('/ShoplinkerApi/ver3/js/' + name, page['url'], destination, routes, True))

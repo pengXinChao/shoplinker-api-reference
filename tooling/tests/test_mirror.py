@@ -40,6 +40,16 @@ class MirrorTests(unittest.TestCase):
         self.assertIn('ShoplinkerApi/ver3/Product/Attribute_Info.html', ua_home)
         self.assertNotIn('<a href=', ua_home)
 
+    def test_version_switch_sits_above_sidebar_menu_and_puts_ua_first(self):
+        page = self.ua_pages[0]
+        tree = html.fromstring((SITE / localized_path(page['url'], 'zh', 'ua/')).read_text())
+        version = tree.xpath('//nav[@class="version-switch"]')[0]
+        menu_title = tree.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " menu-title ")]')[0]
+        self.assertEqual(version.getparent(), menu_title.getparent())
+        self.assertLess(version.getroottree().getpath(version), version.getroottree().getpath(menu_title))
+        self.assertEqual(version.xpath('./a/@data-version'), ['ua/', 'general'])
+        self.assertEqual(version.xpath('./a[@aria-current]/@data-version'), ['ua/'])
+
     def test_http_and_https_document_links_share_local_target(self):
         source = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html'
         for scheme in ('http', 'https'):
