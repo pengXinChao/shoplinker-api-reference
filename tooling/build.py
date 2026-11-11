@@ -53,10 +53,10 @@ def translate_text(value, dictionary):
     return leading + dictionary[key] + trailing
 
 
-def render_page(page, dictionary, routes, language='zh'):
+def render_page(page, dictionary, routes, language='zh', prefix=''):
     """按指定语言生成参考页；路由保留语言，业务提交仍交由官方网站处理。"""
     tree = html.fromstring(page['html'])
-    destination = localized_path(page['url'], language)
+    destination = localized_path(page['url'], language, prefix)
     is_public = '/service/api' in page['url']
     tree.set('lang', 'zh-CN' if language == 'zh' else language)
     for e in list(tree.iter()):
@@ -128,7 +128,7 @@ def render_page(page, dictionary, routes, language='zh'):
     switch = etree.Element('nav', attrib={'class': 'language-switch', 'aria-label': {
         'zh': '页面语言', 'en': 'Page language', 'ko': '페이지 언어'}[language]})
     for code, label in [('zh', '中文'), ('en', 'English'), ('ko', '한국어')]:
-        target = posixpath.relpath(localized_path(page['url'], code), posixpath.dirname(destination) or '.')
+        target = posixpath.relpath(localized_path(page['url'], code, prefix), posixpath.dirname(destination) or '.')
         link = etree.SubElement(switch, 'a', href=target, lang='zh-CN' if code == 'zh' else code,
                                 attrib={'data-language': code, 'hreflang': 'zh-CN' if code == 'zh' else code})
         link.text = label
@@ -136,6 +136,18 @@ def render_page(page, dictionary, routes, language='zh'):
             link.set('aria-current', 'page')
         etree.SubElement(head, 'link', rel='alternate', hreflang='zh-CN' if code == 'zh' else code, href=target)
     body.insert(0, switch)
+    version_switch = etree.Element('nav', attrib={'class': 'version-switch', 'aria-label': {
+        'zh': '文档版本', 'en': 'Document version', 'ko': '문서 버전'}[language]})
+    versions = [('普通版', '', {'zh': '普通版', 'en': 'General', 'ko': '일반판'}[language]),
+                ('Under Armour', 'ua/', {'zh': 'Under Armour', 'en': 'Under Armour', 'ko': 'Under Armour'}[language])]
+    for _, target_prefix, label in versions:
+        target = posixpath.relpath(localized_path(page['url'], language, target_prefix), posixpath.dirname(destination) or '.')
+        link = etree.SubElement(version_switch, 'a', href=target,
+                                attrib={'data-version': target_prefix or 'general'})
+        link.text = label
+        if target_prefix == prefix:
+            link.set('aria-current', 'page')
+    body.insert(1, version_switch)
     if not is_public:
         for name in ('jquery-1.8.1.min.js', 'jquery.color-2.1.2.min.js', 'common.js'):
             etree.SubElement(body, 'script', src=local_url('/ShoplinkerApi/ver3/js/' + name, page['url'], destination, routes, True))
@@ -229,14 +241,15 @@ def render_page(page, dictionary, routes, language='zh'):
     return '<!DOCTYPE html>\n' + html.tostring(tree, encoding='unicode')
 
 
-def localized_path(url, language):
+def localized_path(url, language, prefix=''):
     """保留既有中文 URL，英文与韩文使用独立前缀，确保旧链接继续有效。"""
-    return (language + '/' if language != 'zh' else '') + output_path(url)
+    return prefix + (language + '/' if language != 'zh' else '') + output_path(url)
 
 
 def main():
     """离线构建三语页面并校验缺译，不访问真实业务 API。"""
     pages = [json.loads(p.read_text()) for p in sorted((ROOT / 'source').glob('*.json'))]
+    ua_pages = [json.loads(p.read_text()) for p in sorted((ROOT / 'source-ua').glob('*.json'))]
     report = []
     for language in ['zh', 'en', 'ko']:
         dictionary = json.loads((ROOT / ('translations.' + language + '.json')).read_text()) if language != 'ko' else {}
@@ -255,8 +268,20 @@ def main():
         script = ("let language='zh';try{language=localStorage.getItem('shoplinker-language')||'zh'}catch(e){};"
                   "location.replace((['en','ko'].includes(language)?language+'/':'')+" + json.dumps(entry) + ");") if language == 'zh' else 'location.replace(' + json.dumps(entry) + ');'
         index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + title + '</title></head><body><a href="' + entry + '">' + title + '</a><script>' + script + '</script></body></html>')
+        ua_routes = dict(routes)
+        for page in ua_pages:
+            ua_routes[page['url'].split('?')[0]] = localized_path(page['url'], language, 'ua/')
+        for page in ua_pages:
+            target = SITE / localized_path(page['url'], language, 'ua/')
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(render_page(page, dictionary, ua_routes, language, 'ua/'), encoding='utf-8')
+        ua_entry = output_path(ua_pages[0]['url'])
+        ua_index = SITE / 'ua' / (language + '/' if language != 'zh' else '') / 'index.html'
+        ua_index.parent.mkdir(parents=True, exist_ok=True)
+        ua_title = {'zh': 'Shoplinker Under Armour 中文参考', 'en': 'Shoplinker Under Armour API Reference', 'ko': 'Shoplinker Under Armour API 참고 문서'}[language]
+        ua_index.write_text('<!doctype html><html lang="' + ('zh-CN' if language == 'zh' else language) + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + ua_title + '</title></head><body><a href="' + ua_entry + '">' + ua_title + '</a></body></html>')
     (ROOT / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-    print('已生成三语页面：', len(report), '；每种语言：', len(pages))
+    print('已生成普通版与 Under Armour 三语页面：', len(report), '；普通版每种语言：', len(pages), '；UA 每种语言：', len(ua_pages))
 
 
 if __name__ == '__main__':

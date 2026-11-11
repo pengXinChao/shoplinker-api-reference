@@ -24,11 +24,13 @@ class MirrorTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.pages = [json.loads(p.read_text()) for p in (ROOT / 'source').glob('*.json')]
+        cls.ua_pages = [json.loads(p.read_text()) for p in (ROOT / 'source-ua').glob('*.json')]
         cls.dictionary = json.loads((ROOT / 'translations.zh.json').read_text())
         cls.routes = {p['url'].split('?')[0]: output_path(p['url']) for p in cls.pages}
 
     def test_source_count(self):
         self.assertGreaterEqual(len(self.pages), 46)
+        self.assertEqual(len(self.ua_pages), 18)
 
     def test_http_and_https_document_links_share_local_target(self):
         source = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html'
@@ -138,6 +140,29 @@ class MirrorTests(unittest.TestCase):
                     continue
                 for value in [e.text, e.tail, e.get('title'), e.get('alt'), e.get('placeholder')]:
                     self.assertFalse(value and re.search('[가-힣\u4e00-\u9fff]', value), (page['url'], value))
+
+    def test_under_armour_version_preserves_historical_menu_and_contracts(self):
+        expected_paths = {p['url'].split('?')[0] for p in self.ua_pages}
+        self.assertEqual(len(expected_paths), 18)
+        for page in self.ua_pages:
+            source = html.fromstring(page['html'])
+            target = SITE / localized_path(page['url'], 'zh', 'ua/')
+            self.assertTrue(target.is_file(), page['url'])
+            translated = html.fromstring(target.read_text())
+            self.assertEqual([len(t.xpath('.//tr')) for t in source.xpath('//*[@id="content"]//table')],
+                             [len(t.xpath('.//tr')) for t in translated.xpath('//*[@id="content"]//table')])
+            self.assertEqual([p.text_content() for p in source.xpath('//*[@id="content"]//pre')],
+                             [p.text_content() for p in translated.xpath('//*[@id="content"]//pre')])
+            self.assertTrue(translated.xpath('//nav[@class="version-switch"]/a[@data-version="ua/"][@aria-current]'))
+            self.assertTrue(translated.xpath('//nav[@class="language-switch"]//a[@data-language="en"]'))
+
+    def test_under_armour_language_variants_exist(self):
+        for language in ['zh', 'en', 'ko']:
+            for page in self.ua_pages:
+                target = SITE / localized_path(page['url'], language, 'ua/')
+                self.assertTrue(target.is_file(), (language, page['url']))
+                tree = html.fromstring(target.read_text())
+                self.assertEqual(tree.xpath('//nav[@class="language-switch"]/a[@aria-current]/@data-language'), [language])
 
 
 if __name__ == '__main__':

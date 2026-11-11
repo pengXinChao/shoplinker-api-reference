@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-title" content="Shoplinker">
+<meta name="keywords" content="쇼핑몰, 호스팅, 컬러샵, 샵링커, 연동솔루션">
+<meta name="description" content="대한민국 최고의 쇼핑몰 솔루션은 오직 샵링커뿐입니다!">
+<title>Shoplinker API - 中文参考</title>
+<link rel="shortcut icon" href="https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/images/ico/favicon.ico">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/reset.css">
+<link rel="stylesheet" href="../../../../ShoplinkerApi/ver3/css/content.css">
+
+
+
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternate" hreflang="zh-CN" href="ClameList.html"><link rel="alternate" hreflang="en" href="../../../en/ShoplinkerApi/ver3/Clame/ClameList.html"><link rel="alternate" hreflang="ko" href="../../../ko/ShoplinkerApi/ver3/Clame/ClameList.html"><link rel="stylesheet" href="../../../../mirror.css?v=571f3a281b94"></head>
+<body><nav class="language-switch" aria-label="页面语言"><a href="ClameList.html" lang="zh-CN" data-language="zh" hreflang="zh-CN" aria-current="page">中文</a><a href="../../../en/ShoplinkerApi/ver3/Clame/ClameList.html" lang="en" data-language="en" hreflang="en">English</a><a href="../../../ko/ShoplinkerApi/ver3/Clame/ClameList.html" lang="ko" data-language="ko" hreflang="ko">한국어</a></nav><nav class="version-switch" aria-label="文档版本"><a href="../../../../ShoplinkerApi/ver3/Clame/ClameList.html" data-version="general">普通版</a><a href="ClameList.html" data-version="ua/" aria-current="page">Under Armour</a></nav><!-- skip navigation -->
+
+<div id="skip">
+<a href="#gnb"><span>跳转至主菜单</span></a>
+<a href="#content"><span>跳转至正文</span></a>
+</div>
+
+<input type="hidden" name="type_gubun">
+<!-- //skip navigation -->
+
+<input type="hidden" name="guTwo">
+
+
+<div class="wrap">
+
+<div class="header">
+<h1 class="logo">SH<span>O</span>P<br>LINKER<br>-API</h1>
+<div class="gnb">
+<ul id="gnb">
+<li>
+<span class="ico-home"></span>
+<a href="../../../../ShoplinkerApi/ver3/index.html?type_gubun=001"><span>首页</span></a>
+</li>
+<li class="ov">
+<span class="ico-dev"></span>
+<a href="../Product/Attribute_Info.html?spec_135=ov&amp;guTwo=t">
+<span>API</span></a>
+</li>
+
+<li>
+<span class="ico-dev"></span>
+<a href="../../../../ShoplinkerApi/ver3/Product/SkuInfo.html?spec_001=ov&amp;type_gubun=006">
+<span>ERP</span></a>
+</li>
+<li>
+<span class="ico-sandbox"></span>
+<a href="../../../../ShoplinkerApi/ver3/xml.html?type_gubun=003">
+<span>沙箱</span></a>
+</li>
+
+<li>
+<span class="ico-service"></span>
+<a href="../../../../ShoplinkerApi/ver3/introduce.html?type_gubun=004"><span>API 介绍</span></a>
+</li>
+</ul>
+<div class="bn-logout">
+<span class="ico-logout"></span>
+<a href="#" data-local-action="official-login">logout_</a>
+</div>
+</div>
+<div class="submenu-wrap">
+<div class="submenu">
+<ul class="menu-title">
+<li><a href="../../../../ShoplinkerApi/ver3/_customer.html">API 总览</a></li>
+<li class="ov">
+<a href="../../../../ShoplinkerApi/ver3/Product/ProductInfo.html?spec_001=ov&amp;guTwo=t">
+                            开发手册</a>
+</li>
+
+</ul>
+<ol class="menu">
+
+
+
+
+
+<li>一. SKU 管理（安德玛）        <ul>
+
+<li class=""><a href="../Product/Attribute_Info.html?spec_135=ov&amp;guTwo=t">  1. Shoplinker SKU 新增</a></li>
+<li class=""><a href="../Product/Attribute_Product.html?spec_136=ov&amp;guTwo=t">  2. Shoplinker 商品新增</a></li>
+<li class=""><a href="../Product/Attribute_Modify.html?spec_137=ov&amp;guTwo=t">  3. Shoplinker SKU/商品修改</a></li>
+<li class=""><a href="../Product/ProductImageUpdate.html?spec_034=ov&amp;guTwo=t">  4. Shoplinker 图片新增/修改</a></li>
+<li class=""><a href="../Product/GoodsInfo.html?spec_004=ov&amp;guTwo=t">  5. Shoplinker 商品公示信息新增/修改</a></li>
+
+<li class=""><a href="../Product/ProductList.html?spec_002=ov&amp;guTwo=t">  6. Shoplinker 商品查询</a></li>
+
+<li class=""><a href="../Product/Attribute_qty_ref_v7.html?spec_5=ov&amp;guTwo=t">  7. Shoplinker 库存修改</a></li>
+<li class=""><a href="../Product/Attribute_price_ref_v7.html?spec_14=ov&amp;guTwo=t">  8. 商城价格同步</a></li>
+<li class=""><a href="../Product/BasicList.html?spec_020=ov&amp;guTwo=t">  9. 基础信息查询</a></li>
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+<li>二. 订单管理
+<ul>
+<li class=""><a href="../Order/OrderInfo.html?spec_009=ov&amp;guTwo=t">  1. 订单采集</a></li>
+<li class=""><a href="../Order/OrderList.html?spec_037=ov&amp;guTwo=t">  2. 订单详情查询</a></li>
+<li class=""><a href="../Order/ShoplinkerDelivery.html?spec_010=ov&amp;guTwo=t">  3. Shoplinker 运单登记</a></li>
+<li class=""><a href="../Order/DeliveryLinker.html?spec_011=ov&amp;guTwo=t">  4. 商城运单发送</a></li>
+<li class=""><a href="../Order/OrderInsert.html?spec_028=ov&amp;guTwo=t">  5. 订单手动新增</a></li>
+<li class=""><a href="../Order/OrderModify.html?spec_035=ov&amp;guTwo=t">  6. 订单修改</a></li>
+</ul>
+</li>
+<li>五. 售后/CS 管理
+<ul>
+<li class="ov"><a href="ClameList.html?spec_012=ov&amp;guTwo=t">  1. 售后申请采集</a></li>
+<li class=""><a href="CSList.html?spec_013=ov&amp;guTwo=t">  2. CS 采集</a></li>
+<li class=""><a href="../CsInfo/csAction.html?spec_022=ov&amp;guTwo=t">  3. CS 处理</a></li>
+</ul>
+</li></ol>
+</div>
+</div>
+
+</div>
+
+<!--//header-->
+
+	<!--content-->
+    <div id="content">
+<h2 class="cts-title">售后申请采集</h2>
+<p class="mgt_30">用于采集售后申请的 API。</p>
+<div class="basic-box">
+<span class="ico ico-get">get</span> https://apiweb.shoplinker.co.kr/ShoplinkerApi/Clame/Clame_Xml.php?iteminfo_url=XML地址[URL编码]
+</div>
+
+<h3 class="section-title">请求参数</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">参数</th>
+<th class="txt_c" scope="col">类型</th>
+<th scope="col">说明</th>
+<th scope="col">取值范围</th>
+<th scope="col">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td><span class="ico ico-css">必填</span> customer_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>客户代码</td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td><span class="ico ico-css">必填</span> shoplinker_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker 账号</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td><span class="ico ico-css">必填</span> st_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请开始日期</td>
+<td>yyyymmdd</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td><span class="ico ico-css">必填</span> ed_date</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请结束日期</td>
+<td>yyyymmdd</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td>sdt_time</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>查询开始时间</td>
+<td>hhiiss</td>
+<td>查询开始时间</td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> edt_time</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>查询结束时间</td>
+<td>hhiiss</td>
+<td>查询结束时间</td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td>claim_type</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请类型</td>
+<td>
+<span class="ico-select">可选值</span>
+<ol>
+<li>- 全部 : null</li>
+<li>- 自动 : 001</li>
+<li>- 手动 : 002</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> order_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商城订单号</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td class="txt_c">9.</td>
+<td> id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker 订单号</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td>delivery_claim_status</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请状态</td>
+<td>
+<span class="ico-select">可选值</span>
+<ol>
+<li>- 取消申请 : 011</li>
+<li>- 退货申请 : 006</li>
+<li>- 换货申请 : 004</li>
+</ol>
+</td>
+<td>为 NULL 时显示全部售后申请订单</td>
+</tr>
+
+</tbody>
+</table>
+
+<h4 class="section-title2">XML 示例</h4>
+<div class="code-txt">
+<pre><code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">euc-kr</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">Shoplinker</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">ClameInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="othertext">고객사코드</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">customer_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">shoplinker_id</span><span class="GreaterThan">&gt;</span><span class="othertext">42917246</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">shoplinker_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">st_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110709</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">st_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="othertext">20110711</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ed_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ClameInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Shoplinker</span><span class="GreaterThan">&gt;</span></code>
+			</pre>
+		</div>
+
+<h3 class="section-title">响应</h3>
+<table class="board-col2">
+<colgroup>
+<col width="5%">
+<col width="18%">
+<col width="10%">
+<col width="15%">
+<col width="25%">
+<col width="*">
+</colgroup>
+<thead>
+<tr>
+<th class="txt_c" scope="col">No.</th>
+<th scope="col">参数</th>
+<th class="txt_c" scope="col">类型</th>
+<th scope="col">说明</th>
+<th scope="col">取值范围</th>
+<th scope="col">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="txt_c">1.</td>
+<td> shoplinker_order_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker 订单号 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">2.</td>
+<td> mall_order_id  </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商城订单号 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">3.</td>
+<td> mall_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商城名称  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">4.</td>
+<td> order_product_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> 订单商品编号</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">5.</td>
+<td> shoplinker_product_id </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>Shoplinker 商品代码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">6.</td>
+<td> product_name </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>商品名称 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">7.</td>
+<td> quantity </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>订单总数量  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">8.</td>
+<td> order_price </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>订单总金额</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">9.</td>
+<td> sku </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>选项名称  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">10.</td>
+<td> clame_status </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请状态  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">11.</td>
+<td> clame_type </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请种类</td>
+<td>
+<span class="ico-select">可选值</span>
+<ol>
+<li>- 取消相关 : 001</li>
+<li>- 换货相关 : 002</li>
+<li>- 退货相关 : 003</li>
+<li>- 其他 : 004</li>
+</ol>
+</td><td></td>
+</tr>
+<tr>
+<td class="txt_c">12.</td>
+<td> clame_memo </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请备注  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">13.</td>
+<td>   clame_date   </td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>售后申请日期  </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">14.</td>
+<td>mall_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> Shoplinker 商城代码</td>
+<td>APISHOP_0003</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">15.</td>
+<td>claim_type</td>
+<td class="txt_c"></td>
+<td> 售后申请类型</td>
+<td>
+<span class="ico-select">可选值</span>
+<ol>
+<li>- 全部 : null</li>
+<li>- 自动 : 001</li>
+<li>- 手动 : 002</li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">16.</td>
+<td>delivery_invoice</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td> 运单号</td>
+<td></td>
+<td></td>
+</tr>
+
+
+<!-- 2018-10-30 추가 -->
+		<tr>
+<td class="txt_c">17.</td>
+<td>partner_product_id</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>自有商品代码</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="txt_c">18.</td>
+<td>order_seq</td>
+<td class="txt_c"><span class="ico ico-sample">string</span></td>
+<td>合并订单号</td>
+<td></td>
+<td></td>
+</tr>
+<!-- 2018-10-30 추가 -->
+        		<!-- 2019-05-29 추가 -->
+				<!-- 2019-05-29 추가 -->
+        </tbody>
+</table>
+
+<div class="code-txt">
+<pre><code><span class="LessThan">&lt;?</span><span class="OpenTag">xml</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">version</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">1.0</span><span class="unknownchar">"</span><span class="XMLwhitespace"> </span><span class="XMLAttribute">encoding</span><span class="unknownchar">=</span><span class="unknownchar">"</span><span class="XMLString">EUC-KR</span><span class="unknownchar">"</span><span class="GreaterThan">?&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="OpenTag">ClameInfo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="OpenTag">Clame</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">shoplinker_order_id</span><span class="GreaterThan">&gt;</span><span class="othertext">샵링커</span><span class="XMLwhitespace"> </span><span class="othertext">주문번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">shoplinker_order_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">mall_order_id</span><span class="GreaterThan">&gt;</span><span class="othertext">쇼핑몰</span><span class="XMLwhitespace"> </span><span class="othertext">주문번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_order_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">mall_name</span><span class="GreaterThan">&gt;</span><span class="othertext">쇼핑몰명</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">mall_name</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">order_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">쇼핑몰</span><span class="XMLwhitespace"> </span><span class="othertext">상품번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">order_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">shoplinker_product_id</span><span class="GreaterThan">&gt;</span><span class="othertext">샵링커</span><span class="XMLwhitespace"> </span><span class="othertext">상품번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">shoplinker_product_id</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">product_name</span><span class="GreaterThan">&gt;</span><span class="othertext">상품명</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">product_name</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">quantity</span><span class="GreaterThan">&gt;</span><span class="othertext">총주문수량</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">quantity</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">order_price</span><span class="GreaterThan">&gt;</span><span class="othertext">총주문금액</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">order_price</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">sku</span><span class="GreaterThan">&gt;</span><span class="othertext">옵션명</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">sku</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">clame_status</span><span class="GreaterThan">&gt;</span><span class="othertext">클레임</span><span class="XMLwhitespace"> </span><span class="othertext">상태</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">clame_status</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">clame_memo</span><span class="GreaterThan">&gt;</span><span class="othertext">클레임</span><span class="XMLwhitespace"> </span><span class="othertext">메모</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">clame_memo</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">clame_date</span><span class="GreaterThan">&gt;</span><span class="othertext">클레임</span><span class="XMLwhitespace"> </span><span class="othertext">날짜</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">clame_date</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+		</span><span class="LessThan">&lt;</span><span class="OpenTag">delivery_invoice</span><span class="GreaterThan">&gt;</span><span class="othertext">송장</span><span class="XMLwhitespace"> </span><span class="othertext">번호</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">delivery_invoice</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+	</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">Clame</span><span class="GreaterThan">&gt;</span><span class="XMLwhitespace">
+</span><span class="LessThan">&lt;</span><span class="unknownchar">/</span><span class="EndTag">ClameInfo</span><span class="GreaterThan">&gt;</span></code>
+			</pre>
+		</div>
+
+</div>
+<!--//content-->
+
+	<!--endview-->
+	    <div class="footer">
+<p class="foot-txt">
+            Shoplinker G&amp;C 股份有限公司 | 代表董事：金永植 | 京畿道城南市盆唐区黄鸟路359号街7，庆林大厦5层 | 客服：1544-4211 | FAX：031-706-2180<br>
+            营业登记号：120-87-41757 | 通信销售业备案号：第2020-城南盆唐B-0792号 | 个人信息管理负责人：卢海勇 | E-MAIL：security@shoplinkergnc.com
+</p>
+<p class="foot-copy">Copyright© 2024. ShopLinker G&amp;C., LTD. All Rrights Reseved.</p>
+</div>	<div class="bn-top" style="display: none;"><a href="#top">top</a></div>
+</div>
+
+
+<script src="../../../../ShoplinkerApi/ver3/js/jquery-1.8.1.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/jquery.color-2.1.2.min.js"></script><script src="../../../../ShoplinkerApi/ver3/js/common.js"></script><script src="../../../../mirror.js?v=117802554812"></script></body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
