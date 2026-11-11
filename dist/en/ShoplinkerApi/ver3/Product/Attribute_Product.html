@@ -146,7 +146,7 @@
 								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. Query Basic Information</a></li>
 <li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. Query Product Disclosures</a></li>
 <li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. Query Announcements</a></li>
-<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Purchasing Partners</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Suppliers</a></li>
 </ul>
 </li>
 </ol>
@@ -263,7 +263,7 @@
 <td class="txt_c">10.</td>
 <td> market_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner market price (book list price)</td>
+<td>Supplier market price (book list price)</td>
 <td></td>
 <td></td>
 </tr>
@@ -271,7 +271,7 @@
 <td class="txt_c">11.</td>
 <td> sale_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner selling price</td>
+<td>Supplier selling price</td>
 <td></td>
 <td></td>
 </tr>
@@ -279,7 +279,7 @@
 <td class="txt_c">12.</td>
 <td> supply_price_p </td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner supply price</td>
+<td>Supplier supply price</td>
 <td></td>
 <td></td>
 </tr>
@@ -289,7 +289,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Product sale status</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - On sale : 001</li>
 <li> - Sales suspended : 003</li>
@@ -312,7 +312,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Taxable</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- Taxable : 001</li>
 <li>- Tax-exempt : 002</li>
@@ -358,7 +358,7 @@
 <td class="txt_c">23.</td>
 <td>partner_id_tmp </td>
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
-<td>Supplier (purchasing partner) ID</td>
+<td>Supplier ID</td>
 <td></td>
 <td>The supplier ID can only be set when adding a product and cannot be updated.<br>Changing the supplier ID may create duplicate products. Use caution.</td>
 </tr>
@@ -368,7 +368,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Product gender</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- Unisex : 001</li>
 <li>- Men's : 002</li>
@@ -496,7 +496,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Adult product</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - Adult product : Y </li>
 <li> - Not an adult product : N</li>
@@ -571,7 +571,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Unit price input method</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- Default input : default</li>
 <li>- Manual input : manual</li>
@@ -704,7 +704,7 @@
 <td class="txt_c"><span class="ico ico-cdata">bool</span></td>
 <td>Result flag </td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - Success : true</li>
 <li> - Failure : false</li>

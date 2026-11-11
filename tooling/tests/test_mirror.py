@@ -82,6 +82,18 @@ class MirrorTests(unittest.TestCase):
                 for value in [e.text, e.tail, e.get('title'), e.get('alt'), e.get('placeholder')]:
                     self.assertFalse(value and re.search('[가-힣]', value), (page['url'], value))
 
+    def test_enum_choices_do_not_change_required_semantics(self):
+        # 枚举“选择”不表示字段可省略，必填性只能来自字段徽标及条件备注。
+        for language, forbidden in [('zh', '选填'), ('en', 'Optional')]:
+            for page in self.pages:
+                tree = html.fromstring((SITE / localized_path(page['url'], language)).read_text())
+                for row in tree.xpath('//*[@id="content"]//table//tr'):
+                    cells = row.xpath('./td')
+                    if len(cells) != 6:
+                        continue
+                    with self.subTest(language=language, url=page['url'], field=cells[1].text_content()):
+                        self.assertNotIn(forbidden, cells[4].text_content())
+
     def test_internal_navigation_localized(self):
         known_paths = {urlsplit(url).path for url in self.routes}
         for page in self.pages:

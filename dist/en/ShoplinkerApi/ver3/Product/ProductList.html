@@ -146,7 +146,7 @@
 								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. Query Basic Information</a></li>
 <li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. Query Product Disclosures</a></li>
 <li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. Query Announcements</a></li>
-<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Purchasing Partners</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Suppliers</a></li>
 </ul>
 </li>
 </ol>
@@ -317,7 +317,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Sale status</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - On sale : 001</li>
 <li> - Waiting : 002</li>
@@ -453,7 +453,7 @@
 <td class="txt_c">20.</td>
 <td> market_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner market price</td>
+<td>Supplier market price</td>
 <td></td>
 <td>If absent, register the same value as the marketplace sale price</td>
 </tr>
@@ -461,7 +461,7 @@
 <td class="txt_c">21.</td>
 <td> sale_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner selling price</td>
+<td>Supplier selling price</td>
 <td></td>
 <td>If absent, register the same value as the marketplace sale price</td>
 </tr>
@@ -469,7 +469,7 @@
 <td class="txt_c">22.</td>
 <td> supply_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner supply price</td>
+<td>Supplier supply price</td>
 <td></td>
 <td>If absent, register the same value as the marketplace sale price</td>
 </tr>
@@ -479,11 +479,11 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Shipping fee type</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ul>
 <li>- Free shipping : 001</li>
 <li>- Freight collect : 002</li>
-<li>- Freight collect/prepaid : 003</li>
+<li>- Collect freight paid in advance : 003</li>
 <li>- Free shipping for orders of KRW 30,000 or more : 004</li>
 <li>- Free shipping for orders of KRW 50,000 or more : 005</li>
 <li>- Free shipping for orders of KRW 70,000 or more : 006</li>
@@ -506,7 +506,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Taxable</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- Taxable : 001</li>
 <li>- Tax-exempt : 002</li>
@@ -574,7 +574,7 @@
 <td class="txt_c">33.</td>
 <td>partner_id </td>
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
-<td>Supplier (purchasing partner) ID</td>
+<td>Supplier ID</td>
 <td></td>
 <td>The supplier ID can only be set when adding a product and cannot be updated.<br>Changing the supplier ID may create duplicate products. Use caution.</td>
 </tr>
@@ -584,7 +584,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Product gender</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- Unisex : 001</li>
 <li>- Men's : 002</li>

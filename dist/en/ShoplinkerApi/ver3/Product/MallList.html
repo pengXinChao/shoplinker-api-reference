@@ -146,7 +146,7 @@
 								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. Query Basic Information</a></li>
 <li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. Query Product Disclosures</a></li>
 <li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. Query Announcements</a></li>
-<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Purchasing Partners</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. Query Suppliers</a></li>
 </ul>
 </li>
 </ol>
@@ -225,7 +225,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Whether to show the customer product code </td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ul>
 <li>-Y : Show all products, whether or not a customer product code is set</li>
 <li>-N : Show only products with a customer product code</li>
@@ -255,7 +255,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Marketplace code </td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - Collect all : no code</li>
 <li> - Collect by marketplace : <input type="button" style="cursor:hand" value="Shoplinker marketplace code list" data-open-url="https://apiweb.shoplinker.co.kr/ShoplinkerApi/Docs2/pop/mall_list.html?customer_id"></li>
@@ -269,7 +269,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Show detailed description </td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ul>
 <li>-Y : Show product details</li>
 <li>-N : Hide product details</li>
@@ -449,7 +449,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Sale status</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li>- On sale : 001</li>
 <li>- Sales suspended : 003</li>
@@ -465,7 +465,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Whether the product update succeeded</td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - Y : Success</li>
 <li> - N : Failure</li>
@@ -549,7 +549,7 @@
 <td class="txt_c">27.</td>
 <td>market_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner market price</td>
+<td>Supplier market price</td>
 <td></td>
 <td></td>
 </tr>
@@ -557,7 +557,7 @@
 <td class="txt_c">28.</td>
 <td>sale_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner selling price</td>
+<td>Supplier selling price</td>
 <td></td>
 <td></td>
 </tr>
@@ -565,7 +565,7 @@
 <td class="txt_c">29.</td>
 <td>supply_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>Purchasing partner supply price</td>
+<td>Supplier supply price</td>
 <td></td>
 <td></td>
 </tr>
@@ -743,7 +743,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>Whether this is an ESM 2.0 product </td>
 <td>
-<span class="ico-select">Optional</span>
+<span class="ico-select">Allowed values</span>
 <ol>
 <li> - Y : Enabled</li>
 <li> - N : Disabled</li>

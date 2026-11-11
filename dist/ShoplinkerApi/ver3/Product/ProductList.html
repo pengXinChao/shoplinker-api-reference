@@ -146,7 +146,7 @@
 								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. 基础信息查询</a></li>
 <li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. 商品公示信息查询</a></li>
 <li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. 公告查询</a></li>
-<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. 采购客户查询</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. 供应商查询</a></li>
 </ul>
 </li>
 </ol>
@@ -317,7 +317,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>销售状态</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li> - 销售中 : 001</li>
 <li> - 等待中 : 002</li>
@@ -453,7 +453,7 @@
 <td class="txt_c">20.</td>
 <td> market_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户市价</td>
+<td>供应商市价</td>
 <td></td>
 <td>没有值时登记为与商城售价相同的值</td>
 </tr>
@@ -461,7 +461,7 @@
 <td class="txt_c">21.</td>
 <td> sale_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户售价</td>
+<td>供应商售价</td>
 <td></td>
 <td>没有值时登记为与商城售价相同的值</td>
 </tr>
@@ -469,7 +469,7 @@
 <td class="txt_c">22.</td>
 <td> supply_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户供货价</td>
+<td>供应商供货价</td>
 <td></td>
 <td>没有值时登记为与商城售价相同的值</td>
 </tr>
@@ -479,11 +479,11 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>运费类型</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ul>
 <li>- 免费 : 001</li>
 <li>- 到付 : 002</li>
-<li>- 到付/预付 : 003</li>
+<li>- 到付运费预付 : 003</li>
 <li>- 满3万韩元免运费 : 004</li>
 <li>- 满5万韩元免运费 : 005</li>
 <li>- 满7万韩元免运费 : 006</li>
@@ -506,7 +506,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>应税</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li>- 应税 : 001</li>
 <li>- 免税 : 002</li>
@@ -574,7 +574,7 @@
 <td class="txt_c">33.</td>
 <td>partner_id </td>
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
-<td>供应商（采购客户）ID</td>
+<td>供应商 ID</td>
 <td></td>
 <td>供应商 ID 只能在新增商品时设置，无法修改。<br>修改供应商 ID 可能产生重复商品，请注意。</td>
 </tr>
@@ -584,7 +584,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>商品适用性别</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li>- 通用 : 001</li>
 <li>- 男款 : 002</li>

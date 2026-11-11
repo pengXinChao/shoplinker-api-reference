@@ -146,7 +146,7 @@
 								<li class=""><a href="BasicList.html?spec_020=ov&amp;guTwo=t">  4. 基础信息查询</a></li>
 <li class=""><a href="GoodsInfoList.html?spec_026=ov&amp;guTwo=t">  5. 商品公示信息查询</a></li>
 <li class=""><a href="../Admin/NoticList.html?spec_036=ov&amp;guTwo=t">  6. 公告查询</a></li>
-<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. 采购客户查询</a></li>
+<li class=""><a href="partner_list.html?spec_038=ov&amp;guTwo=t">  7. 供应商查询</a></li>
 </ul>
 </li>
 </ol>
@@ -237,7 +237,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>商品销售状态</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li> - 销售中 : 001</li>
 <li> - 停售 : 003</li>
@@ -307,7 +307,7 @@
 <td class="txt_c">14.</td>
 <td> market_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户市价（图书定价）</td>
+<td>供应商市价（图书定价）</td>
 <td></td>
 <td></td>
 </tr>
@@ -315,7 +315,7 @@
 <td class="txt_c">15.</td>
 <td> sale_price_p</td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户售价</td>
+<td>供应商售价</td>
 <td></td>
 <td></td>
 </tr>
@@ -323,7 +323,7 @@
 <td class="txt_c">16.</td>
 <td> supply_price_p </td>
 <td class="txt_c"><span class="ico ico-integer">integer</span></td>
-<td>采购客户供货价</td>
+<td>供应商供货价</td>
 <td></td>
 <td></td>
 </tr>
@@ -333,7 +333,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>应税</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li>- 应税 : 001</li>
 <li>- 免税 : 002</li>
@@ -386,7 +386,7 @@
 <td class="txt_c">23.</td>
 <td>partner_id_tmp </td>
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
-<td>供应商（采购客户）ID</td>
+<td>供应商 ID</td>
 <td></td>
 <td>供应商 ID 只能在新增商品时设置，无法修改。<br>修改供应商 ID 可能产生重复商品，请注意。</td>
 </tr>
@@ -396,7 +396,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>商品适用性别</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li>- 通用 : 001</li>
 <li>- 男款 : 002</li>
@@ -459,7 +459,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>成人商品</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li> - 成人商品 : Y </li>
 <li> - 非成人商品 : N</li>
@@ -515,7 +515,7 @@
 <td class="txt_c"><span class="ico ico-sample">string</span></td>
 <td>单位价格输入方式</td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li>- 默认输入 : default</li>
 <li>- 手动输入 : manual</li>
@@ -644,7 +644,7 @@
 <td class="txt_c"><span class="ico ico-cdata">bool</span></td>
 <td>结果标志 </td>
 <td>
-<span class="ico-select">选填</span>
+<span class="ico-select">可选值</span>
 <ol>
 <li> - 成功 : true</li>
 <li> - 失败 : false</li>
