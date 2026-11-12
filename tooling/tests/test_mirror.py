@@ -50,6 +50,27 @@ class MirrorTests(unittest.TestCase):
         self.assertEqual(version.xpath('./a/@data-version'), ['ua/', 'general'])
         self.assertEqual(version.xpath('./a[@aria-current]/@data-version'), ['ua/'])
 
+    def test_version_links_only_appear_on_shared_api_pages_and_resolve(self):
+        # 两套目录并不覆盖相同页面；每个实际生成的切换链接都必须落到已发布的对应语言文档。
+        ua_urls = {page['url'].split('?')[0] for page in self.ua_pages}
+        for prefix, pages in [('', self.pages), ('ua/', self.ua_pages)]:
+            for language in ['zh', 'en', 'ko']:
+                for page in pages:
+                    with self.subTest(prefix=prefix, language=language, url=page['url']):
+                        path = SITE / localized_path(page['url'], language, prefix)
+                        tree = html.fromstring(path.read_text())
+                        switches = tree.xpath('//nav[@class="version-switch"]')
+                        if page['url'].split('?')[0] not in ua_urls:
+                            self.assertFalse(switches)
+                            continue
+                        self.assertEqual(len(switches), 1)
+                        self.assertEqual(switches[0].xpath('./a/@data-version'), ['ua/', 'general'])
+                        for link in switches[0].xpath('./a'):
+                            target_prefix = 'ua/' if link.get('data-version') == 'ua/' else ''
+                            target = (path.parent / urlsplit(link.get('href')).path).resolve()
+                            self.assertEqual(target, (SITE / localized_path(page['url'], language, target_prefix)).resolve())
+                            self.assertTrue(target.is_file())
+
     def test_http_and_https_document_links_share_local_target(self):
         source = 'https://apiweb.shoplinker.co.kr/ShoplinkerApi/ver3/_customer.html'
         for scheme in ('http', 'https'):

@@ -53,7 +53,7 @@ def translate_text(value, dictionary):
     return leading + dictionary[key] + trailing
 
 
-def render_page(page, dictionary, routes, language='zh', prefix=''):
+def render_page(page, dictionary, routes, language='zh', prefix='', show_version_switch=False):
     """按指定语言生成参考页；路由保留语言，业务提交仍交由官方网站处理。"""
     tree = html.fromstring(page['html'])
     destination = localized_path(page['url'], language, prefix)
@@ -136,22 +136,24 @@ def render_page(page, dictionary, routes, language='zh', prefix=''):
             link.set('aria-current', 'page')
         etree.SubElement(head, 'link', rel='alternate', hreflang='zh-CN' if code == 'zh' else code, href=target)
     body.insert(0, switch)
-    version_switch = etree.Element('nav', attrib={'class': 'version-switch', 'aria-label': {
-        'zh': '文档版本', 'en': 'Document version', 'ko': '문서 버전'}[language]})
-    versions = [('Under Armour', 'ua/', {'zh': 'Under Armour', 'en': 'Under Armour', 'ko': 'Under Armour'}[language]),
-                ('普通版', '', {'zh': '普通版', 'en': 'General', 'ko': '일반판'}[language])]
-    for _, target_prefix, label in versions:
-        target = posixpath.relpath(localized_path(page['url'], language, target_prefix), posixpath.dirname(destination) or '.')
-        link = etree.SubElement(version_switch, 'a', href=target,
-                                attrib={'data-version': target_prefix or 'general'})
-        link.text = label
-        if target_prefix == prefix:
-            link.set('aria-current', 'page')
-    menu_title = tree.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " menu-title ")]')
-    if menu_title:
-        menu_title[0].addprevious(version_switch)
-    else:
-        body.insert(1, version_switch)
+    # 只在两套版本都有对应文档的 API 页提供切换，避免总览或通用专属页跳入不存在的 UA 路径。
+    if show_version_switch:
+        version_switch = etree.Element('nav', attrib={'class': 'version-switch', 'aria-label': {
+            'zh': '文档版本', 'en': 'Document version', 'ko': '문서 버전'}[language]})
+        versions = [('Under Armour', 'ua/', {'zh': 'Under Armour', 'en': 'Under Armour', 'ko': 'Under Armour'}[language]),
+                    ('普通版', '', {'zh': '普通版', 'en': 'General', 'ko': '일반판'}[language])]
+        for _, target_prefix, label in versions:
+            target = posixpath.relpath(localized_path(page['url'], language, target_prefix), posixpath.dirname(destination) or '.')
+            link = etree.SubElement(version_switch, 'a', href=target,
+                                    attrib={'data-version': target_prefix or 'general'})
+            link.text = label
+            if target_prefix == prefix:
+                link.set('aria-current', 'page')
+        menu_title = tree.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " menu-title ")]')
+        if menu_title:
+            menu_title[0].addprevious(version_switch)
+        else:
+            body.insert(1, version_switch)
     if not is_public:
         for name in ('jquery-1.8.1.min.js', 'jquery.color-2.1.2.min.js', 'common.js'):
             etree.SubElement(body, 'script', src=local_url('/ShoplinkerApi/ver3/js/' + name, page['url'], destination, routes, True))
@@ -254,6 +256,7 @@ def main():
     """离线构建三语页面并校验缺译，不访问真实业务 API。"""
     pages = [json.loads(p.read_text()) for p in sorted((ROOT / 'source').glob('*.json'))]
     ua_pages = [json.loads(p.read_text()) for p in sorted((ROOT / 'source-ua').glob('*.json'))]
+    ua_urls = {page['url'].split('?')[0] for page in ua_pages}
     report = []
     for language in ['zh', 'en', 'ko']:
         dictionary = json.loads((ROOT / ('translations.' + language + '.json')).read_text()) if language != 'ko' else {}
@@ -261,7 +264,8 @@ def main():
         for page in pages:
             target = SITE / localized_path(page['url'], language)
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(render_page(page, dictionary, routes, language), encoding='utf-8')
+            target.write_text(render_page(page, dictionary, routes, language,
+                                          show_version_switch=page['url'].split('?')[0] in ua_urls), encoding='utf-8')
             original = html.fromstring(page['html'])
             report.append({'source': page['url'], 'language': language, 'local': localized_path(page['url'], language),
                            'tables': len(original.xpath('//table')), 'examples': len(original.xpath('//pre'))})
@@ -280,7 +284,8 @@ def main():
         for page in ua_pages:
             target = SITE / localized_path(page['url'], language, 'ua/')
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(render_page(page, dictionary, ua_routes, language, 'ua/'), encoding='utf-8')
+            target.write_text(render_page(page, dictionary, ua_routes, language, 'ua/',
+                                          show_version_switch=True), encoding='utf-8')
         ua_page = next(p for p in ua_pages if '/Product/Attribute_Info.html?' in p['url'])
         ua_entry = output_path(ua_page['url']) + '?' + urlsplit(ua_page['url']).query
         ua_index = SITE / 'ua' / (language + '/' if language != 'zh' else '') / 'index.html'
